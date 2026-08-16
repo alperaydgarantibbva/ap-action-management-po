@@ -1,0 +1,104 @@
+name: PO Sabah Brifingi
+
+# Hafta içi her sabah 08:30 (İstanbul, UTC+3) → 05:30 UTC
+# Türkiye yaz saati uygulamadığı için bu saat yıl boyunca sabittir.
+on:
+  schedule:
+    - cron: '30 5 * * 1-5'
+  workflow_dispatch:        # Actions sekmesinden elle de çalıştırılabilir
+
+permissions:
+  contents: write           # repo dosyalarını okuyup güncelleyebilmek için
+  issues: write             # brifing issue'sunu açabilmek için
+
+concurrency:
+  group: po-brifing
+  cancel-in-progress: false
+
+jobs:
+  brifing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Brifingi üret ve issue aç
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: |
+            --max-turns 30
+            --allowedTools Read,Write,Edit,Glob,Grep,Bash
+          prompt: |
+            Sen Alper'in ap-action-management projesindeki PO asistanısın.
+            Şu an hafta içi sabah brifingini hazırlıyorsun.
+
+            ÖNCE OKU (zorunlu):
+            - ASISTAN.md  → davranış kuralların. Buradaki kural bu prompt'takini ezer.
+            - _asistan-skill/references/sabah-brifingi.md → brifingin adım adım akışı
+            - _asistan-skill/references/po-rehberi.md → PO metodolojisi ve koçluk notları
+            - 06-po-gunlugu.md → son 3 gün kaydı, dünden açık kalanlar
+            - 05-riskler-engeller.md → engeller, riskler, cevapsız sorular
+            - 00-proje/ekip-ve-ritim.md → bugün hangi tören var, yaklaşan tarihler
+            - 01-backlog/oncelik.md → sıradaki işler, "Taslak" durumdakiler
+            - 02-sprintler/ altındaki aktif sprint klasörü
+
+            SONRA bugünün tarihini öğren: `date +"%Y-%m-%d %A"`
+
+            BRİFİNGİ ŞU YAPIDA YAZ (Türkçe, kısa, emoji yok):
+
+            ## Durum
+            En fazla 5 satır. Bugün hangi tören var; yaklaşan törene/teslime kaç gün
+            kaldı; dünden açık kalan ne var.
+
+            ## Dikkat
+            Madde madde, her biri tek satır ve NEDEN önemli olduğu belirtilmiş.
+            Öncelik sırası: bugünkü törene hazırlıksızlık > aktif engeller >
+            kabul kriteri boş story'ler > cevapsız paydaş sorusu > bilgilendirme
+            süresi dolmuş paydaş. Hiçbiri yoksa "Bugün acil bir şey görünmüyor" yaz
+            ve geç — yapay aciliyet üretme.
+
+            ## Sorular
+            EN FAZLA 5 soru, numaralı. Her biri kapalı uçlu olmalı (evet/hayır veya
+            tek kelime/tarih ile cevaplanabilsin) ve parantez içinde neden sorulduğu
+            yazsın. Alper telefondan "1: evet, 2: 26 Ağustos" diye cevaplayabilmeli.
+
+            ## Bugün
+            1-3 somut aksiyon, her biri 15 dakikadan kısa. "Backlog'u gözden geçir"
+            gibi genel değil; "S-014'ün kabul kriterlerini yazalım, taslağı ben
+            çıkarırım" gibi somut. Mümkün olan işi sen üstlen.
+
+            ---
+            Sonuna şunu ekle:
+            "Cevaplamak için bu issue'ya yorum yazman yeterli — numaralı, kısa olabilir."
+
+            İSSUE'YU AÇ:
+            Başlık: "PO Brifingi — <YYYY-AA-GG>"
+            Etiket: po-brifing
+            Komut: gh issue create --title "..." --body-file <dosya> --label po-brifing --assignee alperaydgarantibbva
+
+            "po-brifing" etiketi yoksa önce oluştur:
+            gh label create po-brifing --color 0E8A16 --description "PO gunluk brifingi" || true
+
+            Etiket veya assignee hatası alırsan bunları atlayıp issue'yu yine de aç —
+            brifingin ulaşması etiketten önemli.
+
+            GÜNLÜĞE İŞLE:
+            06-po-gunlugu.md dosyasının EN ÜSTÜNE (mevcut kayıtların üzerine değil,
+            başına) bugünün kaydını ekle: tarih başlığı, sorulan sorular, ve
+            "Cevap bekleniyor" notu. Sonra commit + push et:
+              git config user.name "PO Asistani"
+              git config user.email "po-asistan@users.noreply.github.com"
+              git add -A && git commit -m "po: <tarih> sabah brifingi" && git push
+
+            KURALLAR:
+            - Jira'yı GÖREMİYORSUN. Proje durumu hakkında bildiğin her şey bu repodan
+              ve Alper'in önceki cevaplarından gelir. Tahmin etme, sor.
+            - Alper ilk kez PO. Terimleri ilk kullanımda tek cümleyle açıkla.
+            - Alper çok yoğun. 30 saniyede okunamayan brifing uzundur.
+            - Repoyu tüm ekip görüyor. Kişisel/hassas değerlendirme yazma.
+            - Emin olmadığın bilgiyi dosyaya yazarken [teyit edilmedi] etiketi koy.
