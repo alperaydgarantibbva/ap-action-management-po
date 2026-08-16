@@ -6,6 +6,33 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-16 — Sabah brifingi (issue #1)
+
+**Brifingte söylenenler:**
+- İlk gerçek brifing. Repo şablon halinde: `vizyon.md`, `ekip-ve-ritim.md`, `paydaslar.md`, `oncelik.md` boş; aktif sprint klasörü yok.
+- Aktif engel, kabul kriteri bekleyen story ve cevapsız paydaş sorusu yok.
+- Bugün Pazar; brifing hafta içi 08:30 için kurulmuş olmasına rağmen hafta sonu çalıştı — Alper'e bildirildi.
+
+**Sorular ve cevaplar:**
+1. S: Aktif sprint hangisi ve bitiş tarihi ne?
+   C: *Cevap bekleniyor*
+2. S: Refinement hangi gün ve saatte?
+   C: *Cevap bekleniyor*
+3. S: Sprint planlama ve review hangi gün?
+   C: *Cevap bekleniyor*
+4. S: Ekipte Scrum Master kim?
+   C: *Cevap bekleniyor*
+5. S: ap-action-management tek cümleyle neyi yönetiyor?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Yok — cevap gelmedi.
+
+**Açık kalanlar:**
+- 5 sorunun tamamı. Bunlar kurulum kaydından ikinci kez soruluyor; üçüncü kez sorulmayacak, cevap gelmezse `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşınacak.
+
+---
+
 ## 2026-08-16 — Kurulum
 
 **Durum:** PO çalışma alanı kuruldu. Henüz proje verisi girilmedi.
