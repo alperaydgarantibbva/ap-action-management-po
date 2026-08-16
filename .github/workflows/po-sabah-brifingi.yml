@@ -10,6 +10,8 @@ on:
 permissions:
   contents: write           # repo dosyalarını okuyup güncelleyebilmek için
   issues: write             # brifing issue'sunu açabilmek için
+  id-token: write           # action'ın kimlik doğrulaması için ZORUNLU
+  actions: read
 
 concurrency:
   group: po-brifing
@@ -30,6 +32,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Zamanlanmış çalışmalar cron'u en son değiştiren kullanıcıya atfedilir.
+          # O kullanıcı bot ise action çalışmayı reddeder; bu satır onu engeller.
+          allowed_bots: "*"
           claude_args: |
             --max-turns 30
             --allowedTools Read,Write,Edit,Glob,Grep,Bash
@@ -77,15 +82,17 @@ jobs:
             "Cevaplamak için bu issue'ya yorum yazman yeterli — numaralı, kısa olabilir."
 
             İSSUE'YU AÇ:
-            Başlık: "PO Brifingi — <YYYY-AA-GG>"
-            Etiket: po-brifing
-            Komut: gh issue create --title "..." --body-file <dosya> --label po-brifing --assignee alperaydgarantibbva
+            Brifing metnini önce bir dosyaya yaz (örn. /tmp/brifing.md), sonra:
 
-            "po-brifing" etiketi yoksa önce oluştur:
-            gh label create po-brifing --color 0E8A16 --description "PO gunluk brifingi" || true
+              gh label create po-brifing --color 0E8A16 --description "PO gunluk brifingi" || true
+              gh issue create --title "PO Brifingi — <YYYY-AA-GG>" \
+                --body-file /tmp/brifing.md --label po-brifing
 
-            Etiket veya assignee hatası alırsan bunları atlayıp issue'yu yine de aç —
-            brifingin ulaşması etiketten önemli.
+            Etiket komutu hata verirse yok say ve issue'yu yine de aç — brifingin
+            ulaşması etiketten önemli. `--assignee` KULLANMA, hata verebiliyor.
+
+            İssue açma komutu başarısız olursa hatayı oku, tekrar dene; yine olmazsa
+            brifing metnini çıktıya yaz ki workflow log'undan okunabilsin.
 
             GÜNLÜĞE İŞLE:
             06-po-gunlugu.md dosyasının EN ÜSTÜNE (mevcut kayıtların üzerine değil,

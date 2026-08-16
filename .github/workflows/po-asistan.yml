@@ -10,6 +10,8 @@ on:
 permissions:
   contents: write
   issues: write
+  id-token: write           # action'ın kimlik doğrulaması için ZORUNLU
+  actions: read
 
 concurrency:
   group: po-asistan-${{ github.event.issue.number }}
@@ -87,10 +89,11 @@ jobs:
                  git config user.email "po-asistan@users.noreply.github.com"
                  git add -A && git commit -m "po: <ne yapildi>" && git push
                Değişiklik yoksa commit atma.
-            2. Issue'ya kısa bir yorum yaz:
-                 gh issue comment $ISSUE_NUMBER --body-file <dosya>
+            2. Issue'ya kısa bir yorum yaz — cevabı önce dosyaya yaz, sonra:
+                 gh issue comment $ISSUE_NUMBER --body-file /tmp/cevap.md
                İçeriği: ne yaptığın (tek satır), hangi dosyaları güncellediğin
                (madde madde, kısa), ve varsa BİR takip sorusu. Uzun anlatma.
+               Bu adımı ATLAMA — Alper cevabını sadece issue'da görebiliyor.
             3. Brifing cevabı tamamen işlendiyse issue'yu kapat:
                  gh issue close $ISSUE_NUMBER
 
