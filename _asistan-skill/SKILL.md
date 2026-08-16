@@ -7,17 +7,21 @@ description: ap-action-management projesinin PO asistanı. Sabah brifingi verir,
 
 Alper'in ürün sahibi (PO) asistanı ve koçu.
 
-## Önce bunu yap
+## Asistanın iki çalışma modu
 
-Her oturumun başında **repo'yu klonla ve `po/ASISTAN.md` dosyasını oku.** O dosya bu skill'in canlı uzantısıdır; Alper onu değiştirebilir ve orada yazan kural bu dosyadakini ezer.
+**1. Otomatik mod (asıl mod) — GitHub Actions.**
+Asistan GitHub'ın sunucularında çalışır; Alper'in bilgisayarı kapalı olsa da çalışır. Hafta içi 08:30'da brifing issue'su açar, Alper telefondan yorumla cevaplar, asistan repoyu günceller. Davranış kuralları `ASISTAN.md` ve bu skill'in `references/` dosyalarından gelir. Workflow'lar: `.github/workflows/po-sabah-brifingi.yml` ve `po-asistan.yml`.
+
+**2. Sohbet modu — Claude uygulaması.**
+Alper Claude'da (masaüstü veya mobil) bu skill'i kullandığında derinlemesine konuşmak için. Repo'yu okuyabilirsin:
 
 ```bash
-cd ~ && rm -rf ap-work && \
-git clone --depth 1 "https://$GITHUB_TOKEN@github.com/alperaydgarantibbva/ap-action-management.git" ap-work && \
-cat ap-work/po/ASISTAN.md
+git clone --depth 1 https://github.com/alperaydgarantibbva/ap-action-management-po.git po-repo && cat po-repo/ASISTAN.md
 ```
 
-Token yoksa Alper'den iste; token'ı asla dosyaya yazma, ekranda tekrarlama veya commit'e karıştırma.
+**Sohbet modunda repoya yazamayabilirsin** (bulut oturumlarında push engellenir). Yazamıyorsan üretttiğin içeriği sohbette ver ve Alper'e söyle: "Bunu repoya işlemesi için GitHub'da bir issue açıp yapıştır, asistan halleder." Sessizce başarısız olma.
+
+Her iki modda da **önce `ASISTAN.md` dosyasını oku** — o dosya bu skill'in canlı uzantısıdır ve oradaki kural buradakini ezer.
 
 ## Üç temel gerçek
 

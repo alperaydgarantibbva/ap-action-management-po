@@ -1,6 +1,20 @@
 # PO Asistanı — Çalışma Talimatları
 
-Bu dosya asistanın nasıl davranacağını tanımlar. Alper bunu istediği zaman değiştirebilir; asistan her oturumda bu dosyayı okur ve buradaki kurallara uyar.
+Bu dosya asistanın nasıl davranacağını tanımlar. Alper bunu istediği zaman değiştirebilir; asistan her çalışmasında bu dosyayı okur ve buradaki kurallara uyar. **Buradaki kural, workflow dosyalarındaki prompt'u ezer** — davranışı değiştirmek istediğinizde YAML'a değil bu dosyaya dokunun.
+
+## Asistan nerede çalışıyor?
+
+Asistan **GitHub Actions içinde**, yani GitHub'ın kendi sunucularında çalışır. Alper'in bilgisayarının açık olması gerekmez.
+
+| Ne zaman | Ne olur |
+|---|---|
+| Hafta içi 08:30 (İstanbul) | `po-sabah-brifingi.yml` çalışır, brifing issue'su açılır, telefona bildirim düşer |
+| Alper issue'ya yorum yazdığında | `po-asistan.yml` çalışır, cevabı işler, repoyu günceller, cevap yazar |
+| Alper yeni issue açtığında | Aynı workflow çalışır, istenen görevi yapar |
+
+**İletişim kanalı GitHub Issue'ları.** Alper telefondaki GitHub uygulamasından bildirim alır ve yorum yazarak cevaplar. Her tur yaklaşık 1-2 dakika sürer.
+
+Proje verisi GitHub'ın dışına çıkmaz; asistan da repo'nun dışına yazmaz.
 
 ---
 
@@ -25,6 +39,8 @@ Jira'yı okuyamadığın için **tahmin etme, sor.** Ama akıllıca sor:
 - **Sorularının kaynağını belirt:** "6 gündür kabul kriteri boş olduğu için soruyorum" gibi. Alper neden sorulduğunu bilirse cevaplamak ister.
 
 ## 3. Sabah brifingi (hafta içi 08:30)
+
+Brifing bir **GitHub issue** olarak açılır: başlık `PO Brifingi — YYYY-AA-GG`, etiket `po-brifing`. Alper yoruma cevap yazar; cevap `po-asistan.yml` workflow'unu tetikler.
 
 Sırayla:
 

@@ -1,6 +1,14 @@
 # PO Çalışma Alanı — ap-action-management
 
-Bu klasör, ürün sahibi (PO) çalışmasının **arka planını** tutar: neden bu işi yapıyoruz, kime söz verdik, neye karar verdik, neyi ertelemeye karar verdik.
+Bu repo, ürün sahibi (PO) çalışmasının **arka planını** tutar: neden bu işi yapıyoruz, kime söz verdik, neye karar verdik, neyi ertelemeye karar verdik.
+
+> **Henüz kurulum yapılmadıysa:** [KURULUM.md](KURULUM.md) — 3 adım, ~10 dakika.
+
+## Burada bir asistan çalışıyor
+
+Bu repoda GitHub Actions üzerinde çalışan bir PO asistanı var. Hafta içi her sabah 08:30'da bir brifing issue'su açar; PO cevaplar; asistan cevapları ilgili dosyalara işler ve commit atar.
+
+`PO Asistani` imzalı commit görürseniz kaynağı budur. Asistanın davranış kuralları [ASISTAN.md](ASISTAN.md) dosyasında yazılı ve herkese açık.
 
 ## Jira ile ilişkisi
 
