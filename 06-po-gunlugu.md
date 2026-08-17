@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-17 — Sabah brifingi (issue #2)
+
+**Brifingte söylenenler:**
+- Repo hâlâ şablon halinde: `vizyon.md`, `ekip-ve-ritim.md`, `paydaslar.md`, `oncelik.md` boş; aktif sprint klasörü ve story yok.
+- Bugün Pazartesi. Takvimde tören görünmüyor, ancak bunun nedeni tören takviminin boş olması — gerçek durum [teyit edilmedi].
+- Aktif engel, risk ve cevapsız paydaş sorusu kaydı yok.
+- Issue #1 İstanbul saatiyle 00:13'te açıldığı için gözden kaçmış olabilir; 5 soru cevapsız kaldı.
+
+**Sorular ve cevaplar:**
+1. S: Aktif sprint numarası ve bitiş tarihi ne?
+   C: *Cevap bekleniyor*
+2. S: Bu hafta refinement veya review var mı, hangi gün?
+   C: *Cevap bekleniyor*
+3. S: Ekipte Scrum Master kim?
+   C: *Cevap bekleniyor*
+4. S: ap-action-management neyi yönetiyor — tek cümle?
+   C: *Cevap bekleniyor*
+5. S: Bu hafta ekibin bitirmesini en çok istediğin tek iş ne?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Yok — cevap bekleniyor.
+
+**Açık kalanlar:**
+- 5 sorunun tamamı. 1-4 numaralı sorular ikinci kez soruldu; bugün de cevap gelmezse üçüncü kez sorulmayacak ve `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşınacak.
+- 5. soru (bu haftanın önceliği) Pazartesi ritmi gereği ilk kez soruldu.
+
+---
+
 ## 2026-08-16 — Sabah brifingi (issue #1)
 
 **Brifingte söylenenler:**
