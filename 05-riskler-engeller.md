@@ -32,7 +32,10 @@
 
 | Tarih | Soru | Kime sorulmalı |
 |---|---|---|
-| | | |
+| 2026-08-18 | Aktif sprint hangisi ve tarihleri ne? (3 kez soruldu, cevap gelmedi) | Alper |
+| 2026-08-18 | Tören takvimi nasıl — refinement, planlama, review hangi gün/saat? (3 kez soruldu) | Alper |
+| 2026-08-18 | Ekipte Scrum Master kim? (3 kez soruldu) | Alper |
+| 2026-08-18 | ap-action-management tek cümleyle neyi yönetiyor? (3 kez soruldu) | Alper |
 
 ## Kapanmış maddeler
 
@@ -44,4 +47,4 @@
 
 ---
 
-*Son güncelleme: `[tarih]`*
+*Son güncelleme: 2026-08-18*

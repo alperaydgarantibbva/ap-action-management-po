@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-18 — Sabah brifingi (issue #3)
+
+**Brifingte söylenenler:**
+- Bugün Salı. Tören takvimi şablon halinde olduğu için bugün tören olup olmadığı bilinmiyor; dosyadaki "Refinement Salı 14:00" satırı örnek değer, gerçek değil [teyit edilmedi].
+- Repo hâlâ boş: sprint bilgisi, story, backlog sıralaması ve paydaş listesi girilmemiş.
+- Üç gün üst üste (16, 17, 18 Ağustos) brifinglere cevap gelmedi; issue #1 ve #2 yorumsuz açık duruyor.
+- Kurulumdan beri sorulan 4 soru (sprint tarihleri, tören takvimi, Scrum Master, projenin tanımı) üçüncü güne girdi. Kural gereği bir daha sorulmadı, `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşındı.
+- Aktif engel, risk, kabul kriteri boş story ve cevapsız paydaş sorusu kaydı yok — çünkü henüz kayıt girilmemiş.
+
+**Sorular ve cevaplar:**
+1. S: Bu brifingleri telefonunda bildirim olarak görüyor musun?
+   C: *Cevap bekleniyor*
+2. S: Bugün 14:00'te refinement var mı?
+   C: *Cevap bekleniyor*
+3. S: Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (ikinci kez)
+   C: *Cevap bekleniyor*
+4. S: Brifing saati 08:30 sana uygun mu?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- `05-riskler-engeller.md` → üç kez sorulup cevaplanmayan 4 kurulum sorusu "Cevap bekleyen sorular" tablosuna taşındı.
+- Issue #3'e tek yorumda doldurulabilecek sprint/tören/ekip bilgi şablonu eklendi.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- Cevap gelmemesinin nedeni bilinmiyor: bildirim ulaşmıyor olabilir ya da saat uygun olmayabilir [teyit edilmedi].
+
+---
+
 ## 2026-08-17 — Sabah brifingi (issue #2)
 
 **Brifingte söylenenler:**
