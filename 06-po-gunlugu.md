@@ -6,6 +6,36 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-19 — Sabah brifingi (issue #4)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba. `ekip-ve-ritim.md`'deki "Sprint Planlama Çarşamba 10:00" satırı şablon örneği olduğu için bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- Repo hâlâ veri içermiyor: aktif sprint, story, backlog sıralaması, paydaş listesi girilmemiş. Backlog'da tek story olmadığı için kabul kriteri uyarısı üretilemiyor.
+- Dört gün üst üste (16, 17, 18, 19 Ağustos) brifinglere cevap gelmedi; issue #1, #2, #3 yorumsuz açık.
+- Cevapsızlığın nedeni bilinmiyor: bildirim ulaşmıyor olabilir, saat uygun olmayabilir ya da günlük ritim fazla olabilir [teyit edilmedi]. Üç olasılık ayrı ayrı soruldu.
+- Kurulumdan gelen 4 temel soru (sprint, tören takvimi, Scrum Master, proje tanımı) 3 kez sorulduğu için tekrar sorulmadı; `05-riskler-engeller.md`'de bekliyor.
+
+**Sorular ve cevaplar:**
+1. S: Bu brifingleri telefonunda bildirim olarak görüyor musun? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Bugün 10:00'da sprint planlama var mı?
+   C: *Cevap bekleniyor*
+3. S: Proje şu an aktif bir sprint içinde mi, yoksa henüz başlamadı mı?
+   C: *Cevap bekleniyor*
+4. S: Brifing saati 08:30 uygun mu, yoksa 18:00 daha iyi olur mu? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: Günlük yerine sadece Pazartesi brifing yapalım mı?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- `05-riskler-engeller.md` → "Bu hafta ekibin bitirmesini en çok istediğin tek iş ne?" sorusu 2 kez sorulup cevaplanmadığı için üçüncü kez sorulmadı, "Cevap bekleyen sorular" tablosuna taşındı.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 4 numaralı sorular ikinci kez soruldu; yarın da cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+
+---
+
 ## 2026-08-18 — Sabah brifingi (issue #3)
 
 **Brifingte söylenenler:**

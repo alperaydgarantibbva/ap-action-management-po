@@ -36,6 +36,7 @@
 | 2026-08-18 | Tören takvimi nasıl — refinement, planlama, review hangi gün/saat? (3 kez soruldu) | Alper |
 | 2026-08-18 | Ekipte Scrum Master kim? (3 kez soruldu) | Alper |
 | 2026-08-18 | ap-action-management tek cümleyle neyi yönetiyor? (3 kez soruldu) | Alper |
+| 2026-08-19 | Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
 
 ## Kapanmış maddeler
 
@@ -47,4 +48,4 @@
 
 ---
 
-*Son güncelleme: 2026-08-18*
+*Son güncelleme: 2026-08-19*
