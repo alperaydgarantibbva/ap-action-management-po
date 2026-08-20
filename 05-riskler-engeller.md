@@ -37,6 +37,8 @@
 | 2026-08-18 | Ekipte Scrum Master kim? (3 kez soruldu) | Alper |
 | 2026-08-18 | ap-action-management tek cümleyle neyi yönetiyor? (3 kez soruldu) | Alper |
 | 2026-08-19 | Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
+| 2026-08-20 | Brifingleri telefonunda bildirim olarak görüyor musun? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
+| 2026-08-20 | Brifing saati 08:30 uygun mu, 18:00 daha mı iyi? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
 
 ## Kapanmış maddeler
 
@@ -48,4 +50,4 @@
 
 ---
 
-*Son güncelleme: 2026-08-19*
+*Son güncelleme: 2026-08-20*

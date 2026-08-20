@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-20 — Sabah brifingi (issue #5)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe. Tören takvimi şablon halinde olduğu için bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- PO haftalık ritmine göre Perşembe paydaş güncellemesi günü, ancak `00-proje/paydaslar.md` boş olduğu için taslak üretilemedi.
+- Beş iş günü üst üste (16, 17, 18, 19, 20 Ağustos) brifinglere cevap gelmedi; issue #1, #2, #3, #4 yorumsuz açık.
+- Repo hâlâ veri içermiyor: aktif sprint, story, backlog sıralaması ve paydaş listesi girilmemiş. Bu yüzden engel/kabul kriteri/paydaş uyarısı üretilemiyor.
+- "Bildirim görüyor musun?" ve "08:30 uygun mu?" soruları üçüncü kez sorulmadı; kural gereği bekleyen sorular tablosuna taşındı.
+
+**Sorular ve cevaplar:**
+1. S: Proje şu an aktif bir sprint içinde mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Günlük brifing yerine sadece Pazartesi brifing yapalım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Brifingleri "devam" denene kadar duraklatayım mı?
+   C: *Cevap bekleniyor*
+4. S: Tek cümlelik bir iş tarifi verirsen ilk story taslağını asistan yazsın mı?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- `05-riskler-engeller.md` → "Bu brifingleri telefonunda bildirim olarak görüyor musun?" ve "Brifing saati 08:30 uygun mu?" soruları 2 kez sorulup cevaplanmadığı için üçüncü kez sorulmadı, "Cevap bekleyen sorular" tablosuna taşındı.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 2 numaralı sorular ikinci kez soruldu; yarın da cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Cevapsızlığın nedeni hâlâ bilinmiyor [teyit edilmedi]. 3 numaralı soru bu belirsizliği kapatmak için soruldu.
+
+---
+
 ## 2026-08-19 — Sabah brifingi (issue #4)
 
 **Brifingte söylenenler:**
