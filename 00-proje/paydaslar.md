@@ -6,7 +6,29 @@
 
 | Paydaş | Rol | Ne bekliyor | İlgi/Etki | Bilgilendirme sıklığı | Kanal | Son iletişim |
 |---|---|---|---|---|---|---|
-| `[isim]` | `[rol]` | `[beklentisi]` | Yüksek/Orta/Düşük | Haftalık | E-posta | `[tarih]` |
+| Cemal Onaran      | GMY          | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Sibel Kaya        | GMY          | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Sertaç Kezik      | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Fatih Kaskaya     | Group Manager| Superbanker ekran geliştirmeleri ile ilgili bağımlılıklar | Yüksek | Aylık | E-posta |  |
+| Gizem G. Okyay    | Group Manager| RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Cüneyt Tırnava    | Group Manager| RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Mustafa Sağlık    | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Ahmet Saygılı     | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Hakan Akyürek     | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Zeynep Ö.Yıldırım | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Haluk Bekmez      | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Burak M. Kadıoğlu | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Fırat Sağlayan    | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Haluk Bekmez      | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
+| Şahin Dalbudan    | GMY          | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
+| Deniz K. Bilen    | Unit Manager | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
+| Nursen Yıldız     | Manager      | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
+| Çağatay Kösoğlu   | GMy          | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
+| Özge Atcı         | Unit Manager | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
+| Maral Kinran Keser| Manager      | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
+
+
+
 
 **İlgi/Etki notu:** Yüksek etkili paydaşlar sürpriz sevmez — kötü haberi onlara ilk siz söyleyin.
 

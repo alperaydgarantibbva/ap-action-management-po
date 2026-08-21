@@ -17,13 +17,13 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 **Sorular ve cevaplar:**
 1. S: Proje şu an aktif bir sprint içinde mi? (ikinci kez)
-   C: *Cevap bekleniyor*
+   C: evet, spring 1
 2. S: Günlük brifing yerine sadece Pazartesi brifing yapalım mı? (ikinci kez)
-   C: *Cevap bekleniyor*
+   C: Pazartesi ve Cuma olsun
 3. S: Brifingleri "devam" denene kadar duraklatayım mı?
-   C: *Cevap bekleniyor*
+   C: her pazartesi ve cuma
 4. S: Tek cümlelik bir iş tarifi verirsen ilk story taslağını asistan yazsın mı?
-   C: *Cevap bekleniyor*
+   C: evet yazsın. İş tarifi: kapsamın çalışmalarının tamamlanması
 
 **Bu cevaplardan çıkan güncellemeler:**
 - `05-riskler-engeller.md` → "Bu brifingleri telefonunda bildirim olarak görüyor musun?" ve "Brifing saati 08:30 uygun mu?" soruları 2 kez sorulup cevaplanmadığı için üçüncü kez sorulmadı, "Cevap bekleyen sorular" tablosuna taşındı.
