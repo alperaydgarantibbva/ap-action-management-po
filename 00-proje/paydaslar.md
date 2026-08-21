@@ -26,6 +26,9 @@
 | Çağatay Kösoğlu   | GMy          | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
 | Özge Atcı         | Unit Manager | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
 | Maral Kinran Keser| Manager      | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
+| Nihal Acar        | Agile Coach  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
+| Özgül Aslan       | Proje Yöneticisi  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
+| Özgül Aslan       | Proje Yöneticisi  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
 
 
 
