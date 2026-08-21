@@ -6,6 +6,41 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-21 — Sabah brifingi (issue #6)
+
+**Brifingte söylenenler:**
+- Bugün Cuma; Alper'in 20 Ağustos kararı gereği brifingler Pazartesi ve Cuma günleri yapılıyor.
+- Alper cevaplarını issue yorumu olarak değil, doğrudan commit ile verdi: `00-proje/paydaslar.md` 21 paydaşla dolduruldu, `03-toplantilar/` altına iki toplantı notu eklendi (19 Ağustos Pusula II, PlanItEarth Workshop).
+- Sprint 1 aktif olarak teyit edildi, ancak `02-sprintler/` altında klasör yok; sprint hedefi, tarihler ve review günü hâlâ yazılı değil.
+- Tören takvimi hâlâ şablon değerlerinde, bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- 21 paydaşın tamamı "Aylık" bilgilendirme olarak işaretli ama "son iletişim" sütunu boş; sayaç başlamadı.
+
+**Bu brifingte asistanın ürettikleri:**
+- `01-backlog/stories/S-001-aksiyon-sql-tanimi-sistem-uzerinden.md` → Alper'in 20 Ağustos'ta istediği ilk story taslağı yazıldı. Kaynak: iki toplantı notu. Durum: Taslak, onay bekliyor.
+- `01-backlog/oncelik.md` → S-001 tek kayıt olduğu için 1. sıraya yazıldı; sıralama Alper tarafından onaylanmadı.
+
+**Sorular ve cevaplar:**
+1. S: Sprint 1 hangi tarihte bitiyor?
+   C: *Cevap bekleniyor*
+2. S: S-001 doğru konuyu mu tarif ediyor?
+   C: *Cevap bekleniyor*
+3. S: EVAM'ın sprint başına 2-3 event kısıtını risk olarak kaydedeyim mi?
+   C: *Cevap bekleniyor*
+4. S: "Account Planning maintenance süreç sahipliği" konusunu bekleyen karar olarak kaydedeyim mi?
+   C: *Cevap bekleniyor*
+5. S: PlanItEarth workshop'u yapıldı mı, yoksa 17 Eylül'de mi?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Henüz yok — cevap bekleniyor. 3 ve 4 numaralı sorulara "evet" gelirse `05-riskler-engeller.md` güncellenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1 numaralı soru (sprint tarihi) daha önce 3 kez sorulup bekleyen sorular tablosuna taşınmıştı; Sprint 1'in aktif olduğu teyit edildiği için bitiş tarihi olarak daraltılıp yeniden soruldu.
+- S-001 içindeki 4 açık soru story dosyasında duruyor; refinement'a girmeden önce kapanmalı.
+
+---
+
 ## 2026-08-20 — Sabah brifingi (issue #5)
 
 **Brifingte söylenenler:**

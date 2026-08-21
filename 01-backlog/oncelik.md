@@ -6,9 +6,11 @@
 
 | # | ID | Başlık | Durum | Neden bu sırada | Hedef sprint |
 |---|---|---|---|---|---|
-| 1 | `[S-001]` | `[başlık]` | Hazır / Taslak / Beklemede | `[gerekçe]` | `[Sprint N]` |
+| 1 | [S-001](stories/S-001-aksiyon-sql-tanimi-sistem-uzerinden.md) | Aksiyon sorumlusu tanım SQL'ini sistem üzerinden gönderip durumunu takip edebilir | Taslak | 19 Ağustos Pusula görüşmesinde "sistem üzerinden sürece dönüştürülmeli" diye açıkça istendi; aksiyon havuzunu besleyen akışın önkoşulu | `[teyit edilmedi]` |
 | 2 | | | | | |
 | 3 | | | | | |
+
+*Sıralama Alper tarafından onaylanmadı — S-001 backlog'daki tek kayıt olduğu için 1. sıraya yazıldı.*
 
 **Durum tanımları:**
 - **Hazır** — Kabul kriterleri yazılı, ekip anladı, sprinte alınabilir.
