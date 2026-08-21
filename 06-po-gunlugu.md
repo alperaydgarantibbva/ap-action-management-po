@@ -34,9 +34,14 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 **Bu cevaplardan çıkan güncellemeler:**
 - Henüz yok — cevap bekleniyor. 3 ve 4 numaralı sorulara "evet" gelirse `05-riskler-engeller.md` güncellenecek.
 
+**Brifingten sonra gelen:**
+- Alper 08:57'de `00-proje/vizyon.md`'yi doldurdu. Bu sürümün hedefi yazılı hale geldi: Aksiyon Yönetim Yapısı ve tekil aksiyon havuzu. 6 başarı kriteri tanımlandı, kapsam dışı iki madde net (yapay zeka eklentileri; Ana Banka / Müşteri Yolculuğu / Ürün Performansları / Müşteri Memnuniyeti modülleri).
+- Issue #6'ya ek not yazıldı: başarı kriterlerinin epic adayı olduğu, S-001'in bu hedefin içinde kaldığı, vizyon dosyasının "Taslak" başlığının güncellenmesi gerektiği.
+
 **Açık kalanlar:**
 - Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
 - 1 numaralı soru (sprint tarihi) daha önce 3 kez sorulup bekleyen sorular tablosuna taşınmıştı; Sprint 1'in aktif olduğu teyit edildiği için bitiş tarihi olarak daraltılıp yeniden soruldu.
+- Vizyon başarı kriterlerinden epic taslakları çıkarılsın mı — Alper'in onayı bekleniyor.
 - S-001 içindeki 4 açık soru story dosyasında duruyor; refinement'a girmeden önce kapanmalı.
 
 ---
