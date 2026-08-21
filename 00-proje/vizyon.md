@@ -1,7 +1,5 @@
 # Ürün Vizyonu — ap-action-management
 
-> **Durum:** Taslak — Alper tarafından doldurulacak.
-> Asistan bu dosyayı okuyup boş kalan yerleri sabah brifinglerinde sorabilir.
 
 ## Tek cümlelik özet
 
