@@ -6,6 +6,42 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-24 — Sabah brifingi (issue #7)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi; brifingler Alper'in 20 Ağustos kararı gereği Pazartesi ve Cuma günleri yapılıyor.
+- Tören takvimi hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- Sprint 1 aktif, ancak bitiş tarihi yazılı değil ve `02-sprintler/` altında klasör yok. Sprint hedefi de yazılmamış.
+- Cuma sorulan 5 sorunun tamamı cevapsız; issue #6'ya yorum gelmedi.
+- Cuma akşamı (21 Ağustos 17:47) Alper `00-proje/paydaslar.md`'ye 3 satır ekledi; liste 23 kayda çıktı. İki satır tekrarlı: Haluk Bekmez ve Özgül Aslan ikişer kez yazılmış.
+- 23 paydaşın tamamı "Aylık" bilgilendirme işaretli ama "son iletişim" sütunu boş; sayaç hâlâ başlamadı.
+- Backlog'da tek story var: S-001, Taslak. Kabul kriterleri yazılı ama 4 açık soru ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok — engel olmadığı için değil, henüz girilmediği için [teyit edilmedi].
+
+**Sorular ve cevaplar:**
+1. S: Sprint 1 hangi tarihte bitiyor? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: S-001 doğru konuyu tarif ediyor mu, bu haliyle ekibe gösterilebilir mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu?
+   C: *Cevap bekleniyor*
+4. S: Vizyondaki 6 başarı kriterinden epic taslaklarını çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: EVAM'ın sprint başına 2-3 event kısıtını risk, Account Planning maintenance süreç sahipliğini bekleyen karar olarak kaydedeyim mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Henüz yok — cevap bekleniyor. 1'e tarih gelirse `00-proje/ekip-ve-ritim.md` ve `02-sprintler/sprint-01/` açılacak; 5'e "evet" gelirse `05-riskler-engeller.md` güncellenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1, 2, 4 ve 5 numaralı sorular ikinci kez soruldu; Cuma da cevap gelmezse üçüncü kez sorulmayacak ve `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşınacak.
+- Cuma sorulan "PlanItEarth workshop'u yapıldı mı, yoksa 17 Eylül'de mi?" sorusu bu turda 5 soru sınırına girmediği için sorulmadı; bir sonraki brifingte tekrar sorulacak.
+- Teklif edilen ve cevap bekleyen üç aksiyon: S-001'in Alper'e ait 2 açık sorusunun cevabı, sprint-01 klasörü + sprint hedefi taslağı, `paydaslar.md`'deki tekrar eden iki satırın silinmesi.
+- Alper cevaplarını issue yorumu yerine doğrudan commit ile veriyor; bu tur da aynı olabilir.
+
+---
+
 ## 2026-08-21 — Sabah brifingi (issue #6)
 
 **Brifingte söylenenler:**
