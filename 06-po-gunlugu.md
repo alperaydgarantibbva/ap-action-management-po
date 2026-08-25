@@ -6,6 +6,41 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-25 — Sabah brifingi (issue #8)
+
+**Brifingte söylenenler:**
+- Bugün Salı. Brifing ritmi Alper'in 20 Ağustos kararı gereği Pazartesi ve Cuma; bu tur plan dışı çalıştı [teyit edilmedi].
+- Dün akşam Alper iki commit attı: `91-prototyping/01-action-engine/README.md` (Action Engine prototip tanımı; 5 fonksiyonel başlık: sinyal yönetimi, aksiyon yönetimi, skorlama, A/B testing, gerçekleşen ve etki takibi) ve `03-toplantilar/20260824-tasarim.md` (yalnızca veri modeli görseli, metin yok).
+- Action Engine tanımının backlog'da karşılığı yok; backlog'da hâlâ tek story var (S-001).
+- S-001 hâlâ Taslak: 4 açık soru ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Açık soruların ikisinin muhatabı Alper.
+- Tören takvimi `00-proje/ekip-ve-ritim.md`'de hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- `00-proje/paydaslar.md`'de iki satır tekrar ediyor (Haluk Bekmez, Özgül Aslan); 23 paydaşın tamamında "son iletişim" sütunu boş.
+- Dünkü (24 Ağustos) 5 sorunun tamamı cevapsız; issue #7 yorumsuz.
+
+**Sorular ve cevaplar:**
+1. S: Action Engine README'deki 5 fonksiyonel başlıktan epic taslaklarını çıkarayım mı?
+   C: *Cevap bekleniyor*
+2. S: S-001'deki iş Account Planning tarafında mı, GT Pusula tarafında mı geliştirilecek?
+   C: *Cevap bekleniyor*
+3. S: Action Engine prototipi ekibin geliştirme kapsamında mı, yoksa hizalanma amaçlı ayrı bir çalışma mı?
+   C: *Cevap bekleniyor*
+4. S: accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı?
+   C: *Cevap bekleniyor*
+5. S: Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi?
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Henüz yok — cevap bekleniyor. 1'e "evet" gelirse `01-backlog/epics/` altına 5 epic taslağı açılacak; 2'ye cevap gelirse S-001'in açık sorusu kapanacak; 3 ve 4'e cevap gelirse `01-backlog/oncelik.md` ve `00-proje/ekip-ve-ritim.md` güncellenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 24 Ağustos'ta sorulan 5 soru (Sprint 1 bitiş tarihi, S-001 onayı, haftanın hedefi, vizyondan epic taslakları, EVAM kısıtı + maintenance sahipliği) bu turda tekrarlanmadı; ikinci kez sorulmuşlardı ve üçüncü kez sorulmama kuralına takılıyorlar. Bir sonraki planlı brifingte (Cuma, 28 Ağustos) sorulmayacak, `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşınacaklar.
+- Teklif edilen ve cevap bekleyen üç aksiyon: 5 epic taslağının çıkarılması, S-001 kabul kriterlerine "en fazla 2 milyon satır" limitinin eklenmesi (README 3.3'te geçiyor, story'de yok), `paydaslar.md`'deki iki tekrar satırının silinmesi.
+- `20260824-tasarim.md` yalnızca görsel içeriyor; toplantı kararları yazılı değil.
+
+---
+
 ## 2026-08-24 — Sabah brifingi (issue #7)
 
 **Brifingte söylenenler:**
