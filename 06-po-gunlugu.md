@@ -6,6 +6,43 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-26 — Sabah brifingi (issue #9)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba. Brifing ritmi Alper'in 20 Ağustos kararı gereği Pazartesi ve Cuma; workflow hafta içi her gün tetiklendiği için dün ve bugün plan dışı çalıştı.
+- Tören takvimi `00-proje/ekip-ve-ritim.md`'de hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- Backlog'da tek story var: S-001, 5 gündür Taslak. Alper'e ait 2 açık sorusu kapanmadığı için Definition of Ready karşılanmıyor.
+- 24 Ağustos'ta eklenen Action Engine README'deki 5 fonksiyonel başlığın backlog'da hâlâ karşılığı yok; kapsam backlog dışında büyüyor.
+- 23 paydaşın tamamında "son iletişim" sütunu boş; `paydaslar.md`'de iki satır tekrar ediyor (Haluk Bekmez, Özgül Aslan).
+- `05-riskler-engeller.md` hâlâ şablon; kayıtlı aktif engel yok [teyit edilmedi].
+- `03-toplantilar/20260824-tasarim.md` yalnızca görsel içeriyor, toplantı kararları yazılı değil.
+- Dünkü (25 Ağustos) 5 sorunun tamamı cevapsız; issue #8 yorumsuz. Alper'in son commit'i 24 Ağustos akşamı.
+
+**Sorular ve cevaplar:**
+1. S: Action Engine README'deki 5 başlıktan epic taslaklarını çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: S-001'deki iş Account Planning tarafında mı, GT Pusula tarafında mı geliştirilecek? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Ortak klasöre manuel SQL bırakma yolu S-001 ile kapatılacak mı, bir süre paralel mi yürüyecek?
+   C: *Cevap bekleniyor*
+4. S: Brifing hafta içi her gün mü çalışsın, yoksa Pazartesi/Cuma mı kalsın?
+   C: *Cevap bekleniyor*
+5. S: accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu cevaplardan çıkan güncellemeler:**
+- Henüz yok — cevap bekleniyor. 1'e "evet" gelirse `01-backlog/epics/` altına 5 epic taslağı açılacak; 2 ve 3'e cevap gelirse S-001'in Alper'e ait iki açık sorusu kapanacak; 4'e cevap gelirse workflow tetikleme günü ve `00-proje/kararlar.md` güncellenecek; 5'e tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna yazılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1, 2 ve 5 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve `05-riskler-engeller.md` içindeki "Cevap bekleyen sorular" tablosuna taşınacak.
+- 25 Ağustos'ta sorulan "Action Engine prototipi ekibin geliştirme kapsamında mı?" ve "Soruları cevaplamak için issue yorumu mu, commit mi?" soruları bu turda 5 soru sınırına girmediği için sorulmadı.
+- 24 Ağustos'ta sorulan 5 soru (Sprint 1 bitiş tarihi, S-001 onayı, haftanın hedefi, vizyondan epic taslakları, EVAM kısıtı + maintenance sahipliği) üçüncü kez sorulmama kuralı gereği sorulmuyor; `05-riskler-engeller.md` "Cevap bekleyen sorular" tablosuna taşınmaları gerekiyor.
+- Teklif edilen ve onay bekleyen iki asistan aksiyonu: `paydaslar.md`'deki tekrar eden iki satırın silinmesi, 20 Ağustos brifing ritmi kararının `kararlar.md`'ye K-002 olarak yazılması.
+
+---
+
 ## 2026-08-25 — Sabah brifingi (issue #8)
 
 **Brifingte söylenenler:**
