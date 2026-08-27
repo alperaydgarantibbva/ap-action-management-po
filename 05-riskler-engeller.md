@@ -39,6 +39,16 @@
 | 2026-08-19 | Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
 | 2026-08-20 | Brifingleri telefonunda bildirim olarak görüyor musun? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
 | 2026-08-20 | Brifing saati 08:30 uygun mu, 18:00 daha mı iyi? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
+| 2026-08-21 | Sprint 1 hangi tarihte bitiyor? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
+| 2026-08-21 | S-001 doğru konuyu tarif ediyor mu, bu haliyle ekibe gösterilebilir mi? (2 kez soruldu) | Alper |
+| 2026-08-21 | EVAM'ın sprint başına 2-3 event kısıtını risk olarak kaydedeyim mi? (2 kez soruldu) | Alper |
+| 2026-08-21 | Account Planning maintenance süreç sahipliğini bekleyen karar olarak kaydedeyim mi? (2 kez soruldu) | Alper |
+| 2026-08-21 | PlanItEarth workshop'u yapıldı mı, yoksa 17 Eylül'de mi? | Alper |
+| 2026-08-24 | Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu? | Alper |
+| 2026-08-24 | Vizyondaki 6 başarı kriterinden / Action Engine README'deki 5 başlıktan epic taslakları çıkarayım mı? (2 kez soruldu) | Alper |
+| 2026-08-25 | S-001'deki iş Account Planning tarafında mı, GT Pusula tarafında mı geliştirilecek? (2 kez soruldu; S-001'in açık sorusu) | Alper |
+| 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) | Alper |
+| 2026-08-25 | Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi? | Alper |
 
 ## Kapanmış maddeler
 
@@ -50,4 +60,4 @@
 
 ---
 
-*Son güncelleme: 2026-08-20*
+*Son güncelleme: 2026-08-27*

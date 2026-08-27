@@ -6,6 +6,46 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-27 — Sabah brifingi (issue #10)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe. 20 Ağustos kararına göre brifing günleri Pazartesi ve Cuma; workflow hafta içi her gün tetiklendiği için bu tur da plan dışı çalıştı. Yarın (28 Ağustos, Cuma) planlı brifing günü.
+- PO haftalık ritminde Perşembe paydaş güncellemesi günü; `paydaslar.md` dolu olduğu için ilk aylık güncelleme taslağı çıkarılabilir durumda.
+- Tören takvimi `00-proje/ekip-ve-ritim.md`'de hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- S-001 6 gündür Taslak; kabul kriterleri yazılı ama 4 açık soru ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Açık soruların ikisinin muhatabı Alper.
+- 21 paydaşın tamamında "son iletişim" sütunu boş; bilgilendirme sayacı hâlâ başlamadı.
+- 24 Ağustos'ta eklenen Action Engine README'deki 5 fonksiyonel başlığın backlog'da hâlâ karşılığı yok; kapsam backlog dışında büyüyor.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi].
+- Son üç brifing (issue #7, #8, #9) cevapsız; Alper'in son commit'i 24 Ağustos 19:01.
+
+**Sorular ve cevaplar:**
+1. S: Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Şu an ekibin işini durduran bir engel var mı?
+   C: *Cevap bekleniyor*
+3. S: 21 paydaşa gidecek ilk aylık güncelleme taslağını bugün çıkarayım mı?
+   C: *Cevap bekleniyor*
+4. S: Action Engine prototipi ekibin geliştirme kapsamında mı, yoksa hizalanma amaçlı ayrı bir çalışma mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: Ortak klasöre manuel SQL bırakma yolu S-001 ile kapatılacak mı, bir süre paralel mi yürüyecek? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `00-proje/paydaslar.md` → Tekrar eden iki satır (Haluk Bekmez, Özgül Aslan) silindi; liste 23'ten 21 kayda indi. Üç brifingtir teklif edilip cevap gelmemişti; veri tekrarı olduğu için düzeltildi.
+- `05-riskler-engeller.md` → 24, 25 ve 26 Ağustos'ta ikinci kez sorulup cevapsız kalan sorular ile daha önce sorulup takipten düşen sorular "Cevap bekleyen sorular" tablosuna taşındı (11 satır eklendi).
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse workflow tetikleme günü ve `00-proje/kararlar.md` güncellenecek; 2'ye cevap gelirse `05-riskler-engeller.md` aktif engel tablosu (engel yoksa tarihli "engel yok" notu) yazılacak; 3'e "evet" gelirse `04-raporlar/` altına aylık paydaş güncelleme taslağı açılacak; 4'e cevap gelirse Action Engine başlıklarının backlog'a girip girmeyeceği netleşecek; 5'e cevap gelirse S-001'in Alper'e ait bir açık sorusu kapanacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1, 4 ve 5 numaralı sorular ikinci kez soruldu; yarınki brifingte cevap gelmezse üçüncü kez sorulmayacak ve `05-riskler-engeller.md` tablosuna taşınacak.
+- Kural gereği artık sorulmayan 8 soru bekleyen sorular tablosunda; bunlar cevaplanmadıkça sprint tarihleri, sprint hedefi, epic yapısı ve S-001'in "Hazır" durumu ilerlemiyor.
+- Yarın Cuma: hafta kapanışı. Riskler/engeller güncellemesi ve paydaş güncellemesi ihtiyacı gündeme gelecek.
+
+---
+
 ## 2026-08-26 — Sabah brifingi (issue #9)
 
 **Brifingte söylenenler:**

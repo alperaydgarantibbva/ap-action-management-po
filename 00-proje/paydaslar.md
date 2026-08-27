@@ -19,7 +19,6 @@
 | Haluk Bekmez      | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
 | Burak M. Kadıoğlu | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
 | Fırat Sağlayan    | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
-| Haluk Bekmez      | Direktör     | RM'lerin verimli yönetimi, ana banka oranı artışı | Yüksek | Aylık | E-posta |  |
 | Şahin Dalbudan    | GMY          | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
 | Deniz K. Bilen    | Unit Manager | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
 | Nursen Yıldız     | Manager      | Projenin takvim ve bütçeye uygun tamamlanması | Yüksek | Aylık | E-posta |  |
@@ -28,10 +27,11 @@
 | Maral Kinran Keser| Manager      | Superbanker projesi tasarım uyumluluğu | Yüksek | Aylık | E-posta |  |
 | Nihal Acar        | Agile Coach  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
 | Özgül Aslan       | Proje Yöneticisi  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
-| Özgül Aslan       | Proje Yöneticisi  | Projenin beklentilere uygun takibi ve tamamlanması | Yüksek | Aylık | E-posta |  |
 
 
 
+
+*2026-08-27: Tekrar eden iki satır (Haluk Bekmez, Özgül Aslan) silindi; liste 23'ten 21 kayda indi.*
 
 **İlgi/Etki notu:** Yüksek etkili paydaşlar sürpriz sevmez — kötü haberi onlara ilk siz söyleyin.
 
