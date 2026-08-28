@@ -6,6 +6,46 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-28 — Sabah brifingi (issue #11)
+
+**Brifingte söylenenler:**
+- Bugün Cuma: 20 Ağustos kararına göre planlı brifing günü ve hafta kapanışı (riskler güncellenir, paydaş ihtiyacına bakılır).
+- Alper bugün `00-proje/ActionPlanning-ActionManagement-KickOff-202709.pptx` dosyasını yükledi (16 slayt). Sunum "Step 1: Action Management" modülünü 5 katman (Capture, Transform, Prioritize, Activate, Monitor), 4 engine, 4 havuz ve 6 sahiplik rolü olarak tarif ediyor. 24 Ağustos'ta eklenen Action Engine README'nin 5 fonksiyonel başlığı ve vizyondaki 6 başarı kriteri ile örtüşüyor.
+- Sunumdaki TRANSFORM katmanı S-001 ile birebir örtüşüyor: "SQL'ler Action Owner tarafından hazırlanır → sistemsel olarak kontrol edilip onaylanır → periyodik çalışacak şekilde planlanır → Action Library'ye kaydedilir."
+- Kapsam belgelerde büyüyor, backlog'da değil: backlog'da hâlâ tek story var (S-001), epic yok.
+- S-001 7 gündür Taslak; Alper'e ait 2 açık soru nedeniyle Definition of Ready karşılanmıyor.
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok. Bu soru 3 kez sorulduğu için artık sorulmuyor.
+- Tören takvimi `00-proje/ekip-ve-ritim.md`'de hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi].
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; 21 paydaşın tamamında "son iletişim" sütunu boş.
+- Son dört brifing (issue #7, #8, #9, #10) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: Şu an ekibin işini durduran bir engel var mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: KickOff sunumundaki 5 katmandan 5 epic taslağı çıkarayım mı?
+   C: *Cevap bekleniyor*
+3. S: Sunumdaki 6 sahiplik rolü (Signal, Action, Strategic Priority, A/B Test, Performance, Reporting Owner) için isimler belirlendi mi?
+   C: *Cevap bekleniyor*
+4. S: 21 paydaşa gidecek ilk aylık güncelleme taslağını çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: Dosya adındaki "202709" kickoff tarihi mi?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `00-proje/kickoff-ozeti.md` → KickOff sunumunun metni çıkarıldı. Gerekçe: pptx binary olduğu için repoda aranamıyor ve story yazarken referans verilemiyordu. Sunumdaki ifadeler korundu, yorum gerektiren yerler `[teyit edilmedi]` işaretlendi. Alper onaylamadı.
+- `05-riskler-engeller.md` → 27 Ağustos'ta ikinci kez sorulup cevapsız kalan 3 soru (brifing günleri, Action Engine prototipinin kapsamı, manuel SQL yolunun kapatılması) "Cevap bekleyen sorular" tablosuna taşındı; kural gereği üçüncü kez sorulmuyorlar.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse `05-riskler-engeller.md` aktif engel tablosu (engel yoksa tarihli "engel yok" notu) yazılacak; 2'ye "evet" gelirse `01-backlog/epics/` altına 5 epic taslağı açılacak ve `01-backlog/oncelik.md` güncellenecek; 3'e cevap gelirse `00-proje/ekip-ve-ritim.md` ekip tablosu ve S-001'in onay adımı netleşecek; 4'e "evet" gelirse `04-raporlar/` altına aylık paydaş güncelleme taslağı açılacak; 5'e tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna yazılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 4 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 18 satıra çıktı. Bunlar cevaplanmadıkça sprint tarihleri, sprint hedefi, epic yapısı ve S-001'in "Hazır" durumu ilerlemiyor.
+- Hafta kapanışı tamamlanmadı: engel durumu teyit edilmedi, paydaş bilgilendirme sayacı başlamadı.
+
+---
+
 ## 2026-08-27 — Sabah brifingi (issue #10)
 
 **Brifingte söylenenler:**

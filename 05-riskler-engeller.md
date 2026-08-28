@@ -49,6 +49,9 @@
 | 2026-08-25 | S-001'deki iş Account Planning tarafında mı, GT Pusula tarafında mı geliştirilecek? (2 kez soruldu; S-001'in açık sorusu) | Alper |
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) | Alper |
 | 2026-08-25 | Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi? | Alper |
+| 2026-08-27 | Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
+| 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu; sormaya devam edilmiyor) | Alper |
+| 2026-08-27 | Ortak klasöre manuel SQL bırakma yolu S-001 ile kapatılacak mı, bir süre paralel mi yürüyecek? (2 kez soruldu; S-001'in açık sorusu) | Alper |
 
 ## Kapanmış maddeler
 
@@ -60,4 +63,4 @@
 
 ---
 
-*Son güncelleme: 2026-08-27*
+*Son güncelleme: 2026-08-28*
