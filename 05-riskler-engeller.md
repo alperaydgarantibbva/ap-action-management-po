@@ -52,6 +52,8 @@
 | 2026-08-27 | Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor) | Alper |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu; sormaya devam edilmiyor) | Alper |
 | 2026-08-27 | Ortak klasöre manuel SQL bırakma yolu S-001 ile kapatılacak mı, bir süre paralel mi yürüyecek? (2 kez soruldu; S-001'in açık sorusu) | Alper |
+| 2026-08-28 | Şu an ekibin işini durduran bir engel var mı? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: aktif engel tablosu boş kalıyor — engel olmadığı için değil, teyit alınamadığı için) | Alper |
+| 2026-08-28 | 21 paydaşa gidecek ilk aylık güncelleme taslağını çıkarayım mı? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. 2026-08-31'de taslak onay beklemeden yazıldı: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi) | Alper |
 
 ## Kapanmış maddeler
 
@@ -63,4 +65,4 @@
 
 ---
 
-*Son güncelleme: 2026-08-28*
+*Son güncelleme: 2026-08-31*

@@ -6,6 +6,49 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-08-31 — Sabah brifingi (issue #12)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi: 20 Ağustos kararına göre planlı brifing günü; PO haftalık ritminde haftanın önceliğini belirleme ve backlog sıralamasını gözden geçirme günü.
+- Tören takvimi `00-proje/ekip-ve-ritim.md`'de hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi]. Bu soru 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- S-001 10 gündür Taslak; Alper'e ait 2 açık soru (geliştirme tarafı, manuel SQL yolunun kapatılması) nedeniyle Definition of Ready karşılanmıyor.
+- 21 paydaşın tamamında "son iletişim" sütunu boş; aylık bilgilendirme ritmi 10 gündür başlamadı ve yarın ay değişiyor.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; engel sorusu 2 kez sorulup cevaplanmadığı için bekleyen sorular tablosuna taşındı.
+- Repodaki tek tarihli madde 17 Eylül PlanItEarth workshop'u; 17 gün kaldı.
+- Son beş brifing (issue #7, #8, #9, #10, #11) cevapsız. Alper'in son commit'i 28 Ağustos 19:18 (KickOff pptx yüklemesi); o dosyanın metin özeti 28 Ağustos brifinginde çıkarılmıştı, yeni bilgi gelmedi.
+- Kapsam belgelerde büyümeye devam ediyordu, backlog'da değil: KickOff'un 5 katmanı, Action Engine README'nin 5 başlığı ve vizyonun 6 başarı kriteri backlog'da karşılıksızdı. Bu tur kapatıldı (aşağıya bak).
+
+**Sorular ve cevaplar:**
+1. S: Açılan 5 epic (E-01…E-05) bu haliyle onaylanıyor mu?
+   C: *Cevap bekleniyor*
+2. S: Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu?
+   C: *Cevap bekleniyor*
+3. S: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` bu haliyle gönderilebilir mi?
+   C: *Cevap bekleniyor*
+4. S: 17 Eylül PlanItEarth workshop'u takvimde hâlâ duruyor mu?
+   C: *Cevap bekleniyor*
+5. S: 6 sahiplik rolü için isimler belirlendi mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `01-backlog/epics/` → KickOff sunumunun 5 katmanından 5 epic taslağı açıldı: E-01 CAPTURE, E-02 TRANSFORM (S-001 bu epic'in altında), E-03 PRIORITIZE, E-04 ACTIVATE, E-05 MONITOR. Her epic vizyondaki bir başarı kriterine bağlandı; kaynak, risk ve açık karar satırları belgelerden alındı, yorum gerektiren yerler `[teyit edilmedi]` işaretlendi. Gerekçe: bu teklif 24, 25, 26 ve 28 Ağustos'ta 4 kez yapıldı, cevap gelmedi; sormaya devam etmek yerine taslak çıkarıldı. Alper onaylamadı.
+- `01-backlog/oncelik.md` → "Epic yapısı" tablosu eklendi; 5 epic ile vizyon başarı kriterleri eşleştirildi. Sıra, KickOff'taki katman akışı — değer sırası değil, onaylanmadı.
+- `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` → 21 paydaşa gidecek ilk aylık güncelleme taslağı yazıldı. Gerekçe: 27 ve 28 Ağustos'ta 2 kez teklif edildi, cevap gelmedi; kural gereği üçüncü kez sorulmuyor. Taslak yalnızca repodaki belgelerden yazıldı, Jira'daki gerçek ilerleme yok — bu sınır dosyanın sonunda yazılı. **Gönderilmedi**, gönderim Alper'de.
+- `05-riskler-engeller.md` → 28 Ağustos'ta ikinci kez sorulup cevapsız kalan 2 soru (aktif engel var mı, paydaş güncelleme taslağı) "Cevap bekleyen sorular" tablosuna taşındı; tablo 22 satıra çıktı.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse epic'lerin durumu "Fikir"den ilerletilecek ve `oncelik.md` sıralaması onaylı hale gelecek; "hayır" gelirse taslaklar Alper'in tarifine göre yeniden yazılacak. 2'ye cevap gelirse haftanın hedefi `06-po-gunlugu.md` ve aktif sprint kaydına yazılacak. 3'e "evet" gelirse `paydaslar.md`'deki 21 satırın "son iletişim" sütunu doldurulup aylık sayaç başlatılacak. 4'e cevap gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna yazılacak. 5'e isimler gelirse `ekip-ve-ritim.md` ekip tablosu ve 5 epic'in "Sahip" satırı doldurulacak, S-001'in onay adımı netleşecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 5 numaralı soru ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 22 satırda. Sprint tarihleri, sprint hedefi, tören takvimi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen üç çıktı (5 epic, epic tablosu, paydaş taslağı) "onaylanmadı" işaretli duruyor. Alper reddederse geri alınacak.
+- Aylık paydaş bilgilendirmesi Ağustos içinde gönderilmezse ilk tur kaçırılmış olacak; taslak hazır, karar Alper'de.
+
+---
+
 ## 2026-08-28 — Sabah brifingi (issue #11)
 
 **Brifingte söylenenler:**
