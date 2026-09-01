@@ -6,6 +6,45 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-01 — Sabah brifingi (issue #13)
+
+**Brifingte söylenenler:**
+- Bugün Salı; hafta ve ay değişti. Şablondaki tören takvimine göre Salı refinement günü, ama `00-proje/ekip-ve-ritim.md` hâlâ şablon değerlerinde; bugün tören olup olmadığı bilinmiyor [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif; bitiş tarihi ve sprint hedefi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- S-001 11 gündür Taslak; kabul kriterleri yazılı ama 4 açık soru (ikisi Alper'de) ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Backlog'daki tek story bu.
+- Ağustos kapandı ve 21 paydaşa gidecek ilk aylık güncelleme gönderilmedi; aylık ritmin ilk turu kaçırıldı. Taslak 31 Ağustos'ta yazıldı, `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderim kararı Alper'de.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; engel sorusu 2 kez sorulup cevaplanmadığı için takipten düştü.
+- 31 Ağustos'ta onay beklemeden üretilen üç çıktı (5 epic, `oncelik.md` epic tablosu, paydaş taslağı) "onaylanmadı" işaretiyle duruyor.
+- Repodaki tek tarihli madde 17 Eylül PlanItEarth workshop'u; 16 gün kaldı.
+- Son altı brifing (issue #7, #8, #9, #10, #11, #12) cevapsız — hiçbirine yorum gelmedi. Alper'in son commit'i 28 Ağustos (KickOff pptx yüklemesi).
+
+**Sorular ve cevaplar:**
+1. S: Açılan 5 epic (E-01…E-05) bu haliyle onaylanıyor mu? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Paydaş güncellemesi Eylül'ün ilk haftasında gönderilecek mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: S-001'i iki açık sorusu kapanmadan refinement'a sokayım mı?
+   C: *Cevap bekleniyor*
+4. S: E-01 CAPTURE altına ilk story taslağını çıkarayım mı?
+   C: *Cevap bekleniyor*
+5. S: Brifing hafta içi her gün mü çalışsın, haftada tek özet mi?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 31 Ağustos'ta üçüncü/ikinci kez sorulup cevapsız kalan üç soru (17 Eylül workshop, haftanın tek hedefi, 6 sahiplik rolü isimleri) "Cevap bekleyen sorular" tablosunda kapatıldı; kural gereği artık sorulmuyorlar. Tablo 23 satırda.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse epic'lerin durumu "Fikir"den ilerletilecek ve `oncelik.md` sıralaması onaylı hale gelecek. 2'ye "evet" gelirse taslak Eylül başlığıyla güncellenip `paydaslar.md`'deki 21 satırın "son iletişim" sütunu doldurulacak ve aylık sayaç başlatılacak. 3'e cevap gelirse S-001'in durumu ve refinement gündemi netleşecek. 4'e "evet" gelirse `01-backlog/stories/` altına E-01 için ilk story taslağı açılacak. 5'e cevap gelirse workflow tetikleme günü ve `00-proje/kararlar.md` güncellenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 2 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 23 satırda. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Aylık paydaş bilgilendirmesinin ilk turu (Ağustos) kaçırıldı; taslak hazır, gönderim Alper'de.
+- Onay beklemeden üretilen üç çıktı hâlâ "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-08-31 — Sabah brifingi (issue #12)
 
 **Brifingte söylenenler:**
