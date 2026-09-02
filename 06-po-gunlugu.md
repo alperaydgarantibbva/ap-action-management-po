@@ -6,6 +6,44 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-02 — Sabah brifingi (issue #14)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba; şablon tören takviminde sprint planlama günü (10:00), ama `00-proje/ekip-ve-ritim.md` hâlâ şablon değerlerinde; bugün gerçekten tören olup olmadığı bilinmiyor [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif; sprint hedefi ve bitiş tarihi hâlâ yazılı değil, `02-sprintler/` altında klasör yok. Yazılı sprint hedefi olmadan planlama yapılırsa kapsam savunulamaz.
+- S-001 13 gündür Taslak; kabul kriterleri yazılı ama 4 açık soru (ikisi Alper'de, ikisi Umut Özdemir / Garo Üçkardeş'te) ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Backlog'daki tek story bu.
+- Ağustos paydaş güncellemesi gönderilmedi; Eylül'ün 2. günündeyiz, 21 paydaşın hiçbirinde "son iletişim" kaydı yok. Aylık ritmin ilk turu kaçtı, ikincisi kaymaya başladı. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; engel sorusu 2 kez sorulup cevaplanmadığı için takipten düştü.
+- Onay beklemeden üretilen üç çıktı (5 epic, `oncelik.md` epic tablosu, paydaş taslağı) hâlâ "onaylanmadı" işaretli. Repoyu ekip görüyor.
+- Repodaki tek tarihli madde 17 Eylül PlanItEarth workshop'u; 15 gün kaldı.
+- Son yedi brifing (issue #7, #8, #9, #10, #11, #12, #13) cevapsız — hiçbirine yorum gelmedi. Alper'in son commit'i 28 Ağustos (KickOff pptx yüklemesi).
+
+**Sorular ve cevaplar:**
+1. S: S-001'i iki açık sorusu kapanmadan refinement'a sokayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: S-001'i ikiye böleyim mi — (1) gönderim + otomatik doğrulama, (2) onay akışı + işlem geçmişi?
+   C: *Cevap bekleniyor*
+3. S: S-001'in iki teknik açık sorusunu Umut Özdemir ve Garo Üçkardeş'e soracak kısa mesaj taslağını çıkarayım mı?
+   C: *Cevap bekleniyor*
+4. S: E-01 CAPTURE altına ilk story taslağını çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: Cevap vermeye vaktin yoksa brifingi geçici olarak durdurayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 1 Eylül'de ikinci kez sorulup cevapsız kalan iki soru (5 epic onayı, paydaş güncellemesinin gönderimi) "Cevap bekleyen sorular" tablosuna taşındı; kural gereği artık sorulmuyorlar. Tablo 25 satırda.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse S-001'in durumu ve refinement gündemi netleşecek. 2'ye "evet" gelirse S-001 iki story'ye bölünüp `oncelik.md` sıralaması güncellenecek. 3'e "evet" gelirse `04-raporlar/` altına Umut/Garo'ya gidecek soru metni yazılacak; cevap gelince S-001'in iki teknik açık sorusu kapanacak. 4'e "evet" gelirse `01-backlog/stories/` altına E-01 için ilk story taslağı açılacak. 5'e cevap gelirse workflow tetikleme kararı ve `00-proje/kararlar.md` güncellenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 4 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 25 satırda. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen üç çıktı hâlâ "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-01 — Sabah brifingi (issue #13)
 
 **Brifingte söylenenler:**
