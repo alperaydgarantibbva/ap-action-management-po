@@ -57,6 +57,8 @@
 | 2026-08-28 | KickOff'taki 6 sahiplik rolü (Signal, Action, Strategic Priority, A/B Test, Performance, Reporting Owner) için isimler belirlendi mi? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: `ekip-ve-ritim.md` ekip tablosu ve 5 epic'in "Sahip" satırı boş kalıyor) | Alper |
 | 2026-08-31 | Açılan 5 epic (E-01…E-05) bu haliyle onaylanıyor mu? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: epic'ler ve `oncelik.md` epic tablosu "onaylanmadı" işaretiyle duruyor) | Alper |
 | 2026-08-31 | `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` gönderilebilir mi / Eylül'ün ilk haftasında gönderilecek mi? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: 21 paydaşın "son iletişim" sütunu boş kalıyor, aylık sayaç başlamıyor) | Alper |
+| 2026-09-02 | S-001'i iki açık sorusu kapanmadan refinement'a sokayım mı? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: S-001 "Taslak" durumunda kalıyor, refinement gündemine girmiyor) | Alper |
+| 2026-09-02 | E-01 CAPTURE altına ilk story taslağını çıkarayım mı? (2 kez soruldu, cevap gelmedi; sormaya devam edilmiyor. Sonuç: backlog'da tek story kalmaya devam ediyor) | Alper |
 
 ## Kapanmış maddeler
 
@@ -68,4 +70,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-02*
+*Son güncelleme: 2026-09-03*

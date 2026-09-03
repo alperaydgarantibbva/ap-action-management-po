@@ -45,8 +45,9 @@
 
 | Tarih | Ne |
 |---|---|
+| 2026-09-17 | PlanItEarth Workshop — kaynak: `03-toplantilar/20260917-PlanItEarth-Workshop.md`. Takvimde durup durmadığı [teyit edilmedi] |
 | `[YYYY-AA-GG]` | `[teslim / demo / karar noktası]` |
 
 ---
 
-*Son güncelleme: `[tarih]`*
+*Son güncelleme: 2026-09-03*

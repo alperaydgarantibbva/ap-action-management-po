@@ -6,6 +6,43 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-03 — Sabah brifingi (issue #15)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe; PO haftalık ritminde paydaş güncelleme günü. `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde, bugün gerçek bir tören olup olmadığı bilinmiyor [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif; sprint hedefi ve bitiş tarihi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- S-001 13 gündür Taslak (2026-08-21'den beri); kabul kriterleri yazılı ama 4 açık soru (ikisi Alper'de, ikisi Umut Özdemir / Garo Üçkardeş'te) ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Backlog'daki tek story bu; bir sonraki sprinti dolduracak hazır iş yok.
+- Ağustos paydaş güncellemesi gönderilmedi; Eylül'ün 3. günündeyiz, 21 paydaşın hiçbirinde "son iletişim" kaydı yok. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi, gönderim kararı Alper'de. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; engel sorusu 2 kez sorulup cevaplanmadığı için takipten düştü.
+- Onay beklemeden üretilen üç çıktı (5 epic, `oncelik.md` epic tablosu, paydaş taslağı) hâlâ "onaylanmadı" işaretli. Repoyu ekip görüyor.
+- 17 Eylül PlanItEarth workshop'una 14 gün kaldı; repodaki tek tarihli madde bu, hazırlık kaydı yok.
+- Son sekiz brifing (issue #7–#14) cevapsız — hiçbirine yorum gelmedi. Alper'in son commit'i 28 Ağustos (KickOff pptx yüklemesi).
+
+**Sorular ve cevaplar:**
+1. S: Brifingi geçici olarak durdurayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: S-001'i ikiye böleyim mi — (1) gönderim + otomatik doğrulama, (2) onay akışı + işlem geçmişi? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: S-001'in iki teknik açık sorusunu Umut Özdemir ve Garo Üçkardeş'e soracak kısa mesaj taslağını çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+4. S: 17 Eylül workshop'u için gündem taslağı çıkarayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 2 Eylül'de ikinci kez sorulup cevapsız kalan iki soru (S-001'in refinement'a girmesi, E-01 altına ilk story taslağı) "Cevap bekleyen sorular" tablosuna taşındı; kural gereği artık sorulmuyorlar. Tablo 27 satırda.
+- `00-proje/ekip-ve-ritim.md` → "Önemli tarihler" tablosuna 17 Eylül PlanItEarth Workshop satırı yazıldı; kaynak `03-toplantilar/20260917-PlanItEarth-Workshop.md`, tarihin takvimde durup durmadığı `[teyit edilmedi]`. Gerekçe: repodaki tek tarihli madde bu ve tablo boştu; workshop'a 14 gün kaldı. Alper onaylamadı.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse brifing workflow'unun tetiklenmesi durdurulacak veya sürdürülecek, karar `00-proje/kararlar.md`'ye yazılacak. 2'ye "evet" gelirse S-001 iki story'ye bölünüp `oncelik.md` sıralaması güncellenecek. 3'e "evet" gelirse `04-raporlar/` altına Umut/Garo'ya gidecek soru metni yazılacak; cevap gelince S-001'in iki teknik açık sorusu kapanacak. 4'e "evet" gelirse `03-toplantilar/20260917-PlanItEarth-Workshop.md` altına gündem taslağı eklenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- 1, 2 ve 3 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 27 satırda. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-02 — Sabah brifingi (issue #14)
 
 **Brifingte söylenenler:**
