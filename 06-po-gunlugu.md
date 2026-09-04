@@ -6,6 +6,41 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-04 — Sabah brifingi (issue #16)
+
+**Brifingte söylenenler:**
+- Bugün Cuma; PO haftalık ritminde hafta kapanışı günü (riskler güncellenir, paydaş ihtiyacına bakılır). Kayıtlı tören yok; `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif; sprint hedefi ve bitiş tarihi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- S-001 14 gündür Taslak (2026-08-21'den beri); kabul kriterleri yazılı ama 4 açık soru ve 2 bekleyen bağımlılık nedeniyle Definition of Ready karşılanmıyor. Backlog'daki tek story bu; bir sonraki sprinti dolduracak hazır iş yok.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos turu kaçtı, Eylül'ün 4. günündeyiz. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi, karar Alper'de. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- `05-riskler-engeller.md`'de kayıtlı aktif engel yok [teyit edilmedi]; engel sorusu 2 kez sorulup cevaplanmadığı için takipten düştü.
+- Onay beklemeden üretilen dört çıktı (5 epic, `oncelik.md` epic tablosu, paydaş taslağı, 17 Eylül tarih satırı) hâlâ "onaylanmadı" işaretli. Repoyu ekip görüyor.
+- 17 Eylül PlanItEarth workshop'una 13 gün kaldı; repoda hazırlık kaydı yok.
+- Son dokuz brifing (issue #7–#15) cevapsız — hiçbirine yorum gelmedi. Alper'in son commit'i 28 Ağustos (KickOff pptx yüklemesi).
+
+**Sorular ve cevaplar:**
+1. S: 17 Eylül workshop'u için gündem taslağı çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Bu hafta ekip tarafında kapanan bir iş oldu mu?
+   C: *Cevap bekleniyor*
+3. S: Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 3 Eylül'de ikinci kez sorulup cevapsız kalan üç soru (brifingi durdurma, S-001'i ikiye bölme, Umut/Garo'ya gidecek mesaj taslağı) "Cevap bekleyen sorular" tablosuna taşındı; kural gereği artık sorulmuyorlar. Tablo 30 satıra çıktı.
+- `05-riskler-engeller.md` → 30 satırlık düz tablo dokuz konu başlığına gruplandı (A sprint/tören, B ekip, C S-001, D backlog/epic, E öncelik, F paydaş, G proje tanımı, H risk/engel, I brifing kanalı). Her başlığın altına "cevaplanmazsa ne oluyor" satırı yazıldı. Satırlar ve tarihleri değişmedi, yalnızca sıralandı. Gerekçe: 30 soru dokuz ayrı issue'ya dağılmış durumdaydı; başlık başlık cevaplanabilir hale getirildi. Alper onaylamadı.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse `03-toplantilar/20260917-PlanItEarth-Workshop.md` altına gündem taslağı eklenecek. 2'ye cevap gelirse hafta kapanışı kaydı ve ilerleme notu yazılacak — şu an repoda ekip ilerlemesine dair hiçbir veri yok. 3'e "evet" gelirse gruplanmış 30 soru tek bir kontrol listesi issue'suna dönüştürülecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 3 sorunun tamamı. Cevap bekleniyor.
+- 1 numaralı soru ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 30 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, gruplanmış soru tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-03 — Sabah brifingi (issue #15)
 
 **Brifingte söylenenler:**
