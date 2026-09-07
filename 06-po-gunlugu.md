@@ -6,6 +6,48 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-07 — Sabah brifingi (issue #17)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi; PO haftalık ritminde backlog sıralaması ve hafta önceliği günü. Kayıtlı tören yok; `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- **Yeni içerik geldi:** Alper 2026-09-04 23:21'de `03-toplantilar/20260831-Architecture.md` dosyasını yükledi (commit 6a3560d). 28 Ağustos'tan beri gelen ilk yeni içerik; S-001'in merkezine değiyor ve brifingin çoğu buradan çıktı.
+- Nottan çıkan iki açık uç: (1) Spark çıktısının OLTP'ye taşınma yolu (Kafka event / ODI ara tablo) karara bağlanmadı — Gökçer Belgüsen event, Dursun Akçeşme ODI tarafında; (2) kullanıcıdan metin olarak alınan SQL'in execute edilmesi için bilgi güvenliğinden kayıt açılması gerekiyor.
+- Notta uzlaşıya varılan taraf: okuma/gösterim 55-60 milyon müşteri-ürün kaydı için tek Couchbase collection'ında JSON döküman, TTL ile düşme, SQL++ ile okuma. Üretim Spark'a (Cloudera) alınıyor, DWH yalnız kaynak kalıyor, OLTP-DWH arası tüm alışveriş bulk.
+- Sizing (kaç collection, kaç milyon döküman, ~1 KB JSON, ~20 TPS, subsecond) Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafıyla konuşulacaktı; sahibi ve tarihi yazılı değil. Ecem ve Dursun uçtan uca akış çizimi ve ikinci bir toplantı istedi — planlandığına dair kayıt yok.
+- S-001 17 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos turu kaçtı, Eylül'ün 7. günündeyiz. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- 17 Eylül PlanItEarth workshop'una 10 gün kaldı; repoda hazırlık kaydı yok.
+- Son on brifing (issue #7–#16) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: Kafka event / ODI ara tablo kararını "bekleyen karar" olarak kaydedeyim mi?
+   C: *Cevap bekleniyor*
+2. S: SQL'in execute edilmesi için bilgi güvenliğinden kayıt açıldı mı?
+   C: *Cevap bekleniyor*
+3. S: Ecem ve Dursun'un istediği ikinci uçtan uca toplantı için tarih belirlendi mi?
+   C: *Cevap bekleniyor*
+4. S: S-001'in kabul kriterlerine sözdizimi doğrulaması (parser) maddesini ekleyeyim mi?
+   C: *Cevap bekleniyor*
+5. S: Bu hafta ekip tarafında kapanan bir iş oldu mu? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 31 Ağustos Architecture notundan bir bekleyen karar (D-01 aktarım bacağı) ve üç risk (R-01 metin SQL'in execute edilmesi, R-02 Kafka event yükü, R-03 sizing belirsizliği) yazıldı. D-02 olarak Account Planning maintenance süreç sahipliği eklendi (S-001'in zaten kayıtlı bağımlılığı). Gerekçe: iki tablo da şablon satırlarında duruyordu ve elimizde ilk kez gerçek içerik var. Kararın kimde olduğu ve olasılık/etki değerleri notta yazmıyor, `[teyit edilmedi]` bırakıldı. Alper onaylamadı.
+- `05-riskler-engeller.md` → 3 Eylül'de ikinci kez sorulup cevapsız kalan "17 Eylül workshop gündem taslağı" sorusu H başlığı altına taşındı; kural gereği artık sorulmuyor. Tablo 31 satırda.
+- `01-backlog/stories/S-001-...md` → Bağlam bölümüne 31 Ağustos Architecture notu eklendi; notun "kurgunun kalbi dinamik SQL'lerin koşturulması" ifadesi S-001'in merkezi olduğunu doğruluyor. Kabul kriterlerine dokunulmadı — parser maddesi Alper'in cevabı beklendiği için eklenmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "hayır" gelirse D-01 kaydı geri alınacak; "evet" gelirse karar sahibi yazılacak. 2'ye "hayır" gelirse R-01 aktif engel tablosuna blocker olarak taşınacak ve S-001'in bağımlılıklarına eklenecek. 3'e tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna yazılacak. 4'e "evet" gelirse S-001'e sözdizimi doğrulaması kabul kriteri eklenecek. 5'e cevap gelirse ekip ilerlemesine dair repodaki ilk kayıt açılacak.
+- Ayrıca "sizing: evet" gelirse Big Data ve Couchbase ekiplerine gidecek tek paragraflık soru metni `04-raporlar/` altına yazılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 5 numaralı soru ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 31 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, gruplanmış soru tablosu, bugünkü D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-04 — Sabah brifingi (issue #16)
 
 **Brifingte söylenenler:**

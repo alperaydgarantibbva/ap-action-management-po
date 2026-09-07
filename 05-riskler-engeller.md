@@ -16,7 +16,11 @@
 
 | # | Risk | Olasılık | Etki | Ne yapıyoruz | Kimde |
 |---|---|---|---|---|---|
-| R-01 | `[risk]` | Yüksek/Orta/Düşük | Yüksek/Orta/Düşük | `[önlem]` | `[isim]` |
+| R-01 | Kullanıcıdan metin olarak alınan SQL'in execute edilmesi — servis user'ın yetki genişliği ve runtime hataları güvenlik açığı yaratabilir | `[teyit edilmedi]` | Yüksek | Bilgi güvenliğinden kayıt açılması gerekiyor; Ecem Ekenoğlu ayrıca sözdizimi doğrulaması yapan bir parser önerdi. Kayıt açıldı mı bilinmiyor — 2026-09-07'de soruldu | `[teyit edilmedi]` |
+| R-02 | 1 milyon event'in kısa sürede Kafka'ya basılması Kafka CPU'sunu tabana vurdurabilir | `[teyit edilmedi]` | Yüksek | Dursun Akçeşme'nin uyarısı: 50 binlik partiler şart. Yalnızca Kafka yolu seçilirse geçerli — bkz. D-01 | `[teyit edilmedi]` |
+| R-03 | Sizing netleşmemiş: kaç collection, kaç milyon döküman, ~1 KB JSON, ~20 TPS, subsecond beklentisi | `[teyit edilmedi]` | Orta | Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafıyla konuşulacaktı; sahibi ve tarihi yazılı değil | `[teyit edilmedi]` |
+
+*R-01…R-03, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı. Alper onaylamadı; olasılık/etki değerleri teyit alınınca güncellenecek.*
 
 ## Bekleyen kararlar
 
@@ -24,7 +28,10 @@
 
 | # | Karar konusu | Kim karar vermeli | Ne zamandır bekliyor | Karar gecikirse ne olur |
 |---|---|---|---|---|
-| D-01 | `[konu]` | `[isim]` | `[tarih]` | `[sonuç]` |
+| D-01 | Spark çıktısının OLTP'ye taşınma yolu: Kafka'ya event basıp consumer'ın güncellemesi mi, DWH'ta günlük sil-boşalt yazılan ara tablodan ODI aktarımı mı | `[teyit edilmedi]` — Gökçer Belgüsen event, Dursun Akçeşme ODI tarafında | 2026-08-31 | Aksiyonların ekrana düşme yolu belirsiz kalır; uçtan uca akış çizilemez ve sizing çalışması eksik varsayımla yapılır |
+| D-02 | Account Planning maintenance süreç sahipliği | `[teyit edilmedi]` | 2026-08-21 | S-001'in bağımlılığı; kapanmadan S-001 "Hazır" olamaz |
+
+*D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
 ## Cevap bekleyen sorular
 
@@ -105,7 +112,7 @@
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 
-### H. Risk, engel ve takvim (3 soru)
+### H. Risk, engel ve takvim (4 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -114,6 +121,7 @@
 | 2026-08-21 | EVAM'ın sprint başına 2-3 event kısıtını risk olarak kaydedeyim mi? (2 kez soruldu) |
 | 2026-08-21 | PlanItEarth workshop'u yapıldı mı, yoksa 17 Eylül'de mi? (2026-08-31'de tekrar soruldu) |
 | 2026-08-28 | Şu an ekibin işini durduran bir engel var mı? (2 kez soruldu) |
+| 2026-09-03 | 17 Eylül workshop'u için gündem taslağı çıkarayım mı? (2 kez soruldu; 2026-09-07'de tabloya taşındı) |
 
 ### I. Brifing kanalı (5 soru)
 
@@ -137,4 +145,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-04*
+*Son güncelleme: 2026-09-07*

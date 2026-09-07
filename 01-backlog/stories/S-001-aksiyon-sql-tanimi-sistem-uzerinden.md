@@ -24,6 +24,14 @@
 dönüştürülmesi gerektiğini** açıkça belirtti. Aynı görüşmede GT Pusula ekibinin sorgu kontrolü için
 kullandığı mevcut sürecin reuse edilebileceği söylendi.
 
+31 Ağustos Architecture görüşmesi (`03-toplantilar/20260831-Architecture.md`, Alper 2026-09-04'te
+yükledi) bu story'nin merkezi olduğunu doğruluyor: "kurgunun kalbi, iş biriminin definition
+ekranlarından metin olarak girdiği dinamik SQL'lerin belirli periyotlarda koşturulması." Aynı
+toplantıdan iki madde bu story'yi doğrudan etkiliyor: (1) kullanıcıdan metin olarak alınan SQL'in
+execute edilmesi için bilgi güvenliğinden kayıt açılması gerekiyor (bkz. R-01), (2) Ecem Ekenoğlu
+sözdizimi doğrulaması yapan bir parser önerdi — kabul kriterlerine eklenip eklenmeyeceği
+2026-09-07'de Alper'e soruldu. [teyit edilmedi]
+
 ## Kabul kriterleri
 
 - [ ] Aksiyon sorumlusu SQL'ini sistem üzerinden gönderdiğinde kayıt listede "Gönderildi" durumuyla, gönderen kullanıcı ve gönderim tarihi ile görünür.
@@ -59,4 +67,4 @@ Story 3 günden uzun sürecek gibi duruyorsa bölünmeli. Muhtemel bölünme çi
 
 ---
 
-*Oluşturma: 2026-08-21 · Son güncelleme: 2026-08-21*
+*Oluşturma: 2026-08-21 · Son güncelleme: 2026-09-07*
