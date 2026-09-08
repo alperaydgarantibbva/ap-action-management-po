@@ -51,14 +51,15 @@
 | 2026-08-18 | Tören takvimi nasıl — refinement, planlama, review hangi gün/saat? (3 kez soruldu) |
 | 2026-08-21 | Sprint 1 hangi tarihte bitiyor? (2 kez soruldu) |
 
-### B. Ekip ve sahiplik (2 soru)
+### B. Ekip, sahiplik ve ilerleme (3 soru)
 
-*Cevaplanmazsa: `ekip-ve-ritim.md` ekip tablosu ve 5 epic'in "Sahip" satırı boş kalır.*
+*Cevaplanmazsa: `ekip-ve-ritim.md` ekip tablosu ve 5 epic'in "Sahip" satırı boş kalır; repoda ekibin ilerlemesine dair hiçbir kayıt oluşmaz.*
 
 | Tarih | Soru |
 |---|---|
 | 2026-08-18 | Ekipte Scrum Master kim? (3 kez soruldu) |
 | 2026-08-28 | KickOff'taki 6 sahiplik rolü (Signal, Action, Strategic Priority, A/B Test, Performance, Reporting Owner) için isimler belirlendi mi? (2 kez soruldu) |
+| 2026-09-04 | Bu hafta ekip tarafında kapanan bir iş oldu mu? (2 kez soruldu; 2026-09-08'de tabloya taşındı) |
 
 ### C. S-001 (7 soru)
 
@@ -145,4 +146,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-07*
+*Son güncelleme: 2026-09-08*
