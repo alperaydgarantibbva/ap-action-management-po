@@ -6,6 +6,42 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-09 — Sabah brifingi (issue #19)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba; PO haftalık ritminde sprint hedefi günü. Kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- Sprint 1 aktif görünüyor ama sprint hedefi ve bitiş tarihi yazılı değil; `02-sprintler/` altında klasör yok.
+- Dünkü (issue #18) 5 sorunun tamamı cevapsız kaldı. Dördü ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- S-001 19 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- R-01 (metin olarak alınan SQL'in execute edilmesi) ve D-01 (Spark çıktısının OLTP'ye taşınma yolu) 9 gündür açık; ikisi de 31 Ağustos Architecture notundan çıkmıştı, hiçbiri Alper tarafından onaylanmadı.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos turu kaçtı, Eylül'ün 9. günündeyiz. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- 17 Eylül PlanItEarth workshop'una 8 gün kaldı; repoda hazırlık kaydı yok.
+- 4 Eylül'den beri yeni içerik gelmedi (son commit Alper'den: 6a3560d). Son on iki brifing (issue #7–#18) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: Sprint 1 için hedef cümlesi taslağını ben yazayım mı?
+   C: *Cevap bekleniyor*
+2. S: Sizing için Big Data ve Couchbase ekiplerine gidecek tek paragraflık soru metnini çıkarayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Bugüne kadar cevapsız kalan 36 soruyu tek bir kontrol listesi issue'sunda toplayayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+4. S: 17 Eylül PlanItEarth workshop'unda ap-action-management gündemde mi?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 7 Eylül ve 8 Eylül'de sorulup iki kez cevapsız kalan dört soru bekleyen sorular tablosuna taşındı: D-01 kaydı ve bilgi güvenliği kaydı H başlığına, ikinci uçtan uca akış toplantısının tarihi A başlığına, S-001 parser kabul kriteri C başlığına. Kural gereği üçüncü kez sorulmuyorlar. Tablo 32'den 36 satıra çıktı; başlık sayıları (A 4, C 8, H 6) güncellendi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse Sprint 1 için iki alternatif hedef cümlesi bu issue'ya yazılacak, seçilen `00-proje/ekip-ve-ritim.md` ve aktif sprint kaydına işlenecek. 2'ye "evet" gelirse `04-raporlar/` altına Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafına gidecek sizing soru metni yazılacak. 3'e "evet" gelirse gruplanmış 36 soru tek bir kontrol listesi issue'suna dönüştürülecek. 4'e cevap gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler satırındaki `[teyit edilmedi]` kalkacak ve workshop hazırlığı açılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- 2 ve 3 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 36 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, gruplanmış soru tablosu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-08 — Sabah brifingi (issue #18)
 
 **Brifingte söylenenler:**

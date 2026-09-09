@@ -37,11 +37,15 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-09:** Tablo 36 satırda. Dört soru (D-01 kaydı, bilgi güvenliği kaydı, ikinci uçtan uca
+> toplantı tarihi, S-001 parser kabul kriteri) ikinci kez cevapsız kaldığı için A, C ve H başlıklarına
+> taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-04:** Tablo 30 satıra çıktığı için konu başlıklarına göre gruplandı. Satırlar ve
 > tarihleri değişmedi, yalnızca sıralandı. Amaç: bir başlığın tamamını tek oturumda cevaplayabilmek.
 > Bir başlık cevaplanınca o blok "Kapanmış maddeler"e taşınacak.
 
-### A. Sprint ve tören takvimi (3 soru)
+### A. Sprint ve tören takvimi (4 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` şablon değerlerinde kalır, brifing "bugün tören var mı" sorusuna cevap veremez.*
 
@@ -50,6 +54,7 @@
 | 2026-08-18 | Aktif sprint hangisi ve tarihleri ne? (3 kez soruldu) |
 | 2026-08-18 | Tören takvimi nasıl — refinement, planlama, review hangi gün/saat? (3 kez soruldu) |
 | 2026-08-21 | Sprint 1 hangi tarihte bitiyor? (2 kez soruldu) |
+| 2026-09-07 | Ecem Ekenoğlu ve Dursun Akçeşme'nin istediği ikinci uçtan uca akış toplantısı için tarih belirlendi mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 
 ### B. Ekip, sahiplik ve ilerleme (3 soru)
 
@@ -61,7 +66,7 @@
 | 2026-08-28 | KickOff'taki 6 sahiplik rolü (Signal, Action, Strategic Priority, A/B Test, Performance, Reporting Owner) için isimler belirlendi mi? (2 kez soruldu) |
 | 2026-09-04 | Bu hafta ekip tarafında kapanan bir iş oldu mu? (2 kez soruldu; 2026-09-08'de tabloya taşındı) |
 
-### C. S-001 (7 soru)
+### C. S-001 (8 soru)
 
 *Cevaplanmazsa: S-001 "Taslak"ta kalır, Definition of Ready karşılanmaz, refinement gündemine giremez. Backlog'daki tek story bu.*
 
@@ -74,6 +79,7 @@
 | 2026-09-02 | S-001'i iki açık sorusu kapanmadan refinement'a sokayım mı? (2 kez soruldu) |
 | 2026-09-03 | S-001'i ikiye böleyim mi — (1) gönderim + otomatik doğrulama, (2) onay akışı + işlem geçmişi? (2 kez soruldu) |
 | 2026-09-03 | S-001'in iki teknik açık sorusunu Umut Özdemir ve Garo Üçkardeş'e soracak kısa mesaj taslağını çıkarayım mı? (2 kez soruldu) |
+| 2026-09-07 | S-001'in kabul kriterlerine sözdizimi doğrulaması (parser) maddesini ekleyeyim mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 
 ### D. Backlog ve epic'ler (3 soru)
 
@@ -113,7 +119,7 @@
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 
-### H. Risk, engel ve takvim (4 soru)
+### H. Risk, engel ve takvim (6 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -123,6 +129,8 @@
 | 2026-08-21 | PlanItEarth workshop'u yapıldı mı, yoksa 17 Eylül'de mi? (2026-08-31'de tekrar soruldu) |
 | 2026-08-28 | Şu an ekibin işini durduran bir engel var mı? (2 kez soruldu) |
 | 2026-09-03 | 17 Eylül workshop'u için gündem taslağı çıkarayım mı? (2 kez soruldu; 2026-09-07'de tabloya taşındı) |
+| 2026-09-07 | D-01'i (Spark çıktısının OLTP'ye taşınma yolu: Kafka event / ODI ara tablo) bekleyen karar olarak kayıtlı tutayım mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
+| 2026-09-07 | Metin olarak alınan SQL'in execute edilmesi için bilgi güvenliğinden kayıt açıldı mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı — R-01'in tek açık ucu) |
 
 ### I. Brifing kanalı (5 soru)
 
@@ -146,4 +154,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-08*
+*Son güncelleme: 2026-09-09*
