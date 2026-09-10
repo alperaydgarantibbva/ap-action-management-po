@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-10:** Tablo 38 satırda. İki soru (sizing için Big Data/Couchbase tarafına gidecek soru
+> metni, cevapsız soruların tek kontrol listesi issue'sunda toplanması) ikinci kez cevapsız kaldığı
+> için H ve I başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-09:** Tablo 36 satırda. Dört soru (D-01 kaydı, bilgi güvenliği kaydı, ikinci uçtan uca
 > toplantı tarihi, S-001 parser kabul kriteri) ikinci kez cevapsız kaldığı için A, C ve H başlıklarına
 > taşındı; artık brifingte sorulmuyorlar.
@@ -119,7 +123,7 @@
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 
-### H. Risk, engel ve takvim (6 soru)
+### H. Risk, engel ve takvim (7 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -131,8 +135,9 @@
 | 2026-09-03 | 17 Eylül workshop'u için gündem taslağı çıkarayım mı? (2 kez soruldu; 2026-09-07'de tabloya taşındı) |
 | 2026-09-07 | D-01'i (Spark çıktısının OLTP'ye taşınma yolu: Kafka event / ODI ara tablo) bekleyen karar olarak kayıtlı tutayım mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-07 | Metin olarak alınan SQL'in execute edilmesi için bilgi güvenliğinden kayıt açıldı mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı — R-01'in tek açık ucu) |
+| 2026-09-08 | Sizing için Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafına gidecek tek paragraflık soru metnini çıkarayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı — R-03'ün tek açık ucu) |
 
-### I. Brifing kanalı (5 soru)
+### I. Brifing kanalı (6 soru)
 
 *Cevaplanmazsa: brifingin gün/saat/sıklığı varsayımla yürümeye devam eder. #7–#15 arası dokuz brifing cevapsız.*
 
@@ -143,6 +148,7 @@
 | 2026-08-25 | Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi? |
 | 2026-08-27 | Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (2 kez soruldu) |
 | 2026-09-03 | Cevap vermeye vaktin yoksa brifingi geçici olarak durdurayım mı? (2 kez soruldu) |
+| 2026-09-04 | Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı) |
 
 ## Kapanmış maddeler
 
@@ -154,4 +160,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-09*
+*Son güncelleme: 2026-09-10*
