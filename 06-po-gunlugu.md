@@ -6,6 +6,42 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-11 — Sabah brifingi (issue #21)
+
+**Brifingte söylenenler:**
+- Bugün Cuma; PO haftalık ritminde riskleri/engelleri güncelleme ve haftayı kapatma günü. Kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- 17 Eylül PlanItEarth workshop'una 6 gün kaldı; repoda hazırlık kaydı yok.
+- Dünkü (issue #20) 4 sorunun tamamı cevapsız kaldı. İkisi ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- Sprint 1 aktif görünüyor ama sprint hedefi ve bitiş tarihi yazılı değil; `02-sprintler/` altında klasör yok.
+- S-001 21 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- R-01 (metin olarak alınan SQL'in execute edilmesi) ve D-01 (Spark çıktısının OLTP'ye taşınma yolu) 11 gündür açık; ikisi de 31 Ağustos Architecture notundan çıkmıştı, hiçbiri Alper tarafından onaylanmadı.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos turu kaçtı, Eylül'ün 11. günündeyiz. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- 4 Eylül'den beri repoya yeni içerik gelmedi (Alper'in son commit'i: 6a3560d). Son on dört brifing (issue #7–#20) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: R-01'i aktif engel (blocker) olarak işaretleyeyim mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Risk tablosundaki üç risk (R-01 SQL güvenliği, R-02 Kafka yükü, R-03 sizing) bu haliyle doğru mu?
+   C: *Cevap bekleniyor*
+4. S: Elinde repoya eklenmemiş yeni bir toplantı notu var mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 9 Eylül'de sorulup ikinci kez cevapsız kalan iki soru bekleyen sorular tablosuna taşındı: Sprint 1 hedef cümlesi taslağı A başlığına, 17 Eylül workshop'unda ap-action-management'ın gündemde olup olmadığı H başlığına. Kural gereği üçüncü kez sorulmuyorlar. Tablo 38'den 40 satıra çıktı; başlık sayıları (A 5, H 8) güncellendi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse 31 Ağustos notundaki akış tek sayfalık şemaya çevrilip `03-toplantilar/` altına yazılacak. 2'ye "evet" gelirse R-01 aktif engel tablosuna blocker olarak taşınacak ve S-001'in bağımlılıklarına eklenecek. 3'e cevap gelirse risk tablosundaki `[teyit edilmedi]` işaretleri kalkacak, yanlış bulunan satır düzeltilecek veya silinecek. 4'e "evet" gelirse yeni not `03-toplantilar/` altına alınıp story/risk/karar çıkarımı yapılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 2 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 40 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, workshop gündemi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, gruplanmış soru tablosu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-10 — Sabah brifingi (issue #20)
 
 **Brifingte söylenenler:**

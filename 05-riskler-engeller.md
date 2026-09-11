@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-11:** Tablo 40 satırda. İki soru (Sprint 1 hedef cümlesi taslağı, 17 Eylül
+> workshop'unda ap-action-management'ın gündemde olup olmadığı) ikinci kez cevapsız kaldığı
+> için A ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-10:** Tablo 38 satırda. İki soru (sizing için Big Data/Couchbase tarafına gidecek soru
 > metni, cevapsız soruların tek kontrol listesi issue'sunda toplanması) ikinci kez cevapsız kaldığı
 > için H ve I başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -49,7 +53,7 @@
 > tarihleri değişmedi, yalnızca sıralandı. Amaç: bir başlığın tamamını tek oturumda cevaplayabilmek.
 > Bir başlık cevaplanınca o blok "Kapanmış maddeler"e taşınacak.
 
-### A. Sprint ve tören takvimi (4 soru)
+### A. Sprint ve tören takvimi (5 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` şablon değerlerinde kalır, brifing "bugün tören var mı" sorusuna cevap veremez.*
 
@@ -59,6 +63,7 @@
 | 2026-08-18 | Tören takvimi nasıl — refinement, planlama, review hangi gün/saat? (3 kez soruldu) |
 | 2026-08-21 | Sprint 1 hangi tarihte bitiyor? (2 kez soruldu) |
 | 2026-09-07 | Ecem Ekenoğlu ve Dursun Akçeşme'nin istediği ikinci uçtan uca akış toplantısı için tarih belirlendi mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
+| 2026-09-09 | Sprint 1 için hedef cümlesi taslağını ben yazayım mı? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 
 ### B. Ekip, sahiplik ve ilerleme (3 soru)
 
@@ -123,7 +128,7 @@
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 
-### H. Risk, engel ve takvim (7 soru)
+### H. Risk, engel ve takvim (8 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -136,6 +141,7 @@
 | 2026-09-07 | D-01'i (Spark çıktısının OLTP'ye taşınma yolu: Kafka event / ODI ara tablo) bekleyen karar olarak kayıtlı tutayım mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-07 | Metin olarak alınan SQL'in execute edilmesi için bilgi güvenliğinden kayıt açıldı mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı — R-01'in tek açık ucu) |
 | 2026-09-08 | Sizing için Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafına gidecek tek paragraflık soru metnini çıkarayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı — R-03'ün tek açık ucu) |
+| 2026-09-09 | 17 Eylül PlanItEarth workshop'unda ap-action-management gündemde mi? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -160,4 +166,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-10*
+*Son güncelleme: 2026-09-11*
