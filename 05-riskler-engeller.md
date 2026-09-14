@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-14:** Tablo 42 satırda. İki soru (31 Ağustos notundaki uçtan uca akışın tek
+> sayfalık şemaya çevrilmesi, R-01'in aktif engel olarak işaretlenmesi) ikinci kez cevapsız
+> kaldığı için G ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-11:** Tablo 40 satırda. İki soru (Sprint 1 hedef cümlesi taslağı, 17 Eylül
 > workshop'unda ap-action-management'ın gündemde olup olmadığı) ikinci kez cevapsız kaldığı
 > için A ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -118,7 +122,7 @@
 | 2026-08-28 | 21 paydaşa gidecek ilk aylık güncelleme taslağını çıkarayım mı? (2 kez soruldu; 2026-08-31'de onay beklemeden yazıldı: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi) |
 | 2026-08-31 | Bu taslak gönderilebilir mi / Eylül'ün ilk haftasında gönderilecek mi? (2 kez soruldu) |
 
-### G. Proje tanımı ve prototip kapsamı (3 soru)
+### G. Proje tanımı ve prototip kapsamı (4 soru)
 
 *Cevaplanmazsa: `vizyon.md` kapsam sınırı ve prototip çalışmasının backlog'daki yeri belirsiz kalır.*
 
@@ -127,8 +131,9 @@
 | 2026-08-18 | ap-action-management tek cümleyle neyi yönetiyor? (3 kez soruldu) |
 | 2026-08-25 | accountplanning.ai üzerinde yayınlanacak prototip için hedef tarih var mı? (2 kez soruldu) |
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
+| 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (8 soru)
+### H. Risk, engel ve takvim (9 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -142,6 +147,7 @@
 | 2026-09-07 | Metin olarak alınan SQL'in execute edilmesi için bilgi güvenliğinden kayıt açıldı mı? (2 kez soruldu; 2026-09-09'da tabloya taşındı — R-01'in tek açık ucu) |
 | 2026-09-08 | Sizing için Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafına gidecek tek paragraflık soru metnini çıkarayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı — R-03'ün tek açık ucu) |
 | 2026-09-09 | 17 Eylül PlanItEarth workshop'unda ap-action-management gündemde mi? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
+| 2026-09-10 | R-01'i (metin olarak alınan SQL'in execute edilmesi) aktif engel / blocker olarak işaretleyeyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -166,4 +172,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-11*
+*Son güncelleme: 2026-09-14*
