@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-15:** Tablo 44 satırda. İki soru (risk tablosundaki üç riskin doğruluğu, repoya
+> eklenmemiş yeni toplantı notu olup olmadığı) ikinci kez cevapsız kaldığı için H ve B
+> başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-14:** Tablo 42 satırda. İki soru (31 Ağustos notundaki uçtan uca akışın tek
 > sayfalık şemaya çevrilmesi, R-01'in aktif engel olarak işaretlenmesi) ikinci kez cevapsız
 > kaldığı için G ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -69,7 +73,7 @@
 | 2026-09-07 | Ecem Ekenoğlu ve Dursun Akçeşme'nin istediği ikinci uçtan uca akış toplantısı için tarih belirlendi mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-09 | Sprint 1 için hedef cümlesi taslağını ben yazayım mı? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 
-### B. Ekip, sahiplik ve ilerleme (3 soru)
+### B. Ekip, sahiplik ve ilerleme (4 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` ekip tablosu ve 5 epic'in "Sahip" satırı boş kalır; repoda ekibin ilerlemesine dair hiçbir kayıt oluşmaz.*
 
@@ -78,6 +82,7 @@
 | 2026-08-18 | Ekipte Scrum Master kim? (3 kez soruldu) |
 | 2026-08-28 | KickOff'taki 6 sahiplik rolü (Signal, Action, Strategic Priority, A/B Test, Performance, Reporting Owner) için isimler belirlendi mi? (2 kez soruldu) |
 | 2026-09-04 | Bu hafta ekip tarafında kapanan bir iş oldu mu? (2 kez soruldu; 2026-09-08'de tabloya taşındı) |
+| 2026-09-11 | Elinde repoya eklenmemiş yeni bir toplantı notu var mı? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
 
 ### C. S-001 (8 soru)
 
@@ -133,7 +138,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (9 soru)
+### H. Risk, engel ve takvim (10 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -148,6 +153,7 @@
 | 2026-09-08 | Sizing için Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafına gidecek tek paragraflık soru metnini çıkarayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı — R-03'ün tek açık ucu) |
 | 2026-09-09 | 17 Eylül PlanItEarth workshop'unda ap-action-management gündemde mi? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 | 2026-09-10 | R-01'i (metin olarak alınan SQL'in execute edilmesi) aktif engel / blocker olarak işaretleyeyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
+| 2026-09-11 | Risk tablosundaki üç risk (R-01 SQL güvenliği, R-02 Kafka yükü, R-03 sizing) bu haliyle doğru mu? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -172,4 +178,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-14*
+*Son güncelleme: 2026-09-15*

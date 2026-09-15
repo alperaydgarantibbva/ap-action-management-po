@@ -6,6 +6,43 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-15 — Sabah brifingi (issue #23)
+
+**Brifingte söylenenler:**
+- Bugün Salı; `00-proje/ekip-ve-ritim.md` şablonuna göre refinement günü (14:00) ama o satır hâlâ şablon değerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor. PO haftalık ritminde Salı, refinement'a girecek story'lerin kabul kriterlerinin tamamlandığı gün.
+- 17 Eylül PlanItEarth workshop'una 2 gün kaldı; hazırlık notu 14 Eylül'de taslak olarak yazıldı (`03-toplantilar/20260914-workshop-hazirlik-taslak.md`), onaylanmadı.
+- Dünkü (issue #22) 4 sorunun tamamı cevapsız kaldı. İkisi ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- Sprint 1 aktif görünüyor ama sprint hedefi ve bitiş tarihi yazılı değil; `02-sprintler/` altında klasör yok.
+- S-001 25 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- R-01 (metin olarak alınan SQL'in execute edilmesi) ve D-01 (Spark çıktısının OLTP'ye taşınma yolu) 15 gündür açık; ikisi de 31 Ağustos Architecture notundan çıkmıştı, hiçbiri Alper tarafından onaylanmadı. İkisi de workshop hazırlık taslağının gündeminde.
+- `01-backlog/oncelik.md` sıralama kriterleri hâlâ şablon metni.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos turu kaçtı, Eylül'ün 15. günündeyiz. Taslak hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi. Bu soru bekleyen sorular tablosunda olduğu için tekrar sorulmadı.
+- 4 Eylül'den beri repoya yeni içerik gelmedi (Alper'in son commit'i: 6a3560d). Son on altı brifing (issue #7–#22) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: 17 Eylül workshop'una sen katılıyor musun? (ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: `03-toplantilar/20260914-workshop-hazirlik-taslak.md` bu haliyle kullanılabilir mi?
+   C: *Cevap bekleniyor*
+3. S: Bu hafta ekiple kayıtlı bir toplantın var mı, varsa hangi gün? (ikinci kez)
+   C: *Cevap bekleniyor*
+4. S: `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 11 Eylül'de sorulup ikinci kez cevapsız kalan iki soru bekleyen sorular tablosuna taşındı: risk tablosundaki üç riskin doğruluğu H başlığına, repoya eklenmemiş yeni toplantı notu olup olmadığı B başlığına. Kural gereği üçüncü kez sorulmuyorlar. Tablo 42'den 44 satıra çıktı; başlık sayıları (B 4, H 10) güncellendi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse workshop hazırlık taslağı Alper'in rolüne göre düzenlenecek; "hayır" gelirse taslak silinecek. 2'ye "evet" gelirse taslaktaki "onaylanmadı" işareti kalkacak ve gündem son haline getirilecek; "hayır" gelirse dosya silinecek. 3'e gün gelirse `00-proje/ekip-ve-ritim.md` tören takvimine [teyit edilmedi] işaretiyle yazılacak. 4'e "evet" gelirse `01-backlog/oncelik.md` sıralama kriterleri (zorunluluk, bağımlılık, değer/efor, teknik risk) yazılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 4 sorunun tamamı. Cevap bekleniyor.
+- 1 ve 3 numaralı sorular ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 44 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, workshop gündemi ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, workshop hazırlık taslağı, gruplanmış soru tablosu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-14 — Sabah brifingi (issue #22)
 
 **Brifingte söylenenler:**
