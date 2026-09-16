@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-16:** Tablo 46 satırda. İki soru (17 Eylül workshop'una Alper'in katılıp
+> katılmadığı, bu hafta ekiple kayıtlı toplantı olup olmadığı) ikinci kez cevapsız kaldığı
+> için H ve A başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-15:** Tablo 44 satırda. İki soru (risk tablosundaki üç riskin doğruluğu, repoya
 > eklenmemiş yeni toplantı notu olup olmadığı) ikinci kez cevapsız kaldığı için H ve B
 > başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -61,7 +65,7 @@
 > tarihleri değişmedi, yalnızca sıralandı. Amaç: bir başlığın tamamını tek oturumda cevaplayabilmek.
 > Bir başlık cevaplanınca o blok "Kapanmış maddeler"e taşınacak.
 
-### A. Sprint ve tören takvimi (5 soru)
+### A. Sprint ve tören takvimi (6 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` şablon değerlerinde kalır, brifing "bugün tören var mı" sorusuna cevap veremez.*
 
@@ -72,6 +76,7 @@
 | 2026-08-21 | Sprint 1 hangi tarihte bitiyor? (2 kez soruldu) |
 | 2026-09-07 | Ecem Ekenoğlu ve Dursun Akçeşme'nin istediği ikinci uçtan uca akış toplantısı için tarih belirlendi mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-09 | Sprint 1 için hedef cümlesi taslağını ben yazayım mı? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
+| 2026-09-14 | Bu hafta ekiple kayıtlı bir toplantın var mı, varsa hangi gün? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
 
 ### B. Ekip, sahiplik ve ilerleme (4 soru)
 
@@ -138,7 +143,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (10 soru)
+### H. Risk, engel ve takvim (11 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -154,6 +159,7 @@
 | 2026-09-09 | 17 Eylül PlanItEarth workshop'unda ap-action-management gündemde mi? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 | 2026-09-10 | R-01'i (metin olarak alınan SQL'in execute edilmesi) aktif engel / blocker olarak işaretleyeyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 | 2026-09-11 | Risk tablosundaki üç risk (R-01 SQL güvenliği, R-02 Kafka yükü, R-03 sizing) bu haliyle doğru mu? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
+| 2026-09-14 | 17 Eylül PlanItEarth workshop'una sen katılıyor musun? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -178,4 +184,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-15*
+*Son güncelleme: 2026-09-16*
