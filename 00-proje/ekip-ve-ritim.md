@@ -45,9 +45,9 @@
 
 | Tarih | Ne |
 |---|---|
-| 2026-09-17 | PlanItEarth Workshop — kaynak: `03-toplantilar/20260917-PlanItEarth-Workshop.md`. Takvimde durup durmadığı [teyit edilmedi] |
+| 2026-09-17 | PlanItEarth Workshop — kaynak: `03-toplantilar/20260917-PlanItEarth-Workshop.md`. **Bu satır şüpheli:** kaynak dosya Alper tarafından 2026-08-21'de dolu notlarla yüklenmiş (commit 2cb3cee), yani toplantı o tarihten önce yapılmış olabilir; "17 Eylül" yalnızca dosya adından türetildi. Takvimde durup durmadığı [teyit edilmedi] — 2026-09-17 brifingde satırın silinip silinmeyeceği soruldu |
 | `[YYYY-AA-GG]` | `[teslim / demo / karar noktası]` |
 
 ---
 
-*Son güncelleme: 2026-09-03*
+*Son güncelleme: 2026-09-17*

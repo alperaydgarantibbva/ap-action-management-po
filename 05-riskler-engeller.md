@@ -37,6 +37,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-17:** Tablo 48 satırda. İki soru (workshop hazırlık taslağının bu haliyle
+> kullanılabilir olup olmadığı, `oncelik.md` sıralama kriterleri taslağı) ikinci kez cevapsız
+> kaldığı için H ve E başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-16:** Tablo 46 satırda. İki soru (17 Eylül workshop'una Alper'in katılıp
 > katılmadığı, bu hafta ekiple kayıtlı toplantı olup olmadığı) ikinci kez cevapsız kaldığı
 > için H ve A başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -114,7 +118,7 @@
 | 2026-08-31 | Açılan 5 epic (E-01…E-05) bu haliyle onaylanıyor mu? (2 kez soruldu) |
 | 2026-09-02 | E-01 CAPTURE altına ilk story taslağını çıkarayım mı? (2 kez soruldu) |
 
-### E. Öncelik (2 soru)
+### E. Öncelik (3 soru)
 
 *Cevaplanmazsa: haftalık hedef yazılı olmaz, `oncelik.md` sıralaması onaysız kalır.*
 
@@ -122,6 +126,7 @@
 |---|---|
 | 2026-08-19 | Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (2 kez soruldu) |
 | 2026-08-24 | Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu? (2026-08-31'de tekrar soruldu) |
+| 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 
 ### F. Paydaş iletişimi (2 soru)
 
@@ -143,7 +148,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (11 soru)
+### H. Risk, engel ve takvim (12 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -160,6 +165,7 @@
 | 2026-09-10 | R-01'i (metin olarak alınan SQL'in execute edilmesi) aktif engel / blocker olarak işaretleyeyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 | 2026-09-11 | Risk tablosundaki üç risk (R-01 SQL güvenliği, R-02 Kafka yükü, R-03 sizing) bu haliyle doğru mu? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
 | 2026-09-14 | 17 Eylül PlanItEarth workshop'una sen katılıyor musun? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
+| 2026-09-15 | `03-toplantilar/20260914-workshop-hazirlik-taslak.md` bu haliyle kullanılabilir mi? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -184,4 +190,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-16*
+*Son güncelleme: 2026-09-17*

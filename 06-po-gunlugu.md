@@ -6,6 +6,47 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-17 — Sabah brifingi (issue #25)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe; PO haftalık ritminde paydaş güncelleme günü. Kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor.
+- **Yeni bulgu:** `00-proje/ekip-ve-ritim.md`'de bugüne yazılı tek şey PlanItEarth Workshop'tu, ama kaynak dosya (`03-toplantilar/20260917-PlanItEarth-Workshop.md`) Alper tarafından 2026-08-21'de dolu notlarla yüklenmiş (commit 2cb3cee). Yani toplantı 21 Ağustos'tan önce yapılmış olabilir; "17 Eylül" tarihi yalnızca dosya adından türetilmişti. Haftalardır bu tarihe geri sayım yapılıyordu. Satır silinsin mi diye soruldu.
+- Dünkü (issue #24) 3 sorunun tamamı cevapsız kaldı. İkisi ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- D-01 (Spark çıktısının OLTP'ye taşınma yolu) ve R-01 (metin olarak alınan SQL'in execute edilmesi) 17 gündür açık; ikisi de 31 Ağustos Architecture notundan çıkmıştı. D-01'in karar sahibi hâlâ yazılı değil.
+- Sprint 1 aktif görünüyor ama sprint hedefi ve bitiş tarihi yazılı değil; `02-sprintler/` altında klasör yok.
+- S-001 27 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- `01-backlog/oncelik.md` sıralama kriterleri hâlâ şablon metni; bu sorunun taslak teklifi bugün bekleyen sorular tablosuna taşındı.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos ve Eylül turu kaçtı. Taslak 17 gündür hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi.
+- 4 Eylül'den beri repoya Alper'den yeni içerik gelmedi (son commit'i: 6a3560d). Son on sekiz brifing (issue #7–#24) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: Bugün takvimde PlanItEarth workshop'u var mı; yoksa `ekip-ve-ritim.md`'deki 17 Eylül satırını ve hazırlık taslağını temizleyeyim mi?
+   C: *Cevap bekleniyor*
+2. S: D-01 kararını kim verecek — Gökçer mi, Dursun mu? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: `20260917-PlanItEarth-Workshop.md` notundaki "ekip tüm geliştirme ve maintenance'dan sorumlu olacak" satırı D-02'yi (Account Planning maintenance süreç sahipliği) kapatıyor mu?
+   C: *Cevap bekleniyor*
+4. S: S-001'i "Taslak"tan "Beklemede"ye alayım mı?
+   C: *Cevap bekleniyor*
+5. S: Paydaş güncellemesi taslağının tarihini Eylül'e çekip göndermeye hazır hale getireyim mi?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `03-toplantilar/20260917-karar-formu-taslak.md` → 6 açık sorunun (D-01, D-02, R-01, R-02, R-03, S-001 parser maddesi) her biri için "karar / kim / ne zaman" sütunlu tek sayfalık form yazıldı. 2026-09-16 brifingde teklif edilmişti, cevap gelmedi, tarih geldiği için üretildi. "Onaylanmadı" işaretli. İki kullanımı var: toplantı takvimde varsa yanında götürülür, yoksa karar sahiplerine tek tek sorulacak liste olur.
+- `00-proje/ekip-ve-ritim.md` → 17 Eylül satırı "şüpheli" olarak işaretlendi; kaynak dosyanın 21 Ağustos'ta yüklendiği ve tarihin dosya adından türetildiği yazıldı.
+- `05-riskler-engeller.md` → 15 Eylül'de sorulup ikinci kez cevapsız kalan iki soru bekleyen sorular tablosuna taşındı: workshop hazırlık taslağının kullanılabilirliği H başlığına, `oncelik.md` sıralama kriterleri taslağı E başlığına. Kural gereği üçüncü kez sorulmuyorlar. Tablo 46'dan 48 satıra çıktı; başlık sayıları (E 3, H 12) güncellendi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "hayır/yok" gelirse `ekip-ve-ritim.md` 17 Eylül satırı ve `03-toplantilar/20260914-workshop-hazirlik-taslak.md` silinecek, geri sayım takipten düşecek; "var" gelirse satırdaki şüpheli işareti kalkacak. 2'ye isim gelirse D-01'in "Kim karar vermeli" sütunundaki `[teyit edilmedi]` kalkacak. 3'e "evet" gelirse D-02 "Kapanmış maddeler"e taşınacak ve S-001'in bağımlılıklarından düşecek. 4'e "evet" gelirse `01-backlog/oncelik.md` ve S-001 dosyasında durum "Beklemede" olarak güncellenecek, nedeni D-02 olarak yazılacak. 5'e "evet" gelirse paydaş taslağı Eylül tarihiyle güncellenecek (gönderilmeyecek — Alper gönderir).
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor.
+- 2 numaralı soru ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 48 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, workshop gündemi/katılımı, backlog sıralama kriterleri ve S-001'in "Hazır" durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, 17 Eylül tarih satırı, workshop hazırlık taslağı, karar formu, gruplanmış soru tablosu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-16 — Sabah brifingi (issue #24)
 
 **Brifingte söylenenler:**
