@@ -33,10 +33,23 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
+**Bekleme süreleri (2026-09-18 itibarıyla):** D-01 18 gün, D-02 28 gün. R-01 ve R-02/R-03 de 18 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için bugün bekleyen sorular tablosuna taşındı.
+
+## Haftalık kapanış notları
+
+*Cuma günü asistanın yazdığı tek satırlık durum. Amaç: hafta hafta neyin ilerlediğini geriye dönüp görebilmek.*
+
+| Hafta | Kapanışta durum |
+|---|---|
+| 2026-09-14 – 2026-09-18 | Repoya Alper'den içerik gelmedi (son commit 6a3560d, 2026-09-04). Hiçbir engel/karar kapanmadı: D-01 18, D-02 28 gündür açık. S-001 28 gündür Taslak. 17 Eylül workshop tarihi kayıt oluşmadan geçti. Paydaş bilgilendirmesinde Ağustos ve Eylül turu kaçtı. Asistan bu hafta `oncelik.md` sıralama kriterlerini ve `03-toplantilar/20260917-karar-formu-taslak.md`'yi onay beklemeden yazdı. |
+
 ## Cevap bekleyen sorular
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-18:** Tablo 49 satırda. Bir soru (D-01 kararını kimin vereceği) ikinci kez cevapsız
+> kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-09-17:** Tablo 48 satırda. İki soru (workshop hazırlık taslağının bu haliyle
 > kullanılabilir olup olmadığı, `oncelik.md` sıralama kriterleri taslağı) ikinci kez cevapsız
 > kaldığı için H ve E başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -148,7 +161,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (12 soru)
+### H. Risk, engel ve takvim (13 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -166,6 +179,7 @@
 | 2026-09-11 | Risk tablosundaki üç risk (R-01 SQL güvenliği, R-02 Kafka yükü, R-03 sizing) bu haliyle doğru mu? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
 | 2026-09-14 | 17 Eylül PlanItEarth workshop'una sen katılıyor musun? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
 | 2026-09-15 | `03-toplantilar/20260914-workshop-hazirlik-taslak.md` bu haliyle kullanılabilir mi? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
+| 2026-09-16 | D-01 kararını (Kafka event mi, DWH ara tablo + ODI mi) kim verecek — Gökçer Belgüsen mi, Dursun Akçeşme mi? (2 kez soruldu; 2026-09-18'de tabloya taşındı — D-01'in karar sahibi yazılı değil) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -190,4 +204,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-17*
+*Son güncelleme: 2026-09-18*

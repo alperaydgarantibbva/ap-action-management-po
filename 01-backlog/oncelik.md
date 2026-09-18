@@ -34,10 +34,18 @@ Sıra, sunumdaki katman akışıdır — değer sırası değil.)*
 
 *(Bu projede neye göre önceliklendiriyoruz? Bir kez yazın, sonra her tartışmada buraya bakın.)*
 
-1. `[örn. Yasal/uyum zorunluluğu olan işler önce]`
-2. `[örn. En çok kullanıcıyı etkileyen iş]`
-3. `[örn. Diğer işleri açan bağımlılık]`
-4. `[örn. Teknik risk — erken denenmeli]`
+**Taslak — 2026-09-18'de asistan yazdı, Alper onaylamadı.** Teklif 2026-09-15 ve 2026-09-17
+brifinglerinde yapıldı, cevap gelmediği ve kriter yokluğu her sıralama tartışmasını baştan
+açtığı için taslak olarak yazıldı. Alper değiştirir veya siler.
+
+Sırayla uygulanır — bir üst kriter kararı verdiyse alttakine bakılmaz:
+
+1. **Zorunluluk** — paydaşın veya kurumun açıkça istediği, pazarlık payı olmayan işler önce. (Örnek: S-001, 19 Ağustos Pusula görüşmesinde "sistem üzerinden sürece dönüştürülmeli" diye istendi.)
+2. **Bağımlılık** — başka işlerin önünü açan iş önce. Kaç işi açtığı yazılır.
+3. **Teknik risk** — belirsizliği yüksek konular erken denenir; geç öğrenilen kötü haber pahalıdır. (Örnek: R-01 SQL güvenliği, R-03 sizing.)
+4. **Değer / efor** — az emekle çok fayda veren iş önce.
+
+Her satırın "Neden bu sırada" sütununda bu kriterlerden hangisine dayandığı yazılır.
 
 ## Bilinçli olarak ertelenenler
 
@@ -49,4 +57,4 @@ Sıra, sunumdaki katman akışıdır — değer sırası değil.)*
 
 ---
 
-*Son güncelleme: `[tarih]`*
+*Son güncelleme: 2026-09-18*
