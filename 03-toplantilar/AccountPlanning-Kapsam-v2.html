@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Planning — Aksiyon Yönetimi Kapsam Dokümanı</title>
+<style>
+:root{
+  --ink:#0E2A31;
+  --slate:#3F5B62;
+  --muted:#6C848A;
+  --paper:#EFF3F2;
+  --surface:#FFFFFF;
+  --line:#D2DDDB;
+  --line-soft:#E3EBEA;
+  --teal:#0F6E73;
+  --teal-deep:#0A4348;
+  --wash:#E2EDEB;
+  --copper:#A0562A;
+  --copper-wash:#F7EBE1;
+  --moss:#37634D;
+  --sans:"Segoe UI",Roboto,"Helvetica Neue",Arial,system-ui,sans-serif;
+  --serif:ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#E6EEEC; --slate:#B4C7C6; --muted:#8CA4A6;
+    --paper:#0B1D21; --surface:#112A2F; --line:#26454B; --line-soft:#1C383D;
+    --teal:#55B3B0; --teal-deep:#8FD0CB; --wash:#173A3E;
+    --copper:#D9A06B; --copper-wash:#33241A; --moss:#7FB295;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  -webkit-text-size-adjust:100%;
+}
+.shell{display:grid; grid-template-columns:266px minmax(0,1fr); gap:0; max-width:1420px; margin:0 auto}
+/* ---------- rail ---------- */
+.rail{
+  position:sticky; top:0; align-self:start; height:100vh; overflow-y:auto;
+  padding:34px 26px 40px; border-right:1px solid var(--line); background:var(--surface);
+}
+.rail .mark{font-family:var(--serif); font-size:19px; line-height:1.2; letter-spacing:-.01em; margin:0 0 4px}
+.rail .mark span{display:block; font-family:var(--sans); font-size:11.5px; letter-spacing:.06em; color:var(--muted); margin-top:6px}
+.rail nav{margin-top:26px}
+.rail ol{list-style:none; margin:0; padding:0; counter-reset:toc}
+.rail ol li{counter-increment:toc; margin:0}
+.rail ol a{
+  display:grid; grid-template-columns:26px 1fr; gap:6px; align-items:baseline;
+  padding:5px 0; color:var(--slate); text-decoration:none; font-size:13.5px; line-height:1.35;
+  border-bottom:1px solid var(--line-soft);
+}
+.rail ol a::before{content:counter(toc,decimal-leading-zero); font-variant-numeric:tabular-nums; color:var(--teal); font-size:11px}
+.rail ol a:hover{color:var(--teal)}
+.rail .meta{margin-top:24px; font-size:12px; color:var(--muted); line-height:1.5}
+/* ---------- main ---------- */
+main{padding:0 0 90px; min-width:0}
+.wrap{max-width:1000px; padding:0 40px}
+p,ul,ol,.lede,.note,.callout,h2,h3,h4,table{max-width:74ch}
+h1{font-family:var(--serif); font-weight:600; font-size:clamp(30px,4.2vw,46px); line-height:1.08; letter-spacing:-.02em; margin:0 0 14px; max-width:26ch}
+h2{font-family:var(--serif); font-weight:600; font-size:clamp(22px,2.6vw,29px); line-height:1.18; letter-spacing:-.015em; margin:0 0 10px}
+h3{font-family:var(--serif); font-weight:600; font-size:19px; line-height:1.3; margin:34px 0 8px}
+h4{font-size:14px; font-weight:650; margin:22px 0 6px; color:var(--teal-deep)}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 16px; padding-left:20px}
+li{margin:0 0 7px}
+strong{font-weight:650}
+a{color:var(--teal)}
+.hero{background:var(--surface); border-bottom:1px solid var(--line); padding:56px 0 34px; margin-bottom:8px}
+.hero .wrap>.tag{font-size:12.5px; color:var(--teal); margin:0 0 18px; letter-spacing:.02em}
+.lede{font-size:18.5px; line-height:1.56; color:var(--slate); margin:0 0 6px}
+.stats{display:flex; flex-wrap:wrap; gap:0; border-top:1px solid var(--line); margin-top:30px; max-width:none}
+.stats div{padding:16px 26px 14px 0; margin-right:26px; border-right:1px solid var(--line-soft)}
+.stats div:last-child{border-right:0}
+.stats b{display:block; font-family:var(--serif); font-size:25px; line-height:1; font-weight:600}
+.stats small{display:block; font-size:12px; color:var(--muted); margin-top:5px}
+section{padding:40px 0 8px; border-top:1px solid var(--line); margin-top:34px}
+section:first-of-type{border-top:0; margin-top:0}
+.snum{font-size:12px; color:var(--teal); font-variant-numeric:tabular-nums; margin:0 0 8px; letter-spacing:.04em}
+/* technical inset */
+.tech{
+  border-left:3px solid var(--teal); background:var(--surface);
+  padding:18px 22px 6px; margin:22px 0 26px; max-width:80ch;
+}
+.tech>h4:first-child{margin-top:0}
+.tech h4{color:var(--teal)}
+.tech p,.tech ul,.tech li,.tech table{max-width:none}
+.tech code,code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.9em; background:var(--wash); padding:1px 5px; border-radius:2px}
+/* callouts */
+.callout{border:1px solid var(--line); background:var(--surface); padding:16px 20px 6px; margin:20px 0}
+.callout.karar{border-left:3px solid var(--copper); background:var(--copper-wash)}
+.callout h4{margin-top:0}
+.chip{display:inline-block; font-size:11px; padding:2px 8px; border:1px solid var(--copper); color:var(--copper); border-radius:2px; vertical-align:2px; margin-left:6px}
+/* figures */
+figure{margin:28px 0 30px; max-width:none}
+figure svg{display:block; width:100%; height:auto; background:var(--surface); border:1px solid var(--line)}
+figcaption{font-size:12.5px; color:var(--muted); margin-top:9px; max-width:74ch; line-height:1.5}
+svg text{font-family:var(--sans); fill:var(--ink)}
+.s-t{font-size:13px; font-weight:650}
+.s-l{font-size:12px}
+.s-s{font-size:10.5px; fill:var(--muted)}
+.s-w{fill:#fff}
+.s-w-s{fill:#fff; opacity:.82; font-size:10.5px}
+/* tables */
+.tbl{overflow-x:auto; margin:22px 0 26px; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:13.5px; max-width:none}
+th,td{text-align:left; padding:9px 13px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+th{font-size:12px; font-weight:650; color:var(--teal-deep); background:var(--wash); border-bottom:1px solid var(--line); white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td code{white-space:nowrap}
+.c{text-align:center}
+.mtrx td.c{font-size:13px}
+.k-id{font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--copper); font-weight:650}
+footer{margin-top:50px; padding:26px 0 0; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted)}
+@media (max-width:1000px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); padding:24px}
+  .rail nav{columns:2; column-gap:26px}
+  .wrap{padding:0 22px}
+  p,ul,ol,.lede,.note,.callout,h2,h3,h4{max-width:none}
+}
+@media print{
+  .rail{display:none} .shell{display:block} body{background:#fff}
+  section{break-inside:avoid} figure{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<aside class="rail">
+  <p class="mark">Account Planning<span>Aksiyon Yönetimi · Kapsam Dokümanı</span></p>
+  <nav>
+    <ol>
+      <li><a href="#s1">Amaç ve kapsam</a></li>
+      <li><a href="#s2">Kavramsal akış</a></li>
+      <li><a href="#s3">Platform katmanları ve yönetişim</a></li>
+      <li><a href="#s4">Sinyal yönetimi</a></li>
+      <li><a href="#s5">Aksiyon tanımı</a></li>
+      <li><a href="#s6">Aksiyon havuzu ve yaşam döngüsü</a></li>
+      <li><a href="#s7">Skorlama ve önceliklendirme</a></li>
+      <li><a href="#s8">A/B test ve yayınlama</a></li>
+      <li><a href="#s9">Gerçekleşme</a></li>
+      <li><a href="#s10">Monitoring</a></li>
+      <li><a href="#s11">Roller ve yetkiler</a></li>
+      <li><a href="#s12">Ekranlar</a></li>
+      <li><a href="#s13">Kapasite ve veri mimarisi</a></li>
+      <li><a href="#s14">Yol haritası</a></li>
+      <li><a href="#s15">Açık konular ve karar noktaları</a></li>
+    </ol>
+  </nav>
+  <p class="meta">Teknik bölümler her başlık altında ayrı panelde verilmiştir. Karar bekleyen konular 15. bölümde toplanmıştır.</p>
+</aside>
+
+<main>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="tag">Tüzel Bankacılık · Portföy Yönetim Platformu</p>
+    <h1>Sinyalden aksiyona, aksiyondan sonuca</h1>
+    <p class="lede">Account Planning, tüzel bankacılık müşteri temsilcilerinin portföylerindeki müşteriler için üretilen çok adımlı ve uzun vadeli aksiyonların tanımlanmasını, önceliklendirilmesini, sahaya iletilmesini ve etkisinin ölçülmesini tek bir akışta yöneten performans yönetim platformudur.</p>
+    <p class="lede">Bu doküman platformun uçtan uca kapsamını; iş kurallarını, rolleri, ekranları ve bunları karşılayan teknik yapıyı tanımlar.</p>
+    <div class="stats">
+      <div><b>7</b><small>akış adımı</small></div>
+      <div><b>5</b><small>platform katmanı</small></div>
+      <div><b>4</b><small>sinyal kaynağı</small></div>
+      <div><b>8</b><small>rol / yetki bileşeni</small></div>
+      <div><b>~200M</b><small>erişilebilir aksiyon</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ========== 1 ========== -->
+<section id="s1">
+  <p class="snum">Bölüm 01</p>
+  <h2>Amaç ve kapsam</h2>
+  <p>Portföy yönetimi bugün çok sayıda metrik, çok sayıda araç ve birbirinden bağımsız listeler üzerinden yürüyor. Müşteri temsilcisi hangi müşteri için hangi ürünle ne zaman temas etmesi gerektiğini kendi yorumuyla kuruyor; verilen önerinin müşteriye ulaşıp ulaşmadığı, sonucunun ne olduğu ise büyük ölçüde görünmüyor.</p>
+  <p>Platformun çözdüğü dört temel sorun şunlardır:</p>
+  <ul>
+    <li><strong>Parçalı araç ve veri</strong> — öneriler ve listeler dashboard, e-posta, Excel ve farklı uygulamalar arasında dağılmış durumda.</li>
+    <li><strong>Kaybolan kurumsal hafıza</strong> — müşteriyle kurulan ilişkinin geçmişi kişiye bağlı; portföy devrinde kayboluyor.</li>
+    <li><strong>Belirsiz aksiyon önceliği</strong> — hangi aksiyonun müşteri, temsilci ve banka için daha değerli olduğu ölçülebilir bir temele oturmuyor.</li>
+    <li><strong>Zayıf geri bildirim döngüsü</strong> — önerilen aksiyonun sonucu sistematik olarak toplanmadığı için öneri kalitesi öğrenerek iyileşmiyor.</li>
+  </ul>
+  <p>Kapsam, raporlama odaklı portföy yönetiminden aksiyon odaklı portföy yönetimine geçişi hedefler: her aksiyon bir veri sinyaline dayanır, bir sahibi ve aktörü vardır, önceliği hesaplanır, etkisi ölçülür ve ölçüm sonucu aksiyon tanımını besler.</p>
+</section>
+
+<!-- ========== 2 ========== -->
+<section id="s2">
+  <p class="snum">Bölüm 02</p>
+  <h2>Kavramsal akış</h2>
+  <p>Platform yedi adımlı tek bir akış üzerine kuruludur. İlk iki adım tanım faaliyetidir ve insan tarafından yapılır; kalan beş adım tanımlanan kurgunun sistem tarafından işletilmesidir.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 150" role="img" aria-label="Sinyal, Aksiyon, Skorlama, A/B Split, Publish, Gerçekleşme, Monitoring adımlarından oluşan akış şeması">
+      <g>
+        <path d="M12,28 H124 L140,58 L124,88 H12 Z" fill="var(--moss)"/>
+        <text class="s-t s-w" x="66" y="63" text-anchor="middle">Sinyal</text>
+        <text class="s-s" x="70" y="108" text-anchor="middle">SIGNAL_OWNER</text>
+      </g>
+      <g>
+        <path d="M147,28 H259 L275,58 L259,88 H147 L163,58 Z" fill="var(--moss)"/>
+        <text class="s-t s-w" x="207" y="63" text-anchor="middle">Aksiyon</text>
+        <text class="s-s" x="211" y="108" text-anchor="middle">ACTION_OWNER</text>
+      </g>
+      <g>
+        <path d="M282,28 H394 L410,58 L394,88 H282 L298,58 Z" fill="var(--teal)"/>
+        <text class="s-t s-w" x="342" y="63" text-anchor="middle">Skorlama</text>
+        <text class="s-s" x="346" y="108" text-anchor="middle">Skorlama motoru</text>
+      </g>
+      <g>
+        <path d="M417,28 H529 L545,58 L529,88 H417 L433,58 Z" fill="var(--teal)"/>
+        <text class="s-t s-w" x="477" y="63" text-anchor="middle">A/B Split</text>
+        <text class="s-s" x="481" y="108" text-anchor="middle">ABTEST_OWNER</text>
+      </g>
+      <g>
+        <path d="M552,28 H664 L680,58 L664,88 H552 L568,58 Z" fill="var(--teal)"/>
+        <text class="s-t s-w" x="612" y="63" text-anchor="middle">Publish</text>
+        <text class="s-s" x="616" y="108" text-anchor="middle">Consumer ekranlar</text>
+      </g>
+      <g>
+        <path d="M687,28 H799 L815,58 L799,88 H687 L703,58 Z" fill="var(--teal)"/>
+        <text class="s-t s-w" x="747" y="63" text-anchor="middle">Gerçekleşme</text>
+        <text class="s-s" x="751" y="108" text-anchor="middle">Kaynak sistemler</text>
+      </g>
+      <g>
+        <path d="M822,28 H948 V88 H822 L838,58 Z" fill="var(--teal-deep)"/>
+        <text class="s-t s-w" x="889" y="63" text-anchor="middle">Monitoring</text>
+        <text class="s-s" x="889" y="108" text-anchor="middle">PERFORMANCE_OWNER</text>
+      </g>
+      <g>
+        <rect x="12" y="126" width="11" height="11" fill="var(--moss)"/>
+        <text class="s-s" x="29" y="135">Tanım aşaması — kullanıcı tarafından yapılır</text>
+        <rect x="300" y="126" width="11" height="11" fill="var(--teal)"/>
+        <text class="s-s" x="317" y="135">İşletim aşaması — sistem tarafından takvime göre çalıştırılır</text>
+      </g>
+    </svg>
+    <figcaption>Akışın iki yarısı: sinyal ve aksiyon tanımı bir kez yapılır, kalan adımlar tanımlı takvimlerde tekrar eder. Bir aksiyonun ömrü boyunca bu döngü her koşuda yeniden işler.</figcaption>
+  </figure>
+
+  <p>Adımların işi sırasıyla şudur:</p>
+  <ol>
+    <li><strong>Sinyal</strong> — farklı kaynaklardan gelen, tanımı ve sorumlusu belli olan göstergenin sisteme kaydedilmesi.</li>
+    <li><strong>Aksiyon</strong> — sinyalden türetilen, ne yapılacağını tarif eden ana ve alt aksiyonların tanımlanması.</li>
+    <li><strong>Skorlama</strong> — üretilen aksiyonların dört boyutta puanlanıp ağırlık matrisiyle önceliklendirilmesi.</li>
+    <li><strong>A/B Split</strong> — aksiyonun gerçek etkisini ölçmek için müşterilerin test ve kontrol gruplarına ayrılması.</li>
+    <li><strong>Publish</strong> — aksiyonun, onu alacak aktörün eriştiği ekranlarda görünür hale gelmesi.</li>
+    <li><strong>Gerçekleşme</strong> — aksiyonun sonucunun aktör beyanı veya kaynak sistem verisiyle kapatılması.</li>
+    <li><strong>Monitoring</strong> — aksiyon veriminin ve aktör performansının izlenmesi, geri bildirimin tanıma dönmesi.</li>
+  </ol>
+</section>
+
+<!-- ========== 3 ========== -->
+<section id="s3">
+  <p class="snum">Bölüm 03</p>
+  <h2>Platform katmanları ve yönetişim</h2>
+  <p>Akışın her adımı bir motor, bir havuz ve bir sorumluluk üçlüsünden oluşur. Motor işi yapar, havuz çıktıyı standart biçimde saklar, sorumlu ise o katmanın doğruluğunu taahhüt eder. Bir katmanın çıktısı, sonraki katmanın tek girdisidir; ara yollar tanımlı değildir.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 430" role="img" aria-label="Capture, Transform, Prioritize, Activate, Monitor katmanlarının motor, havuz ve sorumluluk yapısı">
+      <defs>
+        <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--teal)"/>
+        </marker>
+      </defs>
+      <!-- column headers -->
+      <g>
+        <rect x="10" y="12" width="176" height="26" fill="var(--teal-deep)"/><text class="s-t s-w" x="98" y="30" text-anchor="middle">CAPTURE</text>
+        <rect x="198" y="12" width="176" height="26" fill="var(--teal-deep)"/><text class="s-t s-w" x="286" y="30" text-anchor="middle">TRANSFORM</text>
+        <rect x="386" y="12" width="176" height="26" fill="var(--teal-deep)"/><text class="s-t s-w" x="474" y="30" text-anchor="middle">PRIORITIZE</text>
+        <rect x="574" y="12" width="176" height="26" fill="var(--teal-deep)"/><text class="s-t s-w" x="662" y="30" text-anchor="middle">ACTIVATE</text>
+        <rect x="762" y="12" width="188" height="26" fill="var(--teal-deep)"/><text class="s-t s-w" x="856" y="30" text-anchor="middle">MONITOR</text>
+      </g>
+      <!-- engines -->
+      <g fill="var(--wash)" stroke="var(--teal)">
+        <rect x="10" y="52" width="176" height="86"/><rect x="198" y="52" width="176" height="86"/>
+        <rect x="386" y="52" width="176" height="86"/><rect x="574" y="52" width="176" height="86"/>
+        <rect x="762" y="52" width="188" height="86"/>
+      </g>
+      <g>
+        <text class="s-l" x="22" y="72">Sinyal toplama</text>
+        <text class="s-s" x="22" y="90">Model · SQL · Excel</text><text class="s-s" x="22" y="105">RM girişi</text>
+        <text class="s-s" x="22" y="126">Üretim takvimi izlenir</text>
+
+        <text class="s-l" x="210" y="72">Aksiyon motoru</text>
+        <text class="s-s" x="210" y="90">Zenginleştirme SQL</text><text class="s-s" x="210" y="105">Alt aksiyon üretimi</text>
+        <text class="s-s" x="210" y="126">Versiyon yönetimi</text>
+
+        <text class="s-l" x="398" y="72">Skorlama motoru</text>
+        <text class="s-s" x="398" y="90">4 boyut × ağırlık</text><text class="s-s" x="398" y="105">Formül kütüphanesi</text>
+        <text class="s-s" x="398" y="126">Batch, gün sonu</text>
+
+        <text class="s-l" x="586" y="72">A/B split motoru</text>
+        <text class="s-s" x="586" y="90">Feature kombinasyonu</text><text class="s-s" x="586" y="105">Homojen gruplama</text>
+        <text class="s-s" x="586" y="126">Görünürlük kararı</text>
+
+        <text class="s-l" x="774" y="72">İzleme motoru</text>
+        <text class="s-s" x="774" y="90">Near-realtime statü</text><text class="s-s" x="774" y="105">Gerçekleşme sorguları</text>
+        <text class="s-s" x="774" y="126">Aktör ve aksiyon verimi</text>
+      </g>
+      <!-- flow arrows -->
+      <g stroke="var(--teal)" stroke-width="1.5" marker-end="url(#ar)" fill="none">
+        <path d="M186,95 H196"/><path d="M374,95 H384"/><path d="M562,95 H572"/><path d="M750,95 H760"/>
+      </g>
+      <!-- pools -->
+      <g fill="var(--surface)" stroke="var(--line)">
+        <rect x="10" y="156" width="176" height="52"/><rect x="198" y="156" width="176" height="52"/>
+        <rect x="386" y="156" width="176" height="52"/><rect x="574" y="156" width="176" height="52"/>
+        <rect x="762" y="156" width="188" height="52"/>
+      </g>
+      <g>
+        <text class="s-l" x="22" y="178" fill="var(--teal)">Sinyal Havuzu</text><text class="s-s" x="22" y="196">200+ distinct sinyal</text>
+        <text class="s-l" x="210" y="178" fill="var(--teal)">Aksiyon Havuzu</text><text class="s-s" x="210" y="196">Aksiyon kütüphanesi</text>
+        <text class="s-l" x="398" y="178" fill="var(--teal)">Öncelikli aksiyonlar</text><text class="s-s" x="398" y="196">Skor + ağırlık matrisi</text>
+        <text class="s-l" x="586" y="178" fill="var(--teal)">Yaşam döngüsü havuzu</text><text class="s-s" x="586" y="196">Gerçekleşme kütüphanesi</text>
+        <text class="s-l" x="774" y="178" fill="var(--teal)">Raporlama havuzu</text><text class="s-s" x="774" y="196">Performans veri seti</text>
+      </g>
+      <!-- governance -->
+      <text class="s-s" x="10" y="238">Yönetişim — her katmanın doğruluğunu taahhüt eden sorumluluk</text>
+      <g fill="none" stroke="var(--line)" stroke-dasharray="3 3">
+        <rect x="10" y="246" width="176" height="126"/><rect x="198" y="246" width="176" height="126"/>
+        <rect x="386" y="246" width="176" height="126"/><rect x="574" y="246" width="176" height="126"/>
+        <rect x="762" y="246" width="188" height="126"/>
+      </g>
+      <g>
+        <text class="s-l" x="22" y="268" fill="var(--moss)">SIGNAL_OWNER</text>
+        <text class="s-s" x="22" y="288">Kaynak ve hesaplama</text><text class="s-s" x="22" y="303">kuralının tanımı</text>
+        <text class="s-s" x="22" y="323">Üretim takvimi ve</text><text class="s-s" x="22" y="338">runtime sorunları</text>
+        <text class="s-s" x="22" y="358">Kalite güvencesi</text>
+
+        <text class="s-l" x="210" y="268" fill="var(--moss)">ACTION_OWNER</text>
+        <text class="s-s" x="210" y="288">Ne, nasıl, ne zaman</text>
+        <text class="s-s" x="210" y="308">Zenginleştirme SQL</text>
+        <text class="s-s" x="210" y="328">ACTION_APPROVER</text><text class="s-s" x="210" y="343">onayı</text>
+        <text class="s-s" x="210" y="363">Değişiklik kaydı</text>
+
+        <text class="s-l" x="398" y="268" fill="var(--moss)">PERFORMANCE_OWNER</text>
+        <text class="s-s" x="398" y="288">Organizasyon</text><text class="s-s" x="398" y="303">öncelikleri</text>
+        <text class="s-s" x="398" y="323">Ağırlık değişikliği ve</text><text class="s-s" x="398" y="338">gerekçesi</text>
+        <text class="s-s" x="398" y="358">Etki takibi</text>
+
+        <text class="s-l" x="586" y="268" fill="var(--moss)">ABTEST_OWNER</text>
+        <text class="s-s" x="586" y="288">Grup homojenitesi</text>
+        <text class="s-s" x="586" y="308">İstatistiksel yeterlilik</text>
+        <text class="s-s" x="586" y="328">ACTION_OWNER ile</text><text class="s-s" x="586" y="343">metrik seçimi</text>
+        <text class="s-s" x="586" y="363">Split oranı</text>
+
+        <text class="s-l" x="774" y="268" fill="var(--moss)">MONITORING_OWNER</text>
+        <text class="s-s" x="774" y="288">Gerçekleşme sorgusu</text><text class="s-s" x="774" y="303">zamanlama ve performans</text>
+        <text class="s-s" x="774" y="323">Statü kalite kontrolü</text>
+        <text class="s-s" x="774" y="343">PERFORMANCE_OWNER</text><text class="s-s" x="774" y="358">geri bildirimi</text>
+      </g>
+      <!-- feedback loop -->
+      <path d="M856,386 H286" stroke="var(--copper)" stroke-width="1.5" fill="none" stroke-dasharray="5 4"/>
+      <path d="M294,382 L284,386 L294,390 Z" fill="var(--copper)"/>
+      <text class="s-s" x="470" y="404" fill="var(--copper)">Geri bildirim: ölçülen etki, aksiyon tanımının iyileştirilmesini tetikler</text>
+    </svg>
+    <figcaption>Beş katman, dört havuz. Kesikli çizgi geri bildirim döngüsünü gösterir: monitoring çıktısı aksiyon tanımına döner, tanım değişirse yeni versiyon oluşur.</figcaption>
+  </figure>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Havuzlar arasındaki geçişler zamanlanmış işlerle sağlanır; katmanlar arası doğrudan uygulama çağrısı yoktur. Merkezi bir <strong>schedule manager</strong> her aksiyon tanımındaki takvim bilgisine göre ilgili sorguları tetikler.</li>
+      <li>Sinyal ve aksiyon tanım tabloları OLTP tarafında tutulur. Skorlama girdileri ve A/B ölçümleri DWH tarafında hesaplanır, sonuç verisi OLTP'ye geri taşınır (bkz. <a href="#s13">Bölüm 13</a>).</li>
+      <li>Her katmanın yönetişim sorumluluğu, uygulama tarafında bir yetki bileşenine karşılık gelir; ekran ve alan bazlı yetkilendirme bu bileşenler üzerinden yapılır (bkz. <a href="#s11">Bölüm 11</a>).</li>
+      <li>Tüm tanım tablolarında değişiklik geçmişi (kim, ne zaman, hangi alan, eski/yeni değer) tutulur ve iç denetime açıktır.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 4 ========== -->
+<section id="s4">
+  <p class="snum">Bölüm 04</p>
+  <h2>Sinyal yönetimi</h2>
+  <p>Sinyal, bir müşteri için aksiyon alınmasını gerektirebilecek, tanımı ve sorumlusu belli olan göstergedir. Platformdaki her aksiyon bir sinyale dayanır; sinyali olmayan aksiyon üretilemez. Sinyalin işi bir sonuç önermek değil, bir durumu güvenilir biçimde bildirmektir — o durumdan ne yapılacağına aksiyon tanımı karar verir.</p>
+  <p>Sinyaller dört kaynaktan toplanır:</p>
+
+  <figure>
+    <svg viewBox="0 0 960 280" role="img" aria-label="Dört sinyal kaynağından sinyal havuzuna ve aksiyon tanımına akış">
+      <defs>
+        <marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--teal)"/>
+        </marker>
+      </defs>
+      <g fill="var(--surface)" stroke="var(--line)">
+        <rect x="12" y="20" width="290" height="52"/><rect x="12" y="84" width="290" height="52"/>
+        <rect x="12" y="148" width="290" height="52"/><rect x="12" y="212" width="290" height="52"/>
+      </g>
+      <g>
+        <rect x="12" y="20" width="5" height="52" fill="var(--moss)"/>
+        <text class="s-t" x="30" y="42">Analitik model sonuçları</text>
+        <text class="s-s" x="30" y="60">30+ model · eğilim, churn, fiyat, değer · kod MDL</text>
+
+        <rect x="12" y="84" width="5" height="52" fill="var(--moss)"/>
+        <text class="s-t" x="30" y="106">Kural bazlı sorgular</text>
+        <text class="s-s" x="30" y="124">9+ datamart · ürün, servis, segment verisi · kod KRL</text>
+
+        <rect x="12" y="148" width="5" height="52" fill="var(--teal)"/>
+        <text class="s-t" x="30" y="170">Excel yükleme</text>
+        <text class="s-s" x="30" y="188">Pusula listeleri, iştirak potansiyeli · kod EXL</text>
+
+        <rect x="12" y="212" width="5" height="52" fill="var(--copper)"/>
+        <text class="s-t" x="30" y="234">Ad-hoc ürün öncelikleri</text>
+        <text class="s-s" x="30" y="252">Dönemsel işkolu öncelikleri, RM girişi · kod ADH</text>
+      </g>
+      <g stroke="var(--teal)" stroke-width="1.5" fill="none" marker-end="url(#ar2)">
+        <path d="M302,46 H358 V126"/><path d="M302,110 H358 V126"/>
+        <path d="M302,174 H358 V152"/><path d="M302,238 H358 V152"/>
+      </g>
+      <rect x="386" y="86" width="196" height="106" fill="var(--wash)" stroke="var(--teal)"/>
+      <text class="s-t" x="484" y="118" text-anchor="middle" fill="var(--teal-deep)">Sinyal Havuzu</text>
+      <text class="s-s" x="484" y="140" text-anchor="middle">Tanımı doğrulanmış,</text>
+      <text class="s-s" x="484" y="155" text-anchor="middle">standart erişime açık</text>
+      <text class="s-s" x="484" y="176" text-anchor="middle">200+ distinct sinyal</text>
+      <path d="M582,139 H620" stroke="var(--teal)" stroke-width="1.5" marker-end="url(#ar2)" fill="none"/>
+      <rect x="646" y="86" width="302" height="106" fill="var(--surface)" stroke="var(--line)"/>
+      <text class="s-t" x="666" y="112">Aksiyon tanımı</text>
+      <text class="s-s" x="666" y="134">Bir aksiyon yalnızca bir sinyale bağlanır.</text>
+      <text class="s-s" x="666" y="152">Birden fazla sinyal gerekiyorsa bunlardan</text>
+      <text class="s-s" x="666" y="170">bağımsız bir kompozit sinyal türetilir.</text>
+      <text class="s-s" x="646" y="224">Havuza girmiş bir sinyal, kaynağından bağımsız olarak aynı tanım alanlarına,</text>
+      <text class="s-s" x="646" y="242">aynı sorumluluk modeline ve aynı yaşam döngüsü kurallarına tabidir.</text>
+    </svg>
+    <figcaption>Kaynak çeşitliliği havuzda tek bir standarda indirgenir; aksiyon tarafı sinyalin nereden geldiğini bilmek zorunda kalmadan onu referans alabilir.</figcaption>
+  </figure>
+
+  <h3>Sinyal tanım alanları</h3>
+  <p>Her sinyal aşağıdaki alanlarla tanımlanır. Sahip ile sorumlu ayrımı bilinçlidir: sahip sinyali oluşturan kişidir ve değişmez; sorumlu ise sinyalin doğru çalıştığını, beslendiğini ve doğru kullanıldığını takip eden iş sorumlusudur ve zaman içinde güncellenebilir.</p>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Alan</th><th>Açıklama</th><th>Örnek / değer</th><th>Sonradan değişir mi</th></tr></thead>
+      <tbody>
+        <tr><td>Sinyal kodu</td><td>Kaynak tipini içeren tekil kod</td><td><code>SGN-MDL-01</code>, <code>SGN-KRL-14</code></td><td>Hayır</td></tr>
+        <tr><td>Sinyal adı</td><td>İş diliyle kısa ad</td><td>Kredi Eğilim Skoru</td><td>Evet</td></tr>
+        <tr><td>Sinyal açıklaması</td><td>Nasıl oluştuğu, ait olduğu süreç, kullanımda dikkat edilecek noktalar (serbest metin)</td><td>—</td><td>Evet</td></tr>
+        <tr><td>Tanım tarihi</td><td>Sinyalin oluşturulma tarihi</td><td>Sistem atar</td><td>Hayır</td></tr>
+        <tr><td>Sinyal sahibi</td><td>Sinyali oluşturan kullanıcı</td><td>Sistem atar</td><td>Hayır</td></tr>
+        <tr><td>Sinyal sorumlusu</td><td>Doğru üretim ve kullanımın iş sorumlusu</td><td>SIGNAL_OWNER rolünde kullanıcı</td><td>Evet</td></tr>
+        <tr><td>Kaynak tipi</td><td>Sinyalin üretildiği mekanizma</td><td>Model / Kural / Excel / Ad-hoc</td><td>Hayır</td></tr>
+        <tr><td>Oluşma şekli</td><td>Takvime bağlı mı, talebe bağlı mı</td><td>Periyodik / ad-hoc</td><td>Hayır</td></tr>
+        <tr><td>Oluşma frekansı</td><td>Periyodik sinyaller için üretim takvimi</td><td>Günlük / haftalık / aylık; ad-hoc için boş</td><td>Evet</td></tr>
+        <tr><td>Ürün alt grubu</td><td>Lookup üzerinden seçim</td><td>TLN, YPN</td><td>Evet</td></tr>
+        <tr><td>Ürün adı</td><td>Ürün listesinden seçim</td><td>TL Nakdi Kredi – Spot</td><td>Evet</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Sinyal ekranında tanım alanlarının yanında sinyalin ne kadar kullanıldığını gösteren dört istatistik yer alır: <strong>bağlı aksiyon adedi</strong>, <strong>bağlı aktif aksiyon adedi</strong>, <strong>en son bağlanan aksiyon</strong> ve <strong>bağlanma tarihi</strong>. Bu bilgiler sinyalin karşılığının olup olmadığını, sorumlunun tek bakışta görmesini sağlar.</p>
+
+  <h3>Yaşam döngüsü kuralları</h3>
+  <ul>
+    <li><strong>Güncelleme bildirimi.</strong> Bir sinyalin tanımı güncellendiğinde veya pasife alındığında, o sinyali referans alan aksiyonların sorumlularının bilgilendirilmesi zorunludur.</li>
+    <li><strong>Pasife alma.</strong> Görev amacı sonlanan sinyaller pasife alınabilir. Bunun önkoşulu, sinyale bağlı tüm aksiyonların pasif durumda olmasıdır; aktif aksiyonu olan sinyal pasife alınamaz.</li>
+    <li><strong>Lifecycle'ı etkileyen değişiklik yasağı.</strong> Sinyal tanımında, bağlı aksiyonun işleyişini değiştirecek alanlar güncellenemez. Böyle bir ihtiyaçta izlenecek yol sinyali pasife almak ve yerine yeni sinyal ile yeni aksiyon tanımlamaktır.</li>
+    <li><strong>Ad tekilliği aranmaz.</strong> Yazım farklılıkları ve yeniden adlandırma ihtiyacı index değişikliği gerektirdiğinden sinyal adlarında tekillik zorunluluğu uygulanmaz. Çelişki ve duplikasyonlar APPLICATION_ADMIN tarafından gözle kontrol edilerek yönetilir.</li>
+  </ul>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Sinyal kodu <code>SGN-{KAYNAK}-{SIRA}</code> şemasındadır; kaynak kısaltmaları <code>MDL</code>, <code>KRL</code>, <code>EXL</code>, <code>ADH</code> değer listesinden gelir. Ürün alt grubu ve ürün adı lookup tablolarına referanslıdır.</li>
+      <li>Tekillik kısıtı kod alanında (primary key) uygulanır, ad alanında uygulanmaz. Duplikasyon takibi için ad benzerliği raporu önerilir; mevcut kapsamda manuel kontrol öngörülmüştür (<a href="#s15">K-13</a>).</li>
+      <li>Pasife alma işlemi, bağlı aksiyonların statüsünü kontrol eden bir doğrulama ile aynı transaction içinde yapılır; aktif aksiyon varsa işlem reddedilir ve engelleyen aksiyonlar kullanıcıya listelenir.</li>
+      <li>Değiştirilemez alanlar (kod, kaynak tipi, oluşma şekli, sahip, tanım tarihi) uygulama katmanında salt-okunur işaretlenir; güncellenebilir alanlarda değişiklik audit kaydı üretir ve bağlı aksiyon sorumlularına bildirim kuyruğuna kayıt atar.</li>
+      <li>Kullanım kolaylığı gereği SIGNAL_OWNER rolündeki her kullanıcı tüm sinyalleri düzenleyebilir; <code>created_by</code> alanı sabit kalır, <code>signal_responsible</code> alanı personel değişikliklerinde güncellenir.</li>
+      <li>Sinyal istatistikleri (bağlı/aktif aksiyon adedi, son bağlanan aksiyon) aksiyon tanım tablosundan türetilir; ekranda anlık sorgu yerine gün sonu hesaplanan özet tablo kullanılması, tanım ekranının yükünü azaltır.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 5 ========== -->
+<section id="s5">
+  <p class="snum">Bölüm 05</p>
+  <h2>Aksiyon tanımı</h2>
+  <p>Aksiyon, sinyalin işaret ettiği durum karşısında yapılacak işi tarif eder: ne yapılacağı, nasıl yapılacağı, ne zaman yapılacağı ve kimin yapacağı. Aksiyon tanımı platformun en kritik varlığıdır; sahadaki her görev, ekranlardaki her satır bu tanımdan üretilir.</p>
+
+  <h3>Ana ve alt aksiyonlar</h3>
+  <p>Ana aksiyon, gerçekleştirilmesi amaçlanan işi temsil eder. Alt aksiyonlar ana aksiyona bağlı, onun önünü açan tali işlerdir. Bir ana aksiyon alt aksiyonsuz da olabilir. Alt aksiyonlar ana aksiyonun ilerlemesi sürecinde sıralı veya paralel işletilebilir; sıra, alt aksiyon tanımında seçilen <strong>öncül aksiyon</strong> bilgisiyle kurulur. Öncülü seçilmemiş alt aksiyonlar ana aksiyonla birlikte başlayabilir. Birden fazla alt aksiyonun tek bir alt aksiyona bağlanması durumunda o adım bekleme istasyonu gibi çalışır: kendisine bağlı adımların tümü tamamlanmadan başlamaz.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 300" role="img" aria-label="Ana aksiyon ve alt aksiyonların öncül-ardıl ilişkisi">
+      <defs>
+        <marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--slate)"/>
+        </marker>
+      </defs>
+      <rect x="12" y="18" width="936" height="40" fill="var(--teal-deep)"/>
+      <text class="s-t s-w" x="28" y="43">Ana aksiyon — ACT-TLN-003 · Teklif Hazırlığı</text>
+      <text class="s-w-s" x="640" y="43">Sinyal: SGN-MDL-01 · Kategori: SAT · Ürün: TL Nakdi Kredi</text>
+
+      <g stroke="var(--slate)" stroke-width="1.2" fill="none" marker-end="url(#ar3)">
+        <path d="M150,58 V88"/><path d="M420,58 V88"/>
+      </g>
+
+      <g fill="var(--surface)" stroke="var(--line)">
+        <rect x="30" y="92" width="240" height="62"/>
+        <rect x="300" y="92" width="240" height="62"/>
+        <rect x="165" y="184" width="240" height="62"/>
+        <rect x="450" y="184" width="240" height="62"/>
+      </g>
+      <g>
+        <text class="s-l" x="44" y="114">003.01 Mali verilerin temini</text>
+        <text class="s-s" x="44" y="132">Aktör: RM · Öncül yok</text>
+        <text class="s-s" x="44" y="147">Ana aksiyonla birlikte başlar</text>
+
+        <text class="s-l" x="314" y="114">003.02 Ürün belirlenmesi</text>
+        <text class="s-s" x="314" y="132">Aktör: RM · Öncül yok</text>
+        <text class="s-s" x="314" y="147">Ana aksiyonla birlikte başlar</text>
+
+        <text class="s-l" x="179" y="206">003.03 Risk analizi</text>
+        <text class="s-s" x="179" y="224">Aktör: Kredi Analiz</text>
+        <text class="s-s" x="179" y="239">Öncül: 003.01 ve 003.02 — bekleme istasyonu</text>
+
+        <text class="s-l" x="464" y="206">003.05 Teklif mektubu</text>
+        <text class="s-s" x="464" y="224">Aktör: RM</text>
+        <text class="s-s" x="464" y="239">Öncül: 003.03</text>
+      </g>
+      <g stroke="var(--slate)" stroke-width="1.2" fill="none" marker-end="url(#ar3)">
+        <path d="M150,154 V170 H285 V180"/>
+        <path d="M420,154 V170 H285 V180"/>
+        <path d="M405,215 H446"/>
+      </g>
+      <text class="s-s" x="712" y="206" fill="var(--copper)">Ana aksiyonun tamamlanması kendi gerçekleşme</text>
+      <text class="s-s" x="712" y="221" fill="var(--copper)">sorgusuna bağlıdır; alt aksiyonların tamamlanması</text>
+      <text class="s-s" x="712" y="236" fill="var(--copper)">beklenmez, ancak eksik iş olarak raporlanır.</text>
+      <text class="s-s" x="12" y="278">Örnek, Aksiyon Taksonomisi dokümanındaki TL Nakdi Kredi — Teklif Hazırlığı adımlarından uyarlanmıştır.</text>
+    </svg>
+    <figcaption>Öncül seçimi ile kurulan sıralama, aktör Agent olduğunda da aynı şekilde çalışır: Agent kendisinden önceki adımın tamamlanmasını bekler ve tetiklenir.</figcaption>
+  </figure>
+
+  <h3>Aktörler ve sahiplik</h3>
+  <p>Aksiyonlar yalnızca RM'lere değil, farklı departman veya sistemlerdeki aktörlere de atanabilir: back-office, kredi komitesi, dış ticaret operasyon, hukuk, teknik servis veya bir Agent. Her aksiyonun bir sorumlusu, bir planlayan aktörü ve bir tamamlayan aktörü vardır. Müşterinin sahibi olan RM, o müşteri için üretilen tüm aksiyonların nihai sorumlusudur.</p>
+
+  <h3>Ürün ve performans ilişkisi</h3>
+  <p>Her aksiyon bir ürün veya hizmetle ilişkilendirilir. Bu ilişki doğrudan ürün bazında kurulabileceği gibi (leasing, faktoring) daha sıklıkla ürün grubu üzerinden kurulur (TL Nakdi Kredi, YP Gayrinakdi Kredi). Bunun nedeni aynı aksiyon hedefine farklı ürünlerle ulaşılabilmesidir: kredi kullandırımı spot, iskonto, BCH veya KMH ile sonuçlanabilir.</p>
+  <p>Aksiyonlar aynı zamanda RM'lerin Pusula metrikleriyle ilişkilendirilir. İlişki ürün üzerinden ve/veya ayrı bir eşleme tablosuyla bir veya daha fazla metriğe kurulabilir. Seçim aksiyon tanımı sırasında aksiyon sorumlusu tarafından yapılır; atlanan durumlarda veya Pusula tarafındaki değişikliklerde aksiyon üzerinden güncellenebilir. Bu güncelleme skorlamayı etkilediği için tercihen gün sonunda çalıştırılır.</p>
+
+  <h3>Aksiyon kategorileri</h3>
+  <p>Her aksiyon bir kategoriye atanır. Kategoriler, aksiyonun ve alt adımlarının performansa etkisinin ölçülmesini ve hem aktörün hem sürecin gelişim alanlarının aksiyon üzerinden çıkarılabilmesini sağlar.</p>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Kod</th><th>Kategori</th><th>Kapsam</th></tr></thead>
+      <tbody>
+        <tr><td><code>ANZ</code></td><td>Analiz &amp; Planlama</td><td>Müşteri ve piyasa araştırması, ihtiyaç tespiti, ziyaret</td></tr>
+        <tr><td><code>SAT</code></td><td>Satış &amp; Teklif</td><td>Teklif hazırlama, ürün satışı, protokol satışı</td></tr>
+        <tr><td><code>ONY</code></td><td>Onay &amp; Tahsis</td><td>Limit hazırlığı, komite onayı, sözleşme</td></tr>
+        <tr><td><code>OPR</code></td><td>Operasyonel İşlem</td><td>Kullandırım, transfer, ödeme, alım-satım</td></tr>
+        <tr><td><code>TKP</code></td><td>Takip &amp; İzleme</td><td>Bakiye, ciro, talimat ve aktivite takibi</td></tr>
+        <tr><td><code>YNL</code></td><td>Yenileme &amp; Fiyatlama</td><td>Vade sonu yönetimi, repricing, protokol yenileme</td></tr>
+        <tr><td><code>RSK</code></td><td>Risk &amp; Tahsilat</td><td>Erken uyarı, yapılandırma, tazmin, hukuki takip</td></tr>
+        <tr><td><code>DRN</code></td><td>Derinleştirme</td><td>Bakiye ve hacim derinleştirme, top-up analizi</td></tr>
+        <tr><td><code>CRS</code></td><td>Çapraz Satış</td><td>Mevcut müşteriye farklı ürün önerisi</td></tr>
+        <tr><td><code>UYM</code></td><td>Uyum &amp; Regülasyon</td><td>BDDK/TCMB raporlama, risk sınıflandırma</td></tr>
+        <tr><td><code>DJT</code></td><td>Dijital &amp; Entegrasyon</td><td>Kanal açılışı, kullanıcı yönetimi, API/ERP entegrasyonu</td></tr>
+        <tr><td><code>KPN</code></td><td>Kapanış &amp; Çıkış</td><td>Hesap/poliçe kapanışı, iptal, iade, churn win-back</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Tanım statüleri ve onay</h3>
+  <p>Aksiyon tanımı <strong>DRAFT</strong> statüsünde oluşturulur. Gerekli alanlar ve sorgular girilip kontrol ve test süreci tamamlandıktan sonra aksiyon sorumlusu tanımı kaydederek <strong>AKTİF</strong> statüsüne getirir; gereken durumlarda bir üst onaycının onayına düşer. Beklenen etkiyi göstermeyen veya geçersiz hale gelen aksiyonlar, aksiyon sorumlusu veya uygulama admini tarafından <strong>PASİF</strong> statüsüne çekilir. Diğer roller aksiyon tanımını yalnızca görüntüler.</p>
+
+  <h3>Versiyonlama</h3>
+  <p>Sorgu ve açıklama alanlarındaki güncellemeler aksiyonun yeni bir versiyonla tanımlanmasını tetikler. Aksiyonun uygulanma şeklini bozmayan ad değişiklikleri aynı versiyonla devam eder; bu ayrımın iş sorumluluğu aksiyon sorumlusundadır, uygulama tarafında kontrol edilmez. Yeni versiyon tanımlandığında havuzdaki canlı aksiyonlar yaşam döngülerini aynen sürdürür; bir sonraki koşuda yeni versiyon çalışır ve havuz yeni versiyon numarasıyla dolar. A/B testler de versiyon bazında ayrı çalışır; böylece hem aksiyonun kalitesi hem versiyonlar arasındaki etki farkı bağımsız ölçülebilir.</p>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <h4>Üç sorgu, üç takvim</h4>
+    <p>Aksiyon tanım tablosunda, temel bilgilerin yanında farklı takvimlerde çalışacak üç sorgu tanımlanır:</p>
+    <ul>
+      <li><strong>Creation SQL</strong> — aksiyonu üretir ve aksiyon havuzunu doldurur. A/B grup ataması da bu sorguya eklenen feature kombinasyonları ile aynı anda yapılır.</li>
+      <li><strong>Scoring SQL</strong> — üretilen aksiyonların skorlarını hesaplar. Tanımlı olmayan aksiyonlarda skor başlıklarına varsayılan değerler atanır.</li>
+      <li><strong>Realization SQL</strong> — aksiyonun kaynak sistemdeki gerçekleşme durumunu takip eder. Tanımlı olmayan aksiyonlar yalnızca aktör beyanıyla tamamlanır.</li>
+    </ul>
+    <p>Üç sorgunun zamanlaması aksiyon tanımı sırasında girilir; merkezi schedule manager bu takvime göre sorguları çalıştırır.</p>
+    <h4>Alt aksiyon davranışı</h4>
+    <ul>
+      <li>Alt aksiyonlarda sinyal ve creation SQL bulunmaz; ana aksiyon tanımını takiben otomatik üretilirler. Scoring SQL de girilmez.</li>
+      <li>Tanım süresi, sinyal kodu ve üst aksiyon bilgisi ana aksiyondan miras alınır ve değiştirilemez.</li>
+      <li>Öncül aksiyon seçim kutusu, yalnızca aynı ana aksiyona bağlı alt aksiyonları listeler.</li>
+      <li>Aktörün Agent olduğu durumda akış, registry mantığıyla öncül adımın tamamlanmasında Agent'ı tetikler.</li>
+    </ul>
+    <h4>Dinamik SQL risk kontrolleri</h4>
+    <p>Aksiyon tanımında serbest SQL girilmesi kaynak tüketimi ve veri güvenliği riski taşır. Bu risk altı katmanda ele alınır:</p>
+    <ul>
+      <li>Sorguların AI analiz aracıyla ön kontrolü.</li>
+      <li>Veritabanı tarafında kullanıcı bazlı oturum sonlandırma yetkisi.</li>
+      <li>Asenkron bir döngüyle çalışan sorgunun hash'i alınarak eşik aşımında sonlandırılması.</li>
+      <li>Aksiyon sorumlusu için Data Specialist / Data Scientist yeterlilik zorunluluğu.</li>
+      <li>Sorumluluğun iç denetim gündemine taşınabilir olması.</li>
+      <li>Aksiyon bazlı kill switch ile uzun süren sorguların uygulamadan devre dışı bırakılması.</li>
+    </ul>
+    <h4>Versiyonlama mekaniği</h4>
+    <ul>
+      <li>Versiyon numarası aksiyon tanımının bir parçasıdır; havuzdaki her aksiyon kaydı üretildiği versiyonu taşır.</li>
+      <li>Canlı kayıtlar geriye dönük güncellenmez — versiyon geçişi yalnızca bir sonraki koşuda geçerli olur.</li>
+      <li>Versiyon değişimini tetikleyen alanların listesi (SQL alanları, açıklama, kategori, ürün ilişkisi) tanım tablosunda işaretlidir ve uygulama bu listeye göre otomatik versiyon açar.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 6 ========== -->
+<section id="s6">
+  <p class="snum">Bölüm 06</p>
+  <h2>Aksiyon havuzu ve yaşam döngüsü</h2>
+  <p>Tanımlar hazır olduğunda takvime bağlı işler çalışır ve ürettiği aksiyon verisi <strong>Aksiyon Havuzu</strong>'nu oluşturur. Havuz ve aksiyonun yaşam döngüsü sistemin ana omurgasıdır: sahadaki her ekran bu havuzu okur, her geri bildirim bu havuza yazar.</p>
+  <p>Aksiyonlar sistem tarafından üretildikleri anda bekleyen durumda oluşur. RM kendi ekranında ana aksiyonları görür; takvimine ve iş planına uygun olanları planlanmış duruma getirir. Uygun zaman değilse aksiyon ertelenir. Müşteriye hiç sunulamayacak durumlar ile müşterinin ilgilenmediğini belirttiği durumlar birbirinden ayrı işaretlenir — ilk durum bir süre boyunca aynı aksiyonun yeniden üretilmesini engeller, ikincisi müşteri geri bildirimi olarak kayda geçer.</p>
+  <p>Tamamlanma iki farklı yolla olur: aktör sistemsel bir delil olmaksızın aksiyonun gerçekleştiğini beyan ederse yumuşak tamamlanma, kaynak sistemden gelen veri aksiyonu doğrularsa kesin tamamlanma oluşur. Bu ayrım, aksiyon veriminin ölçülmesinde beyanla doğrulanmış gerçekleşmeyi birbirinden ayırt edebilmek için korunur.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 430" role="img" aria-label="Aksiyon statüleri arasındaki geçişleri gösteren yaşam döngüsü şeması">
+      <defs>
+        <marker id="ar4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--slate)"/>
+        </marker>
+        <marker id="ar4t" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--teal)"/>
+        </marker>
+      </defs>
+
+      <text class="s-s" x="14" y="126">Creation SQL koşusu</text>
+      <path d="M14,136 V178 H112" stroke="var(--teal)" stroke-width="1.5" fill="none" marker-end="url(#ar4t)"/>
+
+      <!-- holdout -->
+      <rect x="118" y="34" width="250" height="56" fill="none" stroke="var(--copper)" stroke-dasharray="4 3"/>
+      <text class="s-l" x="132" y="56" fill="var(--copper)">A grubu — holdout</text>
+      <text class="s-s" x="132" y="74" fill="var(--copper)">Aktöre gösterilmez, organik yanıt ölçülür</text>
+      <path d="M208,150 V94" stroke="var(--copper)" stroke-width="1.3" fill="none" stroke-dasharray="4 3"/>
+      <text class="s-s" x="216" y="122" fill="var(--copper)">split kararı</text>
+
+      <!-- PENDING -->
+      <rect x="118" y="150" width="180" height="56" fill="var(--wash)" stroke="var(--teal)" stroke-width="1.5"/>
+      <text class="s-t" x="132" y="174" fill="var(--teal-deep)">PENDING</text>
+      <text class="s-s" x="132" y="192">Sistem üretti, aktör bekliyor</text>
+
+      <!-- PLANNED -->
+      <rect x="400" y="150" width="180" height="56" fill="var(--surface)" stroke="var(--slate)" stroke-width="1.5"/>
+      <text class="s-t" x="414" y="174">PLANNED</text>
+      <text class="s-s" x="414" y="192">Aktör takvimine aldı</text>
+      <path d="M298,178 H396" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+      <text class="s-s" x="312" y="170">planla</text>
+
+      <!-- POSTPONED -->
+      <rect x="400" y="248" width="180" height="50" fill="var(--surface)" stroke="var(--slate)" stroke-width="1.5"/>
+      <text class="s-t" x="414" y="270">POSTPONED</text>
+      <text class="s-s" x="414" y="288">Zamanı uygun değil</text>
+      <path d="M208,206 V273 H396" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+      <text class="s-s" x="222" y="240">ertele</text>
+      <path d="M490,248 V212" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+      <text class="s-s" x="498" y="234">yeniden planla</text>
+
+      <!-- negatives -->
+      <rect x="118" y="330" width="180" height="46" fill="var(--surface)" stroke="var(--slate)"/>
+      <text class="s-l" x="132" y="350">NOT_POSSIBLE</text>
+      <text class="s-s" x="132" y="366">Müşteriye sunulmadan iptal edildi</text>
+      <rect x="318" y="330" width="180" height="46" fill="var(--surface)" stroke="var(--slate)"/>
+      <text class="s-l" x="332" y="350">NOT_INTERESTED</text>
+      <text class="s-s" x="332" y="366">Müşteri ilgilenmedi</text>
+      <path d="M160,206 V326" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+      <path d="M258,206 V300 H408 V326" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+
+      <!-- completes -->
+      <rect x="700" y="120" width="230" height="56" fill="var(--surface)" stroke="var(--slate)" stroke-width="1.5"/>
+      <text class="s-t" x="714" y="144">SOFT_COMPLETE</text>
+      <text class="s-s" x="714" y="162">Aktör beyanı, sistemsel delil yok</text>
+      <rect x="700" y="200" width="230" height="56" fill="var(--wash)" stroke="var(--teal)" stroke-width="1.5"/>
+      <text class="s-t" x="714" y="224" fill="var(--teal-deep)">HARD_COMPLETE</text>
+      <text class="s-s" x="714" y="242">Gerçekleşme sorgusu doğruladı</text>
+      <path d="M580,166 H696" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar4)"/>
+      <path d="M580,190 H660 V228 H696" stroke="var(--teal)" stroke-width="1.3" fill="none" marker-end="url(#ar4t)"/>
+
+      <text class="s-s" x="700" y="290">NOT_POSSIBLE sonrası aynı aksiyon belirli bir</text>
+      <text class="s-s" x="700" y="305">süre boyunca yeniden üretilmez.</text>
+
+      <!-- legend -->
+      <g>
+        <rect x="118" y="398" width="11" height="11" fill="var(--wash)" stroke="var(--teal)"/>
+        <text class="s-s" x="136" y="407">Sistem tarafından atanan statü</text>
+        <rect x="330" y="398" width="11" height="11" fill="var(--surface)" stroke="var(--slate)"/>
+        <text class="s-s" x="348" y="407">Aktör tarafından atanan statü</text>
+        <rect x="546" y="398" width="11" height="11" fill="none" stroke="var(--copper)" stroke-dasharray="3 2"/>
+        <text class="s-s" x="564" y="407">Ölçüm amaçlı, sahaya gösterilmeyen durum</text>
+      </g>
+    </svg>
+    <figcaption>A grubu aksiyonların üretildiği anda gizli kalması, ölçümün bozulmaması için gereklidir. Bu durumun PLANNED statüsüyle temsil edilmesi statünün anlamını çakıştırdığından ayrı bir görünürlük durumu öneriliyor (bkz. <a href="#s15">K-03</a>).</figcaption>
+  </figure>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Statü</th><th>Anlamı</th><th>Kim atar</th><th>Sonraki durumlar</th></tr></thead>
+      <tbody>
+        <tr><td><code>PENDING</code></td><td>Aksiyon üretildi, aktör henüz ele almadı</td><td>Sistem (creation SQL)</td><td>PLANNED, POSTPONED, NOT_POSSIBLE, NOT_INTERESTED</td></tr>
+        <tr><td><code>PLANNED</code></td><td>Aktör aksiyonu takvimine aldı</td><td>Aktör</td><td>SOFT_COMPLETE, HARD_COMPLETE, POSTPONED</td></tr>
+        <tr><td><code>POSTPONED</code></td><td>Aksiyon geçerli ama zamanı uygun değil</td><td>Aktör</td><td>PLANNED, NOT_POSSIBLE, NOT_INTERESTED</td></tr>
+        <tr><td><code>NOT_POSSIBLE</code></td><td>Müşteriye sunulmadan iptal; belirli süre yeniden üretilmez</td><td>Aktör</td><td>Terminal</td></tr>
+        <tr><td><code>NOT_INTERESTED</code></td><td>Müşteri o an için ilgilenmediğini belirtti</td><td>Aktör</td><td>Terminal</td></tr>
+        <tr><td><code>SOFT_COMPLETE</code></td><td>Aktör beyanıyla tamamlandı</td><td>Aktör</td><td>HARD_COMPLETE (sonradan doğrulanırsa)</td></tr>
+        <tr><td><code>HARD_COMPLETE</code></td><td>Gerçekleşme sorgusu tamamlanmayı doğruladı</td><td>Sistem (realization SQL)</td><td>Terminal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Sorumluluk ve devir</h3>
+  <p>Havuza düşen aksiyonların sorumluları müşteri–RM organizasyon ilişkisine göre güncellenir. Aksiyon sorumlusu RM, ihtiyaç halinde bir aksiyonu kendi şubesindeki veya başka bir şubedeki bir RM'e ya da havuz portföy ekibine atayabilir. Devir, atanan kişinin onayıyla tamamlanır; onay verilmez veya bekletilirse devir talebi iptal olur. Bu süre boyunca sorumluluk ilk aktörde kalır.</p>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Statü enum değerleri tek bir listede tutulur ve arayüzde Türkçe etiketlerle gösterilir; kod tarafında yalnızca İngilizce enum kullanılır (<a href="#s15">K-04</a>).</li>
+      <li><code>NOT_POSSIBLE</code> statüsü, aynı sinyal–aksiyon–müşteri üçlüsü için yeniden üretimi engelleyen bir bekleme süresi (suppression window) taşır. Sürenin aksiyon tanımında parametrik olması önerilir.</li>
+      <li>Alt aksiyon tamamlanmaları ana aksiyonun ilerleme yüzdesini arka plan işiyle günceller; ana aksiyonun statüsünü ise yalnızca kendi gerçekleşme sorgusu veya aktör beyanı değiştirir.</li>
+      <li>Devir talebi ayrı bir durum makinesi olarak modellenir: <code>TRANSFER_REQUESTED → ACCEPTED | EXPIRED</code>. Onay süresi ve zaman aşımı değeri tanımlanmalıdır (<a href="#s15">K-14</a>).</li>
+      <li>Havuzu besleyen sorgular için iki tip JCL işi planlanır: rutin işler için geliştirilen sabit işler ve ihtiyaç anında yeni tanımlanan aksiyonların talebe bağlı çalışmasını sağlayan rezerv işler.</li>
+      <li>Kapasite ve saklama katmanları <a href="#s13">Bölüm 13</a>'te ele alınmıştır.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 7 ========== -->
+<section id="s7">
+  <p class="snum">Bölüm 07</p>
+  <h2>Skorlama ve önceliklendirme</h2>
+  <p>Bir RM'in ekranında aynı anda çok sayıda aksiyon bulunur. Skorlama, bu aksiyonların hangi sırayla ele alınmasının hem RM hem banka hem müşteri için en verimli olduğunu hesaplar. Her aksiyon dört boyutta puanlanır:</p>
+  <ul>
+    <li><strong>RM'in pusulasına uyum</strong> — aksiyon, RM'in hedef açığını kapatan bir ürüne mi hizmet ediyor?</li>
+    <li><strong>Banka stratejisine uyum</strong> — işkollarının belirlediği ürün öncelikleriyle örtüşüyor mu?</li>
+    <li><strong>Müşteri ihtiyacına uyum</strong> — müşterinin o ürüne eğilimi ne kadar yüksek?</li>
+    <li><strong>Karlılık etkisi</strong> — ürünün müşteri ölçeği ve sektörüne göre birim karlılığı ne?</li>
+  </ul>
+  <p>Dört puan, önem derecelerini belirleyen <strong>Skor Ağırlık Matrisi</strong> ile çarpılarak tek bir aksiyon skoruna dönüşür. Matris banka ve işkolu seviyelerinde, ilerleyen dönemde bölge, şube ve RM seviyelerinde ilgili seviyenin yetkilisi tarafından güncellenebilir. Böylece önceliklendirme mantığı kod değişikliği gerektirmeden yönetilebilir bir parametre haline gelir.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 300" role="img" aria-label="Dört skor boyutunun ağırlık matrisiyle çarpılarak nihai skora dönüşmesi">
+      <text class="s-s" x="14" y="24">Aksiyon başına hesaplanan skorlar (0–100)</text>
+      <g>
+        <text class="s-l" x="14" y="62">RM pusula uyumu</text>
+        <rect x="170" y="50" width="200" height="14" fill="var(--line-soft)"/><rect x="170" y="50" width="164" height="14" fill="var(--teal)"/>
+        <text class="s-l" x="380" y="62">82</text>
+
+        <text class="s-l" x="14" y="98">Banka stratejisi uyumu</text>
+        <rect x="170" y="86" width="200" height="14" fill="var(--line-soft)"/><rect x="170" y="86" width="120" height="14" fill="var(--teal)"/>
+        <text class="s-l" x="380" y="98">60</text>
+
+        <text class="s-l" x="14" y="134">Müşteri ihtiyacı</text>
+        <rect x="170" y="122" width="200" height="14" fill="var(--line-soft)"/><rect x="170" y="122" width="182" height="14" fill="var(--teal)"/>
+        <text class="s-l" x="380" y="134">91</text>
+
+        <text class="s-l" x="14" y="170">Karlılık etkisi</text>
+        <rect x="170" y="158" width="200" height="14" fill="var(--line-soft)"/><rect x="170" y="158" width="94" height="14" fill="var(--teal)"/>
+        <text class="s-l" x="380" y="170">47</text>
+      </g>
+
+      <text x="424" y="120" font-size="26" fill="var(--muted)">×</text>
+
+      <rect x="460" y="34" width="220" height="152" fill="var(--surface)" stroke="var(--teal)"/>
+      <text class="s-t" x="474" y="56" fill="var(--teal-deep)">Skor Ağırlık Matrisi</text>
+      <g>
+        <text class="s-l" x="474" y="82">Pusula</text><text class="s-l" x="630" y="82" text-anchor="end">%25</text>
+        <text class="s-l" x="474" y="104">Strateji</text><text class="s-l" x="630" y="104" text-anchor="end">%25</text>
+        <text class="s-l" x="474" y="126">Müşteri</text><text class="s-l" x="630" y="126" text-anchor="end">%25</text>
+        <text class="s-l" x="474" y="148">Karlılık</text><text class="s-l" x="630" y="148" text-anchor="end">%25</text>
+        <text class="s-s" x="474" y="172">Varsayılan dağılım; seviye yetkilisi değiştirir</text>
+      </g>
+
+      <text x="706" y="120" font-size="26" fill="var(--muted)">=</text>
+
+      <rect x="744" y="34" width="204" height="152" fill="var(--teal-deep)"/>
+      <text class="s-w-s" x="764" y="60">Aksiyon skoru</text>
+      <text x="764" y="120" font-size="46" font-weight="600" class="s-w">70</text>
+      <text class="s-w-s" x="764" y="150">0–100 aralığında,</text>
+      <text class="s-w-s" x="764" y="166">ana aksiyon sırasını belirler</text>
+
+      <rect x="14" y="216" width="666" height="64" fill="var(--wash)"/>
+      <text class="s-l" x="30" y="240" fill="var(--teal-deep)">Ağırlık matrisi seviyeleri</text>
+      <text class="s-s" x="30" y="260">Banka → İşkolu → (sonraki fazlarda) Bölge → Şube → RM. Alt seviye, üst seviyenin belirlediği</text>
+      <text class="s-s" x="30" y="274">çerçeve içinde kendi ağırlığını ayarlar; her değişiklik gerekçesiyle birlikte kayda geçer.</text>
+      <rect x="700" y="216" width="248" height="64" fill="none" stroke="var(--copper)" stroke-dasharray="4 3"/>
+      <text class="s-s" x="714" y="240" fill="var(--copper)">Ağırlık değişikliği tüm canlı aksiyonların</text>
+      <text class="s-s" x="714" y="256" fill="var(--copper)">skorunu etkiler; gün sonu koşusuyla</text>
+      <text class="s-s" x="714" y="272" fill="var(--copper)">yansıtılır.</text>
+    </svg>
+    <figcaption>Ana aksiyonların sırası skorla belirlenir; alt aksiyonların sırası ise aksiyon tanımındaki öncül ilişkisiyle belirlenir. İki mekanizma birbirinin yerine kullanılmaz.</figcaption>
+  </figure>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Skorlama işlerinin yaklaşık %95'i batch çalışır. Canlı aksiyonların skorlarının gün içinde güncellenmesi ayda bir–iki kezle sınırlı istisnai bir ihtiyaçtır ve talebe bağlı tetiklenir.</li>
+      <li>Skoru oluşturan veriler analitik ortamda bulunduğundan akış şöyledir: aksiyon skor girdileri ve ağırlık matrisi verisi DWH'a aktarılır, hesaplama DWH'ta yapılır, sonuç skorları OLTP'ye geri taşınır.</li>
+      <li>Pusula metrik ilişkisinde yapılan güncellemeler skorlamayı etkilediği için gün sonu koşusuna bırakılır; istisnai durumlarda skorlamanın talebe bağlı çalışması gerekebilir.</li>
+      <li>Skorlama sorgusu tanımlı olmayan aksiyonlarda dört boyuta varsayılan değerler atanır, böylece her aksiyon sıralanabilir bir skora sahip olur.</li>
+    </ul>
+    <h4>Değerlendirilen alternatif mimari <span class="chip">karar bekliyor</span></h4>
+    <p>Aksiyon başına skorlama sorgusu yazmak yerine, tüm aksiyonların skorlarını tek bir merkezi sorguyla güncellemek değerlendirilmektedir. Bu yaklaşımda müşteri–ürün bazında önceden hazırlanmış dört ilişki verisi kullanılır: ürün–Pusula ilişkisi, ürün–müşteri ilişkisi, ürün–banka önceliği ilişkisi ve ürün kar katsayısı. Sorgunun bazını sistemde aktif aksiyonu bulunan distinct müşteriler oluşturur.</p>
+    <ul>
+      <li><strong>Avantaj</strong> — aksiyon sorumlusundan SQL beklenmez, sorgu sayısı ve dinamik SQL riski dramatik biçimde azalır, skor mantığı tek yerde tutulur.</li>
+      <li><strong>Kısıt</strong> — aksiyona özgü skorlama mantığı (örneğin yalnızca o aksiyon için geçerli bir eşik) ifade edilemez; bu tür ihtiyaçlar için istisna mekanizması gerekir.</li>
+      <li>Karar, MVP1 kapsamının belirlenmesinden önce verilmelidir (<a href="#s15">K-08</a>).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 8 ========== -->
+<section id="s8">
+  <p class="snum">Bölüm 08</p>
+  <h2>A/B test ve yayınlama</h2>
+  <p>Bir aksiyonun gerçekten değer üretip üretmediği, yalnızca o aksiyonun uygulandığı müşterilerle uygulanmadığı müşterilerin karşılaştırılmasıyla anlaşılır. Bu nedenle her aksiyon için müşteriler test ve kontrol gruplarına ayrılır. Gruplama kriterleri, aksiyon sorumlusu ile A/B test sorumlusunun birlikte belirlediği özellik kombinasyonlarıyla kurulur ve aksiyon üretildiği anda tek seferde atanır.</p>
+  <p>Kontrol grubuna düşen aksiyonlar aktörlere gösterilmez; bu grup, hiçbir temas olmadığında ortaya çıkan organik davranışı ölçer. Test grubundaki aksiyonlar ise ekranlara yayınlanır ve aktörün iş akışına girer.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 290" role="img" aria-label="A/B test bölünmesi ve yayınlama akışı">
+      <defs>
+        <marker id="ar5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--slate)"/>
+        </marker>
+      </defs>
+      <rect x="12" y="98" width="190" height="66" fill="var(--wash)" stroke="var(--teal)"/>
+      <text class="s-t" x="28" y="124" fill="var(--teal-deep)">Aksiyon üretimi</text>
+      <text class="s-s" x="28" y="142">Creation SQL, grup atamasını</text>
+      <text class="s-s" x="28" y="156">aynı koşuda yapar</text>
+
+      <path d="M202,131 H262" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar5)"/>
+      <text class="s-s" x="212" y="122">split</text>
+
+      <rect x="268" y="40" width="250" height="78" fill="none" stroke="var(--copper)" stroke-dasharray="4 3"/>
+      <text class="s-t" x="284" y="64" fill="var(--copper)">A grubu · %10</text>
+      <text class="s-s" x="284" y="84" fill="var(--copper)">Holdout — aktöre gösterilmez</text>
+      <text class="s-s" x="284" y="100" fill="var(--copper)">Aksiyonsuz organik yanıt ölçülür</text>
+
+      <rect x="268" y="146" width="250" height="78" fill="var(--surface)" stroke="var(--teal)" stroke-width="1.5"/>
+      <text class="s-t" x="284" y="170" fill="var(--teal-deep)">B grubu · %90</text>
+      <text class="s-s" x="284" y="190">Aktörün ekranında yayınlanır</text>
+      <text class="s-s" x="284" y="206">Planlanır, uygulanır, kapatılır</text>
+
+      <path d="M262,120 V79 H264" stroke="var(--copper)" stroke-width="1.3" fill="none" stroke-dasharray="4 3"/>
+      <path d="M262,142 V185 H264" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar5)"/>
+
+      <path d="M518,185 H586" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar5)"/>
+      <rect x="592" y="146" width="180" height="78" fill="var(--surface)" stroke="var(--line)"/>
+      <text class="s-t" x="608" y="170">Publish</text>
+      <text class="s-s" x="608" y="190">SuperBanker widget'ları,</text>
+      <text class="s-s" x="608" y="206">aksiyon paneli, Step notif</text>
+
+      <path d="M518,79 H812 V140" stroke="var(--copper)" stroke-width="1.3" fill="none" stroke-dasharray="4 3"/>
+      <path d="M772,185 H806" stroke="var(--slate)" stroke-width="1.3" fill="none" marker-end="url(#ar5)"/>
+      <rect x="812" y="146" width="136" height="78" fill="var(--teal-deep)"/>
+      <text class="s-t s-w" x="828" y="170">Ölçüm</text>
+      <text class="s-w-s" x="828" y="190">DWH üzerinde</text>
+      <text class="s-w-s" x="828" y="206">A/B karşılaştırması</text>
+
+      <text class="s-s" x="12" y="262">Grup atamaları ve ölçümler aksiyonun versiyonu bazında ayrı tutulur; böylece iki versiyon arasındaki etki farkı da ölçülebilir.</text>
+    </svg>
+    <figcaption>Yayınlama ayrı bir adım değil, split kararının sonucudur: bir aksiyonun ekranda görünmesi, test grubunda olmasına bağlıdır.</figcaption>
+  </figure>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Grup ataması creation SQL'e eklenen feature kombinasyonlarıyla üretim anında yapılır; sonradan yeniden atama yapılmaz, aksi halde ölçüm bozulur.</li>
+      <li>Ölçüm süreci DWH üzerinde yürütülür. MVP1'de aksiyon ve ölçüm verisi birikene kadar hesaplamalar manuel yapılır.</li>
+      <li>MVP2'den itibaren A/B test ekranları devreye alınır: test tanımları, çoklu test senaryoları (A/B/C/D), çoklu metrik tanımı ve before/after opsiyonu bu ekrandan yönetilir.</li>
+      <li>A/B senaryoları için gereken sorgular, aksiyon üretim sorgularıyla aynı yaklaşımla JCL işi olarak tanımlanır ve belirlenen frekanslarda otomatik çalışır.</li>
+      <li>A grubu kayıtlarının hiçbir consumer ekranda görünmemesi uygulama katmanında tek bir görünürlük filtresiyle garanti edilmelidir; statüye bağlı filtreleme bu garantiyi sağlamaz (<a href="#s15">K-03</a>).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 9 ========== -->
+<section id="s9">
+  <p class="snum">Bölüm 09</p>
+  <h2>Gerçekleşme</h2>
+  <p>Bir aksiyonun tamamlandığını söylemenin iki yolu vardır: aktörün beyanı ve kaynak sistemdeki izin kendisi. Aksiyon sorumlusu, aksiyonun gerçekleşmesinin sistem tarafından izlenmesini istiyorsa bunu tanım sırasında bir sorguyla belirtir. Bu sorgu tanımlı frekansta çalışır ve elde ettiği tamamlanma durumunu aksiyona kesin tamamlanma olarak yazar.</p>
+  <p>Gerçekleşme sorgusu tanımlanmayan aksiyonlar yalnızca aktörün beyanıyla kapanır. Bu, bazı aksiyon türleri için kaçınılmazdır — bir ziyaretin yapıldığının sistemsel izi yoktur. Ancak beyanla kapanan aksiyonların oranı, aksiyon kalitesinin göstergelerinden biri olarak izlenir.</p>
+  <p>Referans alınan uygulama Pusula'dır: Pusula'da gün içinde güncellenen ürünler için Account Planning tarafında da aynı frekansta güncelleme beklenir.</p>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>MVP1'de gerçekleşme güncellemesi, DWH'taki verinin güncellenme frekansına bağlı olarak zamanlanmış sorgularla yapılır.</li>
+      <li>Sonraki fazlarda API/servis mimarisine geçilir; böylece kaynak sistemdeki olay, sorgu koşusunu beklemeden aksiyona yansır.</li>
+      <li>Gerçekleşme sorgusunun döndürdüğü detay bilgiler (hangi ürün, hangi tutar, hangi tarih) müşteri aksiyon ekranında tamamlanma detayı olarak gösterilir.</li>
+      <li>Sorguların zamanlaması ve performansı MONITORING_OWNER sorumluluğundadır; uzun süren sorgular aksiyon bazlı kill switch ile devre dışı bırakılabilir.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 10 ========== -->
+<section id="s10">
+  <p class="snum">Bölüm 10</p>
+  <h2>Monitoring</h2>
+  <p>İzleme iki ayrı soruya cevap verir. Birincisi aksiyonun kendisiyle ilgilidir: A/B test sonucuna göre aksiyonun verimi ölçülür, ürettiği katma değer hesaplanır ve aksiyonla ilişkilendirilir. Sahada gerçekleştirme eforu yüksek ancak ölçülen değeri düşük aksiyonların iş kalitesi açısından gözden geçirilmesi beklenir — bu, aksiyon kütüphanesinin zaman içinde sadeleşmesini sağlayan mekanizmadır.</p>
+  <p>İkincisi aktörle ilgilidir: aktörlerin üstlendikleri aksiyonları ne ölçüde doğru planladıkları, ne ölçüde başarılı sonuçlandırdıkları, tamamlama süreleri ve zamanlamaları izlenir. Sonuçlar hem aktöre hem aksiyonun sahibi iş birimine geri bildirim olarak döner.</p>
+  <p>Raporlama dört kümede kurgulanır:</p>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Seviye</th><th>Kapsam</th></tr></thead>
+      <tbody>
+        <tr><td>RM</td><td>Aksiyon planlama ve tamamlama, ürün ve müşteri dağılımı, önceliklerle uyum</td></tr>
+        <tr><td>Şube</td><td>RM aksiyon performansı, şubeler arası karşılaştırma, iş yükü ve potansiyel analizi</td></tr>
+        <tr><td>Bölge</td><td>Şube performans analizi, bölgeler arası karşılaştırma</td></tr>
+        <tr><td>Ürün</td><td>Ürün bazlı aksiyon performansı, geri bildirim analizi, aksiyon iyileştirme fırsatları</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>İzleme sürecinin verimliliği için mümkün olan en az sayıda sorguyla yönetilmesi hedeflenir; seviye bazlı raporların aynı özet tablodan beslenmesi tercih edilir.</li>
+      <li>Gün içi izleme ihtiyaçları için ayrı JCL işleri tasarlanır.</li>
+      <li>Aksiyon performans paneli; ürün, aksiyon tipi, test ve kontrol grubu örneklem sayıları, gözlem süresi, hedef metrik (karlılık, churn, yeni ürün satışı) ve metrik değerini tablo ve trend grafiği olarak gösterir.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 11 ========== -->
+<section id="s11">
+  <p class="snum">Bölüm 11</p>
+  <h2>Roller ve yetkiler</h2>
+  <p>Roller yetki bileşeni olarak oluşturulur; her uygulama görevi için ilgili bileşene sahip kullanıcılar giriş ve güncelleme yapabilir. Rol, kişiye değil göreve tanımlıdır — personel değişikliklerinde tanım değil atama güncellenir.</p>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Yetki bileşeni</th><th>Rol</th><th>Ölçek</th><th>Profil</th><th>Sorumluluk</th></tr></thead>
+      <tbody>
+        <tr><td><code>SIGNAL_OWNER</code></td><td>Sinyal Sorumlusu</td><td>~20</td><td>8 Data Scientist, 10 Data Specialist, 2 diğer</td><td>Sinyalin kaynağını, üretim sıklığını, formatını ve kullanımında dikkat edilecek noktaları tanımlar; detay bilgi için temas noktasıdır.</td></tr>
+        <tr><td><code>ACTION_OWNER</code></td><td>Aksiyon Sorumlusu</td><td>~20</td><td>5 KOBİ, 5 Ticari, 10 TMÇ ortak</td><td>Sinyalden nasıl bir aksiyon alınacağını tarif eder; sinyal verisini ilave sorgularla zenginleştirir, filtreler, çeşitlendirir.</td></tr>
+        <tr><td><code>ACTION_APPROVER</code></td><td>Aksiyon Tanım Onaycısı</td><td>~10</td><td>Yönetici — 2 KOBİ, 2 Ticari, 1 TMÇ ortak</td><td>Aksiyon tanımının sistem kısıtlarına uygun ve iş ihtiyacını doğru karşıladığının onayını verir.</td></tr>
+        <tr><td><code>ACTION_ACTOR</code></td><td>Aktör / RM</td><td>~1.200 RM, ~800 şube müdürü, 100 bölge, 50 iş birimi</td><td>Saha ve operasyon</td><td>Aksiyonun planlanmasından ve gerçekleştirilmesinden sorumludur. Müşterinin sahibi RM, o müşteri için üretilen tüm aksiyonların nihai sorumlusudur.</td></tr>
+        <tr><td><code>ABTEST_OWNER</code></td><td>A/B Test Sorumlusu</td><td>~8</td><td>Data Scientist / Data Specialist</td><td>Test gruplarının homojenitesi, istatistiksel yeterliliği ve izolasyonundan; müşterilerin ürün ve aksiyon bazında adil dağılımından sorumludur.</td></tr>
+        <tr><td><code>PERFORMANCE_OWNER</code></td><td>Performans Sorumlusu</td><td>~6</td><td>2 KOBİ, 2 Ticari, 2 TMÇ</td><td>Organizasyon önceliklerini ve skor ağırlıklarını belirler; RM performans farklarını ve aksiyonların beklenen etkisini ölçer.</td></tr>
+        <tr><td><code>MONITORING_OWNER</code></td><td>Monitoring Sorumlusu</td><td>~10</td><td>4 KOBİ, 4 Ticari, 2 TMÇ</td><td>Gerçekleşme sorgularının doğru zamanlama ve performansla çalışmasını takip eder. Aksiyon sorumlusu tarafından da yürütülebilir.</td></tr>
+        <tr><td><code>APPLICATION_ADMIN</code></td><td>Uygulama Admini</td><td>2</td><td>TMÇ</td><td>Uygulamanın sağlıklı çalıştığını kontrol eder, kullanıcı destek ihtiyaçlarını karşılar, sinyal duplikasyonlarını manuel yönetir.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Ekran – rol yetki matrisi</h3>
+  <div class="tbl">
+    <table class="mtrx">
+      <thead><tr>
+        <th>Ekran</th><th>SIGNAL<br>_OWNER</th><th>ACTION<br>_OWNER</th><th>ACTION<br>_APPROVER</th><th>ACTION<br>_ACTOR</th><th>ABTEST<br>_OWNER</th><th>PERFORMANCE<br>_OWNER</th><th>MONITORING<br>_OWNER</th><th>APPLICATION<br>_ADMIN</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Sinyal tanımlama / güncelleme</td><td class="c">✎</td><td class="c">●</td><td class="c">●</td><td class="c">–</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td></tr>
+        <tr><td>Aksiyon tanımlama / güncelleme</td><td class="c">●</td><td class="c">✎</td><td class="c">●</td><td class="c">–</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">✎</td></tr>
+        <tr><td>Aksiyon onayı</td><td class="c">–</td><td class="c">●</td><td class="c">✎</td><td class="c">–</td><td class="c">–</td><td class="c">●</td><td class="c">–</td><td class="c">●</td></tr>
+        <tr><td>Skor ağırlık matrisi</td><td class="c">–</td><td class="c">●</td><td class="c">●</td><td class="c">–</td><td class="c">●</td><td class="c">✎</td><td class="c">●</td><td class="c">●</td></tr>
+        <tr><td>A/B test tanımları (MVP2)</td><td class="c">●</td><td class="c">✎</td><td class="c">●</td><td class="c">–</td><td class="c">✎</td><td class="c">●</td><td class="c">●</td><td class="c">●</td></tr>
+        <tr><td>RM aksiyon listeleme ve paneli</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">✎</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td></tr>
+        <tr><td>Aksiyon performans paneli</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">✎</td><td class="c">●</td><td class="c">●</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">✎ güncelleme ve görüntüleme · ● yalnızca görüntüleme · – erişim yok. ACTION_OWNER yalnızca kendi aksiyon tanımlarını güncelleyebilir; APPLICATION_ADMIN'in aksiyon tanımındaki güncelleme yetkisi pasife alma ve kill switch ile sınırlıdır.</p>
+</section>
+
+<!-- ========== 12 ========== -->
+<section id="s12">
+  <p class="snum">Bölüm 12</p>
+  <h2>Ekranlar</h2>
+  <p>Ekranlar iki gruba ayrılır. Uygulama ekranları tanım ve yönetişim işini yapar; bu ekranları yaklaşık yetmiş kişilik bir uzman grubu kullanır. Consumer ekranlar ise aksiyonun sahaya ulaştığı yüzeylerdir ve binlerce kullanıcı tarafından günlük iş akışının parçası olarak kullanılır.</p>
+
+  <h3>Uygulama ekranları</h3>
+  <ul>
+    <li><strong>Sinyal tanımlama / güncelleme.</strong> Sinyal tanımlarının girildiği ve güncellendiği ekran. Tanım alanlarının yanında sinyalin kullanım istatistikleri gösterilir.</li>
+    <li><strong>Aksiyon tanımlama / güncelleme.</strong> Sinyal seçimiyle başlayan tanım süreci; aksiyon özellikleri, sorgular ve zamanlama bu ekrandan girilir.</li>
+    <li><strong>Aksiyon onayı.</strong> Ayrı bir ekrana gerek yoktur: tanım ekranında aksiyon sorumlusuna pasif görünen, yönetici giriş yaptığında aktif hale gelen bir onay kontrolü yeterlidir.</li>
+    <li><strong>Aksiyon performans paneli.</strong> Seçilen aksiyonun geçmiş performansı; test ve kontrol grubu örneklemleri, gözlem süresi, hedef metrik ve değeri tablo ve trend grafiğiyle gösterilir.</li>
+  </ul>
+
+  <h3>Saha ekranları</h3>
+  <p>RM'ler bu ekranlara SuperBanker üzerinden üç yoldan erişir: RM karşılama ekranındaki widget, müşteri karşılama ekranındaki müşteri aksiyonları widget'ı ve aksiyon paneli.</p>
+  <ul>
+    <li><strong>RM müşteri aksiyonları.</strong> RM'in müşterilerini listelediği, serbest metinle arama yapabildiği, ürün, aksiyon tipi ve aksiyon durumuna göre filtreleyebildiği ekran. Kolonların RM tarafından özelleştirilebilmesi sonraki fazlarda planlanmıştır.</li>
+    <li><strong>Müşteri aksiyonları.</strong> Müşteri seviyesinde mevcut ve son 30/90 günde tamamlanan aksiyonlar; ürün, oluşma ve tamamlanma tarihleri, gerçekleşme süresi, aktör bilgisi, geri bildirimler ve gerçekleşme sorgusundan dönen tamamlanma detayları.</li>
+    <li><strong>Aksiyon paneli.</strong> Seçilen aksiyonun ana ve alt adımları, statüleri ve o statüde geçen süre; ürün ve müşteri geri bildirimlerinin girişi, gerektiğinde aksiyon tarihinin güncellenmesi. Alt adımlar farklı aktörlerce tamamlandıkça ilerleme arka planda güncellenir.</li>
+    <li><strong>Aksiyon günlüğü.</strong> Son 30/90 günde RM'in müşterileri için hareket gören tüm aksiyonlar; RM'in kendisi dışında alınan aksiyonlardan haberdar olmasını sağlar. Müşterinin veya aksiyonun kritikliğine göre etiketlerle vurgulanır.</li>
+  </ul>
+
+  <h3>Bildirimler</h3>
+  <p>Aksiyonların oluşmasını takiben yeni ve bekleyen aksiyon adetleri kullanıcıya Step bildirimi olarak gösterilir. Bildirim körlüğü oluşmaması için üretilen aksiyonlar biriktirilir ve belirli saatlerde veya belirli adede ulaşıldığında tek bildirimde iletilir. Yüksek skorlu aksiyonlar (80–90 üzeri) bağımsız bildirim olarak da gönderilebilir.</p>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>SuperBanker widget'ları ve müşteri karşılama ekranları Account Planning verisini servis üzerinden okur; aksiyon havuzuna doğrudan sorgu açılmaz.</li>
+      <li>RM ekranlarındaki filtre ve arama, hot-tier veri üzerinde çalışır; 30/90 gün dışındaki kayıtlar warm-tier'dan sayfalı olarak getirilir.</li>
+      <li>Onay kontrolünün aynı ekranda yer alması, yetki bileşenine bağlı alan seviyesinde etkinleştirme gerektirir.</li>
+      <li>Bildirim biriktirme eşikleri (saat, adet, skor eşiği) parametrik tutulur.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 13 ========== -->
+<section id="s13">
+  <p class="snum">Bölüm 13</p>
+  <h2>Kapasite ve veri mimarisi</h2>
+  <p>Platformun ölçeği tasarımın belirleyicisidir. Yaklaşık bir milyon müşteri için müşteri başına en fazla 10 ana ve 20 alt aksiyon beklenmektedir. Yakın zamanda tamamlanan ve iptal edilen aksiyonlarla birlikte yaklaşık 200 milyon aksiyonun uygulamadan canlı erişilebilir olması öngörülür; bunun ötesindeki geçmiş veri arşiv katmanında tutulur.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 350" role="img" aria-label="Schedule manager, OLTP ve DWH katmanları arasındaki veri akışı">
+      <defs>
+        <marker id="ar6" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,1 L8,4.5 L0,8 Z" fill="var(--teal)"/>
+        </marker>
+      </defs>
+      <rect x="12" y="34" width="216" height="196" fill="var(--surface)" stroke="var(--teal)"/>
+      <text class="s-t" x="28" y="58" fill="var(--teal-deep)">Schedule Manager</text>
+      <text class="s-s" x="28" y="76">Aksiyon tanımındaki takvimlere göre tetikler</text>
+      <g fill="var(--wash)"><rect x="28" y="88" width="184" height="36"/><rect x="28" y="132" width="184" height="36"/><rect x="28" y="176" width="184" height="36"/></g>
+      <text class="s-l" x="40" y="104">Creation SQL</text><text class="s-s" x="40" y="118">aksiyonu üretir</text>
+      <text class="s-l" x="40" y="148">Scoring SQL</text><text class="s-s" x="40" y="162">skoru hesaplar</text>
+      <text class="s-l" x="40" y="192">Realization SQL</text><text class="s-s" x="40" y="206">gerçekleşmeyi yazar</text>
+
+      <path d="M228,132 H278" stroke="var(--teal)" stroke-width="1.5" fill="none" marker-end="url(#ar6)"/>
+
+      <rect x="284" y="34" width="286" height="196" fill="var(--surface)" stroke="var(--teal)"/>
+      <text class="s-t" x="300" y="58" fill="var(--teal-deep)">OLTP — işletim ortamı</text>
+      <rect x="300" y="72" width="254" height="44" fill="var(--wash)"/>
+      <text class="s-l" x="312" y="90">Tanım tabloları</text>
+      <text class="s-s" x="312" y="106">Sinyal, aksiyon, ürün, rol, lookup</text>
+      <rect x="300" y="124" width="254" height="44" fill="var(--wash)"/>
+      <text class="s-l" x="312" y="142">Hot-tier · ~100M</text>
+      <text class="s-s" x="312" y="158">Canlı ve bekleyen aksiyonlar, RM ekranları</text>
+      <rect x="300" y="176" width="254" height="44" fill="var(--wash)"/>
+      <text class="s-l" x="312" y="194">Warm-tier · ~100M</text>
+      <text class="s-s" x="312" y="210">Yakın zamanda tamamlanan/iptal edilen</text>
+
+      <g stroke="var(--teal)" stroke-width="1.5" fill="none" marker-end="url(#ar6)">
+        <path d="M570,104 H634"/>
+        <path d="M634,196 H576"/>
+      </g>
+      <text class="s-s" x="578" y="96">skor girdileri, ölçüm verisi</text>
+      <text class="s-s" x="578" y="188">hesaplanan skorlar</text>
+
+      <rect x="640" y="34" width="308" height="196" fill="var(--surface)" stroke="var(--line)"/>
+      <text class="s-t" x="656" y="58">DWH — analitik ortam</text>
+      <rect x="656" y="72" width="276" height="44" fill="var(--line-soft)"/>
+      <text class="s-l" x="668" y="90">Skorlama hesabı</text>
+      <text class="s-s" x="668" y="106">4 boyut × ağırlık matrisi, gün sonu koşusu</text>
+      <rect x="656" y="124" width="276" height="44" fill="var(--line-soft)"/>
+      <text class="s-l" x="668" y="142">A/B ölçümü ve raporlama veri seti</text>
+      <text class="s-s" x="668" y="158">RM, şube, bölge ve ürün seviyeleri</text>
+      <rect x="656" y="176" width="276" height="44" fill="var(--line-soft)"/>
+      <text class="s-l" x="668" y="194">Cold-tier · ~500M</text>
+      <text class="s-s" x="668" y="210">Geçmiş aksiyon arşivi, kurumsal hafıza</text>
+
+      <rect x="12" y="254" width="936" height="72" fill="var(--wash)"/>
+      <text class="s-l" x="30" y="278" fill="var(--teal-deep)">Kapasite varsayımları</text>
+      <text class="s-s" x="30" y="300">~1M müşteri · müşteri başına en fazla 10 ana + 20 alt aksiyon · ~200M canlı erişilebilir kayıt</text>
+      <text class="s-s" x="30" y="316">Katman büyüklükleri ve saklama süreleri sayısal olarak netleştirilmelidir (K-09).</text>
+    </svg>
+    <figcaption>İşletim ve analitik ortamların ayrılması bilinçlidir: skorlama girdileri analitik ortamda bulunduğu için hesap orada yapılır, sahanın ihtiyaç duyduğu sonuç işletim ortamına taşınır.</figcaption>
+  </figure>
+
+  <div class="tech">
+    <h4>Teknik Detaylar</h4>
+    <ul>
+      <li>Havuzu besleyen sorgular iki tip JCL işiyle çalışır: rutin işler için geliştirilmiş sabit işler ve yeni tanımlanan aksiyonların talebe bağlı çalışmasını sağlayan rezerv işler. Her yeni rutin aksiyon için JCL geliştirme süreci tanımlanmalıdır (<a href="#s15">K-11</a>).</li>
+      <li>Skorlama akışı: girdiler ve ağırlık matrisi DWH'a aktarılır → hesaplama DWH'ta yapılır → skorlar OLTP'ye geri yazılır. Gün içi istisnai ihtiyaçlarda OLTP üzerinde doğrudan güncelleme tetiklenebilir.</li>
+      <li>Katman geçişleri (hot → warm → cold) statü ve tarih bazlı bir arşivleme işiyle yapılır; ekranların sorgu planları katman farkını hesaba katacak şekilde tasarlanır.</li>
+      <li>Dinamik SQL kaynak tüketimine karşı veritabanı tarafında kullanıcı bazlı oturum sonlandırma ve aksiyon bazlı kill switch mekanizmaları devrededir (bkz. <a href="#s5">Bölüm 5</a>).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 14 ========== -->
+<section id="s14">
+  <p class="snum">Bölüm 14</p>
+  <h2>Yol haritası</h2>
+  <p>Kapsam üç dalgada devreye alınır. İlk dalga omurgayı kurar: tanımlar, havuz, yaşam döngüsü ve saha ekranları. İkinci dalga ölçüm ve performans yönetimini araçlara bağlar. Üçüncü dalga akışı otomasyona ve ajanlara açar.</p>
+
+  <figure>
+    <svg viewBox="0 0 960 310" role="img" aria-label="MVP1, MVP2 ve MVP3 kapsamlarını gösteren yol haritası">
+      <defs>
+        <marker id="ar7" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="var(--teal-deep)"/>
+        </marker>
+      </defs>
+      <path d="M12,26 H930" stroke="var(--teal-deep)" stroke-width="1.5" fill="none" marker-end="url(#ar7)"/>
+      <circle cx="26" cy="26" r="4" fill="var(--teal-deep)"/><circle cx="332" cy="26" r="4" fill="var(--teal-deep)"/><circle cx="638" cy="26" r="4" fill="var(--teal-deep)"/>
+
+      <rect x="12" y="44" width="290" height="28" fill="var(--teal-deep)"/>
+      <text class="s-t s-w" x="28" y="63">MVP1 · Omurga</text>
+      <rect x="318" y="44" width="290" height="28" fill="var(--teal)"/>
+      <text class="s-t s-w" x="334" y="63">MVP2 · Ölçüm ve performans</text>
+      <rect x="624" y="44" width="324" height="28" fill="var(--moss)"/>
+      <text class="s-t s-w" x="640" y="63">MVP3 · Otomasyon ve ajanlar</text>
+
+      <g fill="var(--surface)" stroke="var(--line)">
+        <rect x="12" y="80" width="290" height="196"/><rect x="318" y="80" width="290" height="196"/><rect x="624" y="80" width="324" height="196"/>
+      </g>
+      <g>
+        <text class="s-l" x="28" y="104">Temel tablolar</text>
+        <text class="s-s" x="28" y="120">Sinyal ve aksiyon tanımı, ürün taksonomisi,</text>
+        <text class="s-s" x="28" y="134">organizasyon rolleri, lookup tabloları</text>
+        <text class="s-l" x="28" y="160">Tanım ve onay ekranları</text>
+        <text class="s-s" x="28" y="176">Sinyal, aksiyon, onay kontrolü</text>
+        <text class="s-l" x="28" y="202">Aksiyon havuzu ve yaşam döngüsü</text>
+        <text class="s-s" x="28" y="218">Veri akış yapısı, schedule manager, JCL işleri</text>
+        <text class="s-l" x="28" y="244">Skorlama ve A/B split</text>
+        <text class="s-s" x="28" y="260">Batch skorlama, üretimde grup ataması, manuel ölçüm</text>
+
+        <text class="s-l" x="334" y="104">A/B test ekranları</text>
+        <text class="s-s" x="334" y="120">Test tanımları, çoklu senaryo (A/B/C/D),</text>
+        <text class="s-s" x="334" y="134">çoklu metrik, before/after opsiyonu</text>
+        <text class="s-l" x="334" y="160">Performans izleme</text>
+        <text class="s-s" x="334" y="176">RM, şube, bölge ve ürün seviyeli raporlar</text>
+        <text class="s-l" x="334" y="202">Gerçekleşmede servis mimarisi</text>
+        <text class="s-s" x="334" y="218">Sorgu koşusu yerine API ile anlık güncelleme</text>
+        <text class="s-l" x="334" y="244">Ekran özelleştirme</text>
+        <text class="s-s" x="334" y="260">RM'in kolon ve filtre tercihlerini saklaması</text>
+
+        <text class="s-l" x="640" y="104">Çok adımlı aksiyon takibi</text>
+        <text class="s-s" x="640" y="120">API entegrasyonu ile adımların otomatik ilerlemesi</text>
+        <text class="s-l" x="640" y="146">Agentic akış</text>
+        <text class="s-s" x="640" y="162">Öncül adımın bitişinde Agent'ın registry ile tetiklenmesi</text>
+        <text class="s-l" x="640" y="188">RM asistan ajanları</text>
+        <text class="s-s" x="640" y="204">Ajanda planlama, görüşme hazırlığı, ses notu,</text>
+        <text class="s-s" x="640" y="218">şikâyet önleme ve çözüm</text>
+        <text class="s-l" x="640" y="244">Portföy ve müşteri özetleyiciler</text>
+        <text class="s-s" x="640" y="260">Aksiyon–müşteri uyumu, aksiyon sunum danışmanı</text>
+      </g>
+      <text class="s-s" x="12" y="298">Faz içerikleri kick-off sunumundaki yol haritası ve sonraki adımlar bölümünden türetilmiştir; sıralama kapsam kararlarına göre güncellenir.</text>
+    </svg>
+    <figcaption>MVP1'in kritik bağımlılığı skorlama mimarisi kararıdır: merkezi tek sorgu yaklaşımı seçilirse aksiyon tanım ekranından skorlama SQL alanı çıkar.</figcaption>
+  </figure>
+</section>
+
+<!-- ========== 15 ========== -->
+<section id="s15">
+  <p class="snum">Bölüm 15</p>
+  <h2>Açık konular ve karar noktaları</h2>
+  <p>Bu bölüm, kapsam metninde birbiriyle çelişen, eksik kalan veya karar bekleyen konuları toplar. Yazım ve terim düzeltmeleri doküman içinde sessizce uygulanmıştır; aşağıdaki maddeler ise iş ve teknik ekiplerin birlikte karara bağlaması gereken konulardır.</p>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>No</th><th>Konu</th><th>Tespit</th><th>Öneri</th><th>Karar sahibi</th></tr></thead>
+      <tbody>
+        <tr><td class="k-id">K-01</td><td>Alt aksiyon paralelliği</td><td>Bir yerde tüm alt aksiyonların ilk aşamada seri tasarlanacağı, başka bir yerde öncülü seçilmemiş alt aksiyonların ana aksiyonla birlikte başlayabileceği belirtiliyor.</td><td>Model paralelliği destekliyor; MVP1'de veri modeli paralel kurulup arayüzde seri akış zorunlu tutulabilir.</td><td>İş + Teknik</td></tr>
+        <tr><td class="k-id">K-02</td><td>Ana aksiyonun tamamlanma koşulu</td><td>Alt aksiyonlar ana aksiyonun önkoşulu olarak tanımlanıyor, ancak ana aksiyonun tamamlanması için alt aksiyonların tamamlanması beklenmiyor.</td><td>Alt aksiyonlar önkoşul değil "destekleyici adım" olarak adlandırılmalı; tamamlanmayan adımlar eksik iş raporunda izlenmeli.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-03</td><td>A grubu görünürlüğü</td><td>Kontrol grubu aksiyonlarının PLANNED statüsünde kalıp gösterilmemesi öngörülüyor; bu, PLANNED'ın "aktör planladı" anlamıyla çakışıyor.</td><td>Statüden bağımsız bir görünürlük alanı (<code>is_visible</code> / <code>holdout</code>) eklenmeli; aksiyon PENDING kalmalı.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-04</td><td>Statü adlandırma</td><td>Aynı statü metinde PLANLANDI, PLANNED ve PLANLANNED olarak geçiyor.</td><td>Kodda tek İngilizce enum, arayüzde Türkçe etiket.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-05</td><td>Aktör rol kodu</td><td>Aktör/RM rolü <code>SIGNAL_ACTOR</code> olarak kodlanmış; rol sinyalle değil aksiyonla ilgili.</td><td><code>ACTION_ACTOR</code> olarak değiştirilmeli.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-06</td><td>Aksiyon tanım ekranı yetkisi</td><td>ACTION_OWNER'ın "kendi sinyallerini" güncelleyebildiği yazılıyor; sinyal yetkisi SIGNAL_OWNER'da.</td><td>İfade "kendi aksiyon tanımları" olarak düzeltilmeli (bu dokümanda düzeltilmiştir).</td><td>İş</td></tr>
+        <tr><td class="k-id">K-07</td><td>ACTION_OWNER yeterlilik profili</td><td>Aksiyon sorumlusunun Data Specialist / Data Scientist olması zorunlu tutulurken rol dağılımı KOBİ, Ticari ve TMÇ iş birimi olarak veriliyor.</td><td>SQL yazan ile iş kuralını tarif eden sorumluluk ayrılmalı ya da iş birimlerinde DSp/DSc kadrosu şart koşulmalı.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-08</td><td>Skorlama mimarisi</td><td>Aksiyon başına skorlama SQL'i ile merkezi tek sorgu yaklaşımı birlikte anlatılıyor, karar verilmemiş.</td><td>Merkezi yaklaşım dinamik SQL riskini ve operasyon yükünü azaltır; aksiyona özgü istisnalar için tanımlı bir kaçış yolu bırakılmalı.</td><td>İş + Teknik</td></tr>
+        <tr><td class="k-id">K-09</td><td>Kapasite sayıları</td><td>200M canlı erişilebilir kayıt ile 100M hot + 100M warm + ~500M cold dağılımı birbirini tam karşılamıyor.</td><td>Katman tanımları ve saklama süreleri sayısal olarak yeniden hesaplanmalı.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-10</td><td>Sinyal pasifleştirme sonrası akış</td><td>Lifecycle'ı etkileyen değişiklikte "sinyal pasife alınıp yeni bir aksiyon yaratılır" deniyor; yeni sinyalin de gerekip gerekmediği belirsiz.</td><td>Zincir netleştirilmeli: yeni sinyal → yeni aksiyon. Eski sinyalin pasife alınması bağlı aksiyonların pasif olmasını gerektirdiği için sıralama tanımlanmalı.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-11</td><td>Yeni aksiyon için JCL süreci</td><td>Kaynak metinde bu konuyu anlatan cümle yarım kalmış.</td><td>Rezerv JCL havuzunun büyüklüğü, tahsis kuralı ve rutine alma kriteri yazılmalı.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-12</td><td>Onay akışının zorunluluğu</td><td>Aksiyonun aktife alınmasında üst onay "gereken durumlarda" olarak geçiyor, koşul tanımlı değil.</td><td>Onay gerektiren durumlar (yeni aksiyon, SQL değişikliği, kapsam büyüklüğü) listelenmeli. Organizasyon Süreç Gelişim ekibiyle netleşecek.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-13</td><td>Sinyal adı duplikasyonu</td><td>Ad tekilliği aranmadığı için duplikasyon riski manuel kontrole bırakılmış.</td><td>Ad benzerliği uyarısı ve periyodik duplikasyon raporu eklenmeli.</td><td>Teknik</td></tr>
+        <tr><td class="k-id">K-14</td><td>Devir onay süresi</td><td>Devir talebinin onaylanmaması durumunda iptal olacağı belirtiliyor, süre tanımlı değil.</td><td>Zaman aşımı süresi parametrik tanımlanmalı ve bekleyen devirler aktörün ekranında görünmeli.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-15</td><td>ACTION_APPROVER ölçeği</td><td>Rol ~10 kişi olarak veriliyor, dağılım 5 kişi üzerinden tarif ediliyor.</td><td>Dağılım güncellenmeli.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-16</td><td>Aksiyon günlüğü etiketleri</td><td>Kritiklik etiketlerinin kapsamı "netleştirilecek" olarak bırakılmış.</td><td>Etiket kümesi ve atama kuralı tanımlanmalı.</td><td>İş</td></tr>
+        <tr><td class="k-id">K-17</td><td>Yeniden üretim bekleme süresi</td><td><code>NOT_POSSIBLE</code> statüsünde "belirli bir süre" yeniden üretim yapılmayacağı belirtiliyor, süre tanımlı değil.</td><td>Süre aksiyon tanımında parametrik olmalı; varsayılan değer belirlenmeli.</td><td>İş</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout karar">
+    <h4>Öncelik sırası</h4>
+    <p>MVP1 kapsamının kilitlenmesi için önce <strong>K-08</strong> (skorlama mimarisi), <strong>K-03</strong> (holdout görünürlüğü) ve <strong>K-01/K-02</strong> (alt aksiyon davranışı) karara bağlanmalıdır; bu dört madde veri modelini ve aksiyon tanım ekranını doğrudan değiştirir. Kalan maddeler geliştirme sürerken paralel çözülebilir.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Account Planning — Aksiyon Yönetimi Kapsam Dokümanı · Kaynaklar: AccountPlanning-Kapsam-Claude.txt, Sinyal Veri Yapısı, Aksiyon Taksonomisi ve Aksiyon Matrisi, Action Management kick-off sunumu.</p>
+</footer>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /shell -->
+</body>
+</html>
