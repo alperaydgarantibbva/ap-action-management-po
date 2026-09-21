@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-09-18 itibarıyla):** D-01 18 gün, D-02 28 gün. R-01 ve R-02/R-03 de 18 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için bugün bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-09-21 itibarıyla):** D-01 21 gün, D-02 31 gün. R-01 ve R-02/R-03 de 21 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Haftalık kapanış notları
 
@@ -47,6 +47,11 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-21:** Tablo 53 satırda. Dört soru (17 Eylül workshop notunun D-02'yi kapatıp
+> kapatmadığı, S-001'in "Beklemede"ye alınması, 17 Eylül takvim satırının ve hazırlık taslağının
+> silinmesi, paydaş taslağının Eylül'e çekilmesi) ikinci kez cevapsız kaldığı için C, F ve H
+> başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-18:** Tablo 49 satırda. Bir soru (D-01 kararını kimin vereceği) ikinci kez cevapsız
 > kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -106,7 +111,7 @@
 | 2026-09-04 | Bu hafta ekip tarafında kapanan bir iş oldu mu? (2 kez soruldu; 2026-09-08'de tabloya taşındı) |
 | 2026-09-11 | Elinde repoya eklenmemiş yeni bir toplantı notu var mı? (2 kez soruldu; 2026-09-15'te tabloya taşındı) |
 
-### C. S-001 (8 soru)
+### C. S-001 (9 soru)
 
 *Cevaplanmazsa: S-001 "Taslak"ta kalır, Definition of Ready karşılanmaz, refinement gündemine giremez. Backlog'daki tek story bu.*
 
@@ -120,6 +125,7 @@
 | 2026-09-03 | S-001'i ikiye böleyim mi — (1) gönderim + otomatik doğrulama, (2) onay akışı + işlem geçmişi? (2 kez soruldu) |
 | 2026-09-03 | S-001'in iki teknik açık sorusunu Umut Özdemir ve Garo Üçkardeş'e soracak kısa mesaj taslağını çıkarayım mı? (2 kez soruldu) |
 | 2026-09-07 | S-001'in kabul kriterlerine sözdizimi doğrulaması (parser) maddesini ekleyeyim mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
+| 2026-09-17 | S-001'i "Taslak"tan "Beklemede"ye alayım mı? (2 kez soruldu; 2026-09-21'de tabloya taşındı — bağımlılığı D-02 açık) |
 
 ### D. Backlog ve epic'ler (3 soru)
 
@@ -141,7 +147,7 @@
 | 2026-08-24 | Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu? (2026-08-31'de tekrar soruldu) |
 | 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 
-### F. Paydaş iletişimi (2 soru)
+### F. Paydaş iletişimi (3 soru)
 
 *Cevaplanmazsa: 21 paydaşın "son iletişim" sütunu boş kalır, aylık bilgilendirme sayacı başlamaz.*
 
@@ -149,6 +155,7 @@
 |---|---|
 | 2026-08-28 | 21 paydaşa gidecek ilk aylık güncelleme taslağını çıkarayım mı? (2 kez soruldu; 2026-08-31'de onay beklemeden yazıldı: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi) |
 | 2026-08-31 | Bu taslak gönderilebilir mi / Eylül'ün ilk haftasında gönderilecek mi? (2 kez soruldu) |
+| 2026-09-17 | Paydaş güncelleme taslağının tarihini Eylül'e çekip göndermeye hazır hale getireyim mi? (2 kez soruldu; 2026-09-21'de tabloya taşındı) |
 
 ### G. Proje tanımı ve prototip kapsamı (4 soru)
 
@@ -161,7 +168,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (13 soru)
+### H. Risk, engel ve takvim (15 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -180,6 +187,8 @@
 | 2026-09-14 | 17 Eylül PlanItEarth workshop'una sen katılıyor musun? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
 | 2026-09-15 | `03-toplantilar/20260914-workshop-hazirlik-taslak.md` bu haliyle kullanılabilir mi? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 | 2026-09-16 | D-01 kararını (Kafka event mi, DWH ara tablo + ODI mi) kim verecek — Gökçer Belgüsen mi, Dursun Akçeşme mi? (2 kez soruldu; 2026-09-18'de tabloya taşındı — D-01'in karar sahibi yazılı değil) |
+| 2026-09-17 | `03-toplantilar/20260917-PlanItEarth-Workshop.md` notundaki "ekip tüm geliştirme ve maintenance'dan sorumlu olacak" satırı D-02'yi kapatıyor mu? (2 kez soruldu; 2026-09-21'de tabloya taşındı — D-02 31 gündür açık) |
+| 2026-09-17 | `ekip-ve-ritim.md`'deki 17 Eylül workshop satırını ve `03-toplantilar/20260914-workshop-hazirlik-taslak.md`'yi silelim mi? (2 kez soruldu; 2026-09-21'de tabloya taşındı — tarih kayıt oluşmadan geçti) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -204,4 +213,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-18*
+*Son güncelleme: 2026-09-21*

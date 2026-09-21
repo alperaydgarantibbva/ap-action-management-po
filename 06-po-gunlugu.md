@@ -6,6 +6,42 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-21 — Sabah brifingi (issue #27)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor. PO haftalık ritminde Pazartesi hafta önceliğini belirleme günü.
+- Takvimde geri sayılan bir teslim veya tören kalmadı; 17 Eylül satırı kayıt oluşmadan geçti ve 18 Eylül'de takipten düştü.
+- Dünkü (issue #26) 5 sorunun tamamı cevapsız kaldı. Dördü ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- D-01 (Spark çıktısının OLTP'ye taşınma yolu) 21 gündür açık ve karar sahibi hâlâ yazılı değil; D-02 (Account Planning maintenance süreç sahipliği) 31 gündür bekliyor ve S-001'in bağımlılığı. R-01…R-03 de 21 gündür teyit almamış.
+- Sprint 1 aktif görünüyor ama sprint hedefi ve bitiş tarihi yazılı değil; `02-sprintler/` altında klasör yok.
+- S-001 31 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos ve Eylül turu kaçtı. Taslak 21 gündür hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi.
+- 4 Eylül'den beri (17 gün) repoya Alper'den yeni içerik gelmedi (son commit'i: 6a3560d). Son yirmi brifing (issue #7–#26) cevapsız.
+
+**Sorular ve cevaplar:**
+1. S: ap-action-management Eylül'de beklemeye mi alındı? (tek kelime: aktif / beklemede)
+   C: *Cevap bekleniyor*
+2. S: Karar formundaki 6 açık maddeyi (D-01, D-02, R-01, R-02, R-03, S-001 parser) karar sahiplerine gidecek tek mesaj haline getireyim mi? (ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Bekleyen sorular tablosundaki 53 soruyu, her başlık için tek bir evet/hayır sorusuna indirgeyip 9 soruluk bir liste çıkarayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 17 Eylül'de sorulup ikinci kez cevapsız kalan dört soru bekleyen sorular tablosuna taşındı: workshop notunun D-02'yi kapatıp kapatmadığı ve 17 Eylül takvim satırının silinmesi H başlığına, S-001'in "Beklemede"ye alınması C başlığına, paydaş taslağının Eylül'e çekilmesi F başlığına. Kural gereği üçüncü kez sorulmuyorlar. Tablo 49'dan 53 satıra çıktı; başlık sayıları (C 9, F 3, H 15) güncellendi. Bekleme süreleri satırı da bugüne çekildi.
+- Bunun dışında yeni taslak üretilmedi. Onay bekleyen dokuz çıktı zaten duruyor; onaysız çıktı biriktirmenin faydası kalmadığı için bugün eklenmedi.
+- Paydaş güncelleme taslağı bilinçli olarak Eylül'e çevrilmedi: Eylül'de repoya kayda geçen yeni ilerleme yok, olmayan ilerleme yazılmaz. Alper "Ağustos içeriğiyle gönderelim" derse son haline getirilecek.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "beklemede" gelirse brifingin içeriği ve sıklığı buna göre değiştirilecek, proje durumu `00-proje/` altına işlenecek; "aktif" gelirse mevcut biçim sürecek. 2'ye "evet" gelirse karar formu tek paragraflık mesaj taslağına çevrilip `04-raporlar/` altına yazılacak (gönderilmeyecek — Alper gönderir). 3'e "evet" gelirse bekleyen sorular tablosu 9 başlık için 9 evet/hayır sorusuna indirgenip ayrı bir liste olarak çıkarılacak; tablonun kendisi silinmeyecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 3 sorunun tamamı. Cevap bekleniyor.
+- 2 numaralı soru ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 53 satırda, dokuz başlıkta. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, workshop gündemi/katılımı, backlog sıralama kriterlerinin onayı, S-001'in "Hazır" durumu ve S-001'in "Beklemede"ye alınması bu sorular cevaplanmadıkça ilerlemiyor.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-18 — Sabah brifingi (issue #26)
 
 **Brifingte söylenenler:**
