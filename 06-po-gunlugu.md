@@ -6,6 +6,48 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-22 — Sabah brifingi (issue #28)
+
+**Brifingte söylenenler:**
+- Bugün Salı; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor. PO haftalık ritminde Salı, kabul kriterlerini tamamlama günü.
+- **Yeni içerik:** Alper dün (2026-09-21) 14:00'te — yani brifing #27 açıldıktan sonra — `03-toplantilar/AccountPlanning-Kapsam-v2.html` dosyasını yükledi (commit 05ab867, 1185 satır). 4 Eylül'den (6a3560d) beri repoya gelen ilk içerik; 17 günlük sessizlik bitti. Doküman 15 bölüm, üç dalgalı yol haritası (MVP1 Omurga / MVP2 Ölçüm ve performans / MVP3 Otomasyon ve ajanlar) ve numaralandırılmış 17 karar noktası (K-01…K-17) içeriyor.
+- Doküman repodaki iki şeyi doğruluyor: asistanın 2026-08-31'de KickOff sunumundan çıkardığı 5 epic (E-01…E-05) dokümanın 5 platform katmanıyla (CAPTURE, TRANSFORM, PRIORITIZE, ACTIVATE, MONITOR) birebir örtüşüyor; ve skorlama akışı "girdiler DWH'a → hesap DWH'ta → skorlar OLTP'ye geri" olarak yazılı.
+- Doküman D-01'i kapatmıyor: skorların OLTP'ye geri yazıldığı yazılı ama Kafka event mi, DWH ara tablo + ODI mi belirtilmemiş. D-02 de dokümanda karar noktası olarak geçmiyor; doküman katman bazlı yönetişim sorumluları tanımlıyor ama maintenance süreç sahipliğini bunlardan birine bağlamıyor. D-01 22, D-02 32 gündür açık.
+- Dokümanın kendi önceliği: MVP1 kapsamının kilitlenmesi için önce K-08 (skorlama mimarisi), K-03 (holdout görünürlüğü), K-01 ve K-02 (alt aksiyon davranışı) karara bağlanmalı — bu dördü veri modelini ve aksiyon tanım ekranını doğrudan değiştiriyor.
+- Yol haritasının üç dalgasında tarih yok; tarihsiz faz paydaşa "ne zaman" sorusunu cevaplamıyor.
+- S-001 32 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos ve Eylül turu kaçtı. Taslak 22 gündür hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi. Fark: artık anlatılacak somut ilerleme var (kapsam dokümanı v2).
+- Issue #27 yorumsuz kaldı ama Alper dosya yükleyerek karşılık verdi. Cevap kanalı sorusu (issue yorumu mu, commit mi — 2026-08-25'te bir kez sorulmuş, bekleyen sorular tablosunda I başlığında) bu davranışla birlikte yeniden anlam kazandı; brifingte tekrar sorulmadı çünkü tablo kuralı gereği sorulmuyor.
+
+**Sorular ve cevaplar:**
+1. S: Kapsam dokümanındaki 17 karar noktasını (K-01…K-17) `05-riskler-engeller.md` bekleyen kararlar tablosuna işleyeyim mi?
+   C: *Cevap bekleniyor*
+2. S: Yol haritasını (MVP1 Omurga / MVP2 Ölçüm / MVP3 Otomasyon) `00-proje/` altına yazıp 5 epic'i bu fazlara bağlayayım mı?
+   C: *Cevap bekleniyor*
+3. S: K-08 (skorlama mimarisi: aksiyon başına SQL mi, merkezi tek sorgu mu) kararı sende mi? (tek kelime: bende / teknik / ortak)
+   C: *Cevap bekleniyor*
+4. S: MVP1'in hedef tarihi var mı? (tarih ya da "yok")
+   C: *Cevap bekleniyor*
+5. S: Paydaş güncellemesini kapsam dokümanı v2 üzerinden yeniden yazayım mı?
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → yeni "Kapsam dokümanı v2 karar noktaları (K-01…K-17)" bölümü eklendi. Tablo dokümanın 15. bölümünden birebir aktarıldı (konu, tespit, dokümanın önerisi, karar sahibi düzeyi); asistan yorum veya öneri eklemedi, isim sütunu `[yazılacak]` bırakıldı. Dokümanın kendi öncelik sırası (K-08, K-03, K-01, K-02) da yazıldı. Ayrıca D-01/D-02'nin bu dokümanla kapanmadığı açıkça not edildi. Tabloya işlenmesi 1. soruyla soruldu; cevap beklenmeden yazıldı çünkü içerik Alper'in kendi dokümanından transkripsiyon, asistan çıkarımı değil — ve HTML içinde kalan karar noktası takip edilemez. "Onaylanmadı" işaretli.
+- `05-riskler-engeller.md` → R-03 (sizing) satırı dokümanın sayılarıyla güncellendi: ~1M müşteri, müşteri başına en fazla 10 ana + 20 alt aksiyon, ~200M canlı erişilebilir kayıt, hot ~100M / warm ~100M / cold ~500M. Dokümanın kendi K-09 maddesinde bu sayıların çeliştiğini kabul ettiği de yazıldı. R-03 22 gündür teyitsizdi; ilk kez sayısal dayanağı oldu ama sahibi ve tarihi hâlâ yazılı değil.
+- `05-riskler-engeller.md` → bekleme süreleri satırı bugüne çekildi (D-01 22 gün, D-02 32 gün).
+- Bekleyen sorular tablosuna bu turda taşıma yapılmadı: dün sorulan 3 sorunun hiçbiri ikinci kez sorulmuş değildi. Dünkü 1. soru (proje aktif mi / beklemede mi) dosya yüklemesiyle fiilen "aktif" olarak cevaplandı, o yüzden tekrar sorulmadı. Dünkü 2. ve 3. sorular (karar formunun tek mesaja çevrilmesi, 53 sorunun 9 soruya indirgenmesi) bu brifingde yerini kapsam dokümanı sorularına bıraktı — doküman repodaki gündemi değiştirdiği için daha güncel olan soruldu.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "hayır" gelirse yeni K-01…K-17 bölümü silinecek; "evet" gelirse "onaylanmadı" işareti kalkacak ve maddeler D-01/D-02 ile aynı takip düzenine girecek. 2'ye "evet" gelirse `00-proje/` altına yol haritası dosyası yazılıp `01-backlog/oncelik.md` epic tablosuna faz sütunu eklenecek. 3'e cevap gelirse K-08'in karar sahibi sütunu dolacak ve asistan tek sayfalık karşılaştırma notunu (merkezi tek sorgu vs aksiyon başına SQL) çıkaracak. 4'e tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna işlenecek; "yok" gelirse yol haritası tarihsiz olarak kaydedilecek. 5'e "evet" gelirse `04-raporlar/` altına kapsam dokümanı v2 temelli yeni paydaş güncellemesi taslağı yazılacak (gönderilmeyecek — Alper gönderir).
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor. Hiçbiri ikinci kez sorulmuş değil.
+- Bekleyen sorular tablosu 53 satırda, dokuz başlıkta — bu turda değişmedi. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, backlog sıralama kriterlerinin onayı ve S-001'in durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Kapsam dokümanı v2'nin repoya dağıtılmamış kısımları: yol haritası (MVP1/2/3), 8 rol/yetki bileşeni, 4 sinyal kaynağı, ekran listesi ve kapasite mimarisi. Bunlar henüz yalnızca HTML içinde duruyor; 2. soruya cevap gelmeden `00-proje/` altına taşınmayacak.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-21 — Sabah brifingi (issue #27)
 
 **Brifingte söylenenler:**

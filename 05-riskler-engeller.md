@@ -18,7 +18,7 @@
 |---|---|---|---|---|---|
 | R-01 | Kullanıcıdan metin olarak alınan SQL'in execute edilmesi — servis user'ın yetki genişliği ve runtime hataları güvenlik açığı yaratabilir | `[teyit edilmedi]` | Yüksek | Bilgi güvenliğinden kayıt açılması gerekiyor; Ecem Ekenoğlu ayrıca sözdizimi doğrulaması yapan bir parser önerdi. Kayıt açıldı mı bilinmiyor — 2026-09-07'de soruldu | `[teyit edilmedi]` |
 | R-02 | 1 milyon event'in kısa sürede Kafka'ya basılması Kafka CPU'sunu tabana vurdurabilir | `[teyit edilmedi]` | Yüksek | Dursun Akçeşme'nin uyarısı: 50 binlik partiler şart. Yalnızca Kafka yolu seçilirse geçerli — bkz. D-01 | `[teyit edilmedi]` |
-| R-03 | Sizing netleşmemiş: kaç collection, kaç milyon döküman, ~1 KB JSON, ~20 TPS, subsecond beklentisi | `[teyit edilmedi]` | Orta | Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafıyla konuşulacaktı; sahibi ve tarihi yazılı değil | `[teyit edilmedi]` |
+| R-03 | Sizing netleşmemiş: kaç collection, kaç milyon döküman, ~1 KB JSON, ~20 TPS, subsecond beklentisi | `[teyit edilmedi]` | Orta | 2026-09-21'de yüklenen kapsam dokümanı v2 ilk kez sayı veriyor: ~1M müşteri, müşteri başına en fazla 10 ana + 20 alt aksiyon, ~200M canlı erişilebilir kayıt, hot ~100M / warm ~100M / cold ~500M. Ama doküman kendi sayılarının çeliştiğini K-09'da kabul ediyor (200M canlı ile 100+100+500M dağılımı örtüşmüyor) ve katman büyüklükleriyle saklama sürelerinin yeniden hesaplanmasını istiyor. Big Data (Can Tezgöçer, Veysel) ve Couchbase (İlhami, Adem Arslan) tarafıyla konuşulacaktı; sahibi ve tarihi hâlâ yazılı değil | `[teyit edilmedi]` |
 
 *R-01…R-03, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı. Alper onaylamadı; olasılık/etki değerleri teyit alınınca güncellenecek.*
 
@@ -33,7 +33,35 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-09-21 itibarıyla):** D-01 21 gün, D-02 31 gün. R-01 ve R-02/R-03 de 21 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-09-22 itibarıyla):** D-01 22 gün, D-02 32 gün. R-01 ve R-02/R-03 de 22 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+
+## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
+
+*Kaynak: `03-toplantilar/AccountPlanning-Kapsam-v2.html`, Bölüm 15 — Alper tarafından 2026-09-21 14:00'te yüklendi (commit 05ab867). Aşağıdaki tablo dokümanın kendi 15. bölümünden birebir aktarılmıştır; asistan yorum veya öneri eklemedi. Karar sahibi sütunu dokümanda "İş / Teknik / İş + Teknik" düzeyinde veriliyor, isim verilmiyor — isimler Alper tarafından yazılacak. Tabloya işlenmesi 2026-09-22 brifinginde soruldu, **Alper onaylamadı.***
+
+**Dokümanın kendi öncelik sırası:** MVP1 kapsamının kilitlenmesi için önce **K-08, K-03, K-01 ve K-02** karara bağlanmalı — bu dördü veri modelini ve aksiyon tanım ekranını doğrudan değiştiriyor. Kalan maddeler geliştirme sürerken paralel çözülebilir.
+
+| # | Konu | Karar bekleyen nokta | Dokümanın önerisi | Karar sahibi | Kim (isim) |
+|---|---|---|---|---|---|
+| K-08 | Skorlama mimarisi | Aksiyon başına skorlama SQL'i mi, merkezi tek sorgu mu — doküman ikisini birlikte anlatıyor, karar verilmemiş | Merkezi yaklaşım dinamik SQL riskini ve operasyon yükünü azaltır; aksiyona özgü istisnalar için tanımlı kaçış yolu bırakılmalı | İş + Teknik | `[yazılacak]` |
+| K-03 | A grubu (holdout) görünürlüğü | Kontrol grubu aksiyonlarının PLANNED'da kalıp gösterilmemesi, PLANNED'ın "aktör planladı" anlamıyla çakışıyor | Statüden bağımsız görünürlük alanı (`is_visible` / holdout) eklenmeli; aksiyon PENDING kalmalı | Teknik | `[yazılacak]` |
+| K-01 | Alt aksiyon paralelliği | Bir yerde tüm alt aksiyonların seri tasarlanacağı, başka yerde öncülü seçilmemiş olanların ana aksiyonla birlikte başlayabileceği yazıyor | Model paralelliği destekliyor; MVP1'de veri modeli paralel kurulup arayüzde seri akış zorunlu tutulabilir | İş + Teknik | `[yazılacak]` |
+| K-02 | Ana aksiyonun tamamlanma koşulu | Alt aksiyonlar önkoşul olarak tanımlanıyor ama ana aksiyonun tamamlanması için beklenmiyor | Alt aksiyonlar "destekleyici adım" olarak adlandırılmalı; tamamlanmayan adımlar eksik iş raporunda izlenmeli | İş | `[yazılacak]` |
+| K-04 | Statü adlandırma | Aynı statü metinde PLANLANDI, PLANNED ve PLANLANNED olarak geçiyor | Kodda tek İngilizce enum, arayüzde Türkçe etiket | Teknik | `[yazılacak]` |
+| K-05 | Aktör rol kodu | Aktör/RM rolü `SIGNAL_ACTOR` olarak kodlanmış; rol sinyalle değil aksiyonla ilgili | `ACTION_ACTOR` olarak değiştirilmeli | Teknik | `[yazılacak]` |
+| K-06 | Aksiyon tanım ekranı yetkisi | ACTION_OWNER'ın "kendi sinyallerini" güncelleyebildiği yazılıyor; sinyal yetkisi SIGNAL_OWNER'da | İfade "kendi aksiyon tanımları" olmalı (doküman içinde düzeltilmiş) | İş | `[yazılacak]` |
+| K-07 | ACTION_OWNER yeterlilik profili | Aksiyon sorumlusuna Data Specialist / Data Scientist zorunluluğu konulurken rol dağılımı KOBİ, Ticari ve TMÇ iş birimi olarak veriliyor | SQL yazan ile iş kuralını tarif eden sorumluluk ayrılmalı ya da iş birimlerinde DSp/DSc kadrosu şart koşulmalı | İş | `[yazılacak]` |
+| K-09 | Kapasite sayıları | 200M canlı erişilebilir kayıt ile 100M hot + 100M warm + ~500M cold dağılımı birbirini tam karşılamıyor | Katman tanımları ve saklama süreleri sayısal olarak yeniden hesaplanmalı | Teknik | `[yazılacak]` |
+| K-10 | Sinyal pasifleştirme sonrası akış | "Sinyal pasife alınıp yeni aksiyon yaratılır" deniyor; yeni sinyalin de gerekip gerekmediği belirsiz | Zincir netleştirilmeli: yeni sinyal → yeni aksiyon. Eski sinyalin pasifi bağlı aksiyonları da pasife çektiği için sıralama tanımlanmalı | İş | `[yazılacak]` |
+| K-11 | Yeni aksiyon için JCL süreci | Kaynak metinde bu konuyu anlatan cümle yarım kalmış | Rezerv JCL havuzunun büyüklüğü, tahsis kuralı ve rutine alma kriteri yazılmalı | Teknik | `[yazılacak]` |
+| K-12 | Onay akışının zorunluluğu | Aktife almada üst onay "gereken durumlarda" olarak geçiyor, koşul tanımlı değil | Onay gerektiren durumlar (yeni aksiyon, SQL değişikliği, kapsam büyüklüğü) listelenmeli. Organizasyon Süreç Gelişim ekibiyle netleşecek | İş | `[yazılacak]` |
+| K-13 | Sinyal adı duplikasyonu | Ad tekilliği aranmadığı için duplikasyon riski manuel kontrole bırakılmış | Ad benzerliği uyarısı ve periyodik duplikasyon raporu eklenmeli | Teknik | `[yazılacak]` |
+| K-14 | Devir onay süresi | Devir talebi onaylanmazsa iptal olacağı belirtiliyor, süre tanımlı değil | Zaman aşımı parametrik tanımlanmalı, bekleyen devirler aktörün ekranında görünmeli | İş | `[yazılacak]` |
+| K-15 | ACTION_APPROVER ölçeği | Rol ~10 kişi olarak veriliyor, dağılım 5 kişi üzerinden tarif ediliyor | Dağılım güncellenmeli | İş | `[yazılacak]` |
+| K-16 | Aksiyon günlüğü etiketleri | Kritiklik etiketlerinin kapsamı "netleştirilecek" olarak bırakılmış | Etiket kümesi ve atama kuralı tanımlanmalı | İş | `[yazılacak]` |
+| K-17 | Yeniden üretim bekleme süresi | NOT_POSSIBLE statüsünde "belirli bir süre" yeniden üretim yapılmayacağı deniyor, süre tanımlı değil | Süre aksiyon tanımında parametrik olmalı; varsayılan değer belirlenmeli | İş | `[yazılacak]` |
+
+**K-01…K-17 ile D-01/D-02 ilişkisi:** Doküman D-01'i (Spark çıktısının OLTP'ye taşınma yolu) kapatmıyor — Bölüm 13 skorların "OLTP'ye geri yazıldığını" söylüyor ama Kafka event mi, DWH ara tablo + ODI mi olduğunu yazmıyor. D-02 (Account Planning maintenance süreç sahipliği) de dokümanda adı geçen bir karar noktası değil; doküman katman bazlı yönetişim sorumlusu (SIGNAL_OWNER, ACTION_OWNER, PERFORMANCE_OWNER, ABTEST_OWNER, MONITORING_OWNER) tanımlıyor ama maintenance süreç sahipliğini bunlardan birine bağlamıyor. İkisi de açık kalmaya devam ediyor. [teyit edilmedi]
 
 ## Haftalık kapanış notları
 
@@ -213,4 +241,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-21*
+*Son güncelleme: 2026-09-22*
