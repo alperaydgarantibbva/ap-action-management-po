@@ -6,6 +6,46 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-23 — Sabah brifingi (issue #29)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. Tören takvimi sorusu 3 kez sorulduğu için artık sorulmuyor. PO haftalık ritminde Çarşamba, sprint hedefi günü — Sprint 1'in hedefi ve bitiş tarihi hâlâ yazılı değil, `02-sprintler/` altında klasör yok.
+- Takvimde geri sayılan bir teslim veya tören yok.
+- Dünkü (issue #28) 5 sorunun tamamı cevapsız kaldı. Hiçbiri o gün ikinci kez sorulmuş değildi; kural gereği bugün ikinci ve son kez soruldular. Cevap gelmezse yarın `05-riskler-engeller.md` bekleyen sorular tablosuna taşınacaklar.
+- 21 Eylül'de yüklenen `03-toplantilar/AccountPlanning-Kapsam-v2.html` (commit 05ab867) sonrası repoya Alper'den yeni içerik gelmedi. Son yirmi iki brifing (issue #7–#28) yorumsuz.
+- Kapsam dokümanının kendi öncelik sırası hatırlatıldı: MVP1 kapsamının kilitlenmesi için önce K-08 (skorlama mimarisi), K-03 (holdout görünürlüğü), K-01 ve K-02 (alt aksiyon davranışı) karara bağlanmalı; dördü de veri modelini ve aksiyon tanım ekranını değiştiriyor.
+- D-01 (Spark çıktısının OLTP'ye taşınma yolu) 23 gündür açık, karar sahibi hâlâ yazılı değil; kapsam dokümanı v2 bu maddeyi kapatmıyor. D-02 (Account Planning maintenance süreç sahipliği) 33 gündür bekliyor. R-01…R-03 de 23 gündür teyit almamış.
+- S-001 33 gündür Taslak (2026-08-21'den beri); backlog'daki tek story, 5 kabul kriteri yazılı ama 4 açık sorusu ve 2 bekleyen bağımlılığı var, Definition of Ready karşılanmıyor.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok; Ağustos ve Eylül turu kaçtı. Taslak 23 gündür hazır: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi.
+
+**Sorular ve cevaplar:**
+1. S: K-08 (skorlama mimarisi: aksiyon başına SQL mi, merkezi tek sorgu mu) kararı kimde? (tek kelime: bende / teknik / ortak — ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: MVP1'in hedef tarihi var mı? (tarih ya da "yok" — ikinci kez)
+   C: *Cevap bekleniyor*
+3. S: Dün `05-riskler-engeller.md`'ye işlenen 17 karar noktası (K-01…K-17) tabloda kalsın mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+4. S: Yol haritasını (MVP1 Omurga / MVP2 Ölçüm / MVP3 Otomasyon) `00-proje/` altına yazıp 5 epic'i bu fazlara bağlayayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+5. S: Paydaş güncellemesini kapsam dokümanı v2 üzerinden yeniden yazayım mı? (ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → bekleme süreleri satırı bugüne çekildi (D-01 23 gün, D-02 33 gün, R-01…R-03 23 gün).
+- Yeni taslak üretilmedi. Onay bekleyen on çıktı zaten duruyor; onaysız çıktı biriktirmenin faydası kalmadığı için bugün eklenmedi. Brifingte iki çıktı teklif edildi (K-08 karşılaştırma notu, yol haritası taslağı) ama Alper "çıkar" demeden yazılmayacak.
+- Bekleyen sorular tablosuna bu turda taşıma yapılmadı: dünkü 5 sorunun hiçbiri o gün ikinci kez sorulmuş değildi, bugün ikinci kez soruldular.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e cevap gelirse K-08'in karar sahibi sütunu dolacak ve asistan tek sayfalık karşılaştırma notunu (merkezi tek sorgu vs aksiyon başına SQL) çıkaracak. 2'ye tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna işlenecek; "yok" gelirse yol haritası tarihsiz kaydedilecek. 3'e "hayır" gelirse K-01…K-17 bölümü silinecek; "evet" gelirse "onaylanmadı" işareti kalkacak ve maddeler D-01/D-02 ile aynı takip düzenine girecek. 4'e "evet" gelirse `00-proje/` altına yol haritası dosyası yazılıp `01-backlog/oncelik.md` epic tablosuna faz sütunu eklenecek. 5'e "evet" gelirse `04-raporlar/` altına kapsam dokümanı v2 temelli yeni paydaş güncellemesi taslağı yazılacak (gönderilmeyecek — Alper gönderir).
+
+**Açık kalanlar:**
+- Yukarıdaki 5 sorunun tamamı. Cevap bekleniyor. Beşi de ikinci kez soruldu; bir sonraki brifingte cevap gelmezse üçüncü kez sorulmayacak ve bekleyen sorular tablosuna taşınacaklar.
+- Bekleyen sorular tablosu 53 satırda, dokuz başlıkta — bu turda değişmedi. Sprint tarihleri, sprint hedefi, tören takvimi, ekip isimleri, epic onayı, paydaş bilgilendirmesi, backlog sıralama kriterlerinin onayı ve S-001'in durumu bu sorular cevaplanmadıkça ilerlemiyor.
+- Kapsam dokümanı v2'nin repoya dağıtılmamış kısımları: yol haritası (MVP1/2/3), 8 rol/yetki bileşeni, 4 sinyal kaynağı, ekran listesi ve kapasite mimarisi. Hâlâ yalnızca HTML içinde; 4. soruya cevap gelmeden `00-proje/` altına taşınmayacak.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-22 — Sabah brifingi (issue #28)
 
 **Brifingte söylenenler:**
