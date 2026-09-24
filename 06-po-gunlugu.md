@@ -6,6 +6,38 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-24 — Sabah brifingi (issue #30)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde paydaş güncelleme günü.
+- Takvimde geri sayılan bir teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #29) 5 sorunun tamamı cevapsız kaldı. Beşi de ikinci kez sorulmuştu; kural gereği bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- Kapsam dokümanı v2'nin öncelik verdiği K-08, K-03, K-01, K-02 kararlarının hiçbiri verilmedi; MVP1 kapsamı bunlar olmadan kilitlenmiyor.
+- D-01 24 gündür açık, karar sahibi yazılı değil. D-02 34 gündür bekliyor.
+- S-001 34 gündür Taslak (2026-08-21'den beri); Definition of Ready karşılanmıyor.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok.
+- Son yirmi üç brifing (issue #7–#29) yorumsuz. Brifingte bundan sonra günde en fazla 2 soru sorulacağı söylendi.
+
+**Sorular ve cevaplar:**
+1. S: Kapsam dokümanı v2 ekiple ya da paydaşlarla paylaşıldı mı? (evet/hayır)
+   C: *Cevap bekleniyor*
+2. S: K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (tarih ya da "yok")
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 2026-09-22'de sorulup ikinci kez cevapsız kalan beş soru bekleyen sorular tablosuna taşındı: MVP1 hedef tarihi A başlığına, yol haritası D başlığına, kapsam v2 temelli paydaş güncellemesi F başlığına, K-08 karar sahibi ile K-01…K-17 tablosunun kalması H başlığına. Tablo 53'ten 58 satıra çıktı; başlık sayıları (A 7, D 4, F 4, H 17) güncellendi. Bekleme süreleri satırı bugüne çekildi (D-01 24 gün, D-02 34 gün).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "hayır" gelirse paydaş güncellemesinin içeriği kapsam dokümanı v2 olacak (taslak yazımı yine Alper'in onayına bağlı). 1'e "evet" gelirse `00-proje/paydaslar.md` son iletişim sütunu [teyit edilmedi] etiketiyle güncellenecek. 2'ye tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna işlenecek; "yok" gelirse asistan dört karar noktası için 30 dakikalık toplantı gündemini `03-toplantilar/` altına çıkaracak.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. İkisi de ilk kez soruldu.
+- Bekleyen sorular tablosu 58 satırda, dokuz başlıkta.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notu, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-23 — Sabah brifingi (issue #29)
 
 **Brifingte söylenenler:**

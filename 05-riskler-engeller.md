@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-09-23 itibarıyla):** D-01 23 gün, D-02 33 gün. R-01 ve R-02/R-03 de 23 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-09-24 itibarıyla):** D-01 24 gün, D-02 34 gün. R-01 ve R-02/R-03 de 24 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -75,6 +75,11 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-24:** Tablo 58 satırda. 2026-09-22'de sorulan beş soru (K-08 karar sahibi, MVP1 hedef
+> tarihi, K-01…K-17 tablosunun kalması, yol haritasının `00-proje/`'ye yazılması, paydaş
+> güncellemesinin kapsam dokümanı v2 üzerinden yeniden yazılması) ikinci kez cevapsız kaldığı için
+> A, D, F ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-21:** Tablo 53 satırda. Dört soru (17 Eylül workshop notunun D-02'yi kapatıp
 > kapatmadığı, S-001'in "Beklemede"ye alınması, 17 Eylül takvim satırının ve hazırlık taslağının
 > silinmesi, paydaş taslağının Eylül'e çekilmesi) ikinci kez cevapsız kaldığı için C, F ve H
@@ -115,7 +120,7 @@
 > tarihleri değişmedi, yalnızca sıralandı. Amaç: bir başlığın tamamını tek oturumda cevaplayabilmek.
 > Bir başlık cevaplanınca o blok "Kapanmış maddeler"e taşınacak.
 
-### A. Sprint ve tören takvimi (6 soru)
+### A. Sprint ve tören takvimi (7 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` şablon değerlerinde kalır, brifing "bugün tören var mı" sorusuna cevap veremez.*
 
@@ -127,6 +132,7 @@
 | 2026-09-07 | Ecem Ekenoğlu ve Dursun Akçeşme'nin istediği ikinci uçtan uca akış toplantısı için tarih belirlendi mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-09 | Sprint 1 için hedef cümlesi taslağını ben yazayım mı? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 | 2026-09-14 | Bu hafta ekiple kayıtlı bir toplantın var mı, varsa hangi gün? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
+| 2026-09-22 | MVP1'in hedef tarihi var mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — yol haritası tarihsiz) |
 
 ### B. Ekip, sahiplik ve ilerleme (4 soru)
 
@@ -155,7 +161,7 @@
 | 2026-09-07 | S-001'in kabul kriterlerine sözdizimi doğrulaması (parser) maddesini ekleyeyim mi? (2 kez soruldu; 2026-09-09'da tabloya taşındı) |
 | 2026-09-17 | S-001'i "Taslak"tan "Beklemede"ye alayım mı? (2 kez soruldu; 2026-09-21'de tabloya taşındı — bağımlılığı D-02 açık) |
 
-### D. Backlog ve epic'ler (3 soru)
+### D. Backlog ve epic'ler (4 soru)
 
 *Cevaplanmazsa: 5 epic ve `oncelik.md` epic tablosu "onaylanmadı" işaretiyle durur, backlog'da tek story kalır.*
 
@@ -164,6 +170,7 @@
 | 2026-08-24 | Vizyondaki 6 başarı kriterinden / Action Engine README'deki 5 başlıktan epic taslakları çıkarayım mı? (2 kez soruldu; 2026-08-31'de onay beklemeden çıkarıldı) |
 | 2026-08-31 | Açılan 5 epic (E-01…E-05) bu haliyle onaylanıyor mu? (2 kez soruldu) |
 | 2026-09-02 | E-01 CAPTURE altına ilk story taslağını çıkarayım mı? (2 kez soruldu) |
+| 2026-09-22 | Yol haritasını (MVP1 Omurga / MVP2 Ölçüm / MVP3 Otomasyon) `00-proje/` altına yazıp 5 epic'i bu fazlara bağlayayım mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı) |
 
 ### E. Öncelik (3 soru)
 
@@ -175,7 +182,7 @@
 | 2026-08-24 | Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu? (2026-08-31'de tekrar soruldu) |
 | 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 
-### F. Paydaş iletişimi (3 soru)
+### F. Paydaş iletişimi (4 soru)
 
 *Cevaplanmazsa: 21 paydaşın "son iletişim" sütunu boş kalır, aylık bilgilendirme sayacı başlamaz.*
 
@@ -184,6 +191,7 @@
 | 2026-08-28 | 21 paydaşa gidecek ilk aylık güncelleme taslağını çıkarayım mı? (2 kez soruldu; 2026-08-31'de onay beklemeden yazıldı: `04-raporlar/2026-08-31-paydas-guncellemesi-taslak.md` — gönderilmedi) |
 | 2026-08-31 | Bu taslak gönderilebilir mi / Eylül'ün ilk haftasında gönderilecek mi? (2 kez soruldu) |
 | 2026-09-17 | Paydaş güncelleme taslağının tarihini Eylül'e çekip göndermeye hazır hale getireyim mi? (2 kez soruldu; 2026-09-21'de tabloya taşındı) |
+| 2026-09-22 | Paydaş güncellemesini kapsam dokümanı v2 üzerinden yeniden yazayım mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı) |
 
 ### G. Proje tanımı ve prototip kapsamı (4 soru)
 
@@ -196,7 +204,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (15 soru)
+### H. Risk, engel ve takvim (17 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -217,6 +225,8 @@
 | 2026-09-16 | D-01 kararını (Kafka event mi, DWH ara tablo + ODI mi) kim verecek — Gökçer Belgüsen mi, Dursun Akçeşme mi? (2 kez soruldu; 2026-09-18'de tabloya taşındı — D-01'in karar sahibi yazılı değil) |
 | 2026-09-17 | `03-toplantilar/20260917-PlanItEarth-Workshop.md` notundaki "ekip tüm geliştirme ve maintenance'dan sorumlu olacak" satırı D-02'yi kapatıyor mu? (2 kez soruldu; 2026-09-21'de tabloya taşındı — D-02 31 gündür açık) |
 | 2026-09-17 | `ekip-ve-ritim.md`'deki 17 Eylül workshop satırını ve `03-toplantilar/20260914-workshop-hazirlik-taslak.md`'yi silelim mi? (2 kez soruldu; 2026-09-21'de tabloya taşındı — tarih kayıt oluşmadan geçti) |
+| 2026-09-22 | K-08 (skorlama mimarisi: aksiyon başına SQL mi, merkezi tek sorgu mu) kararı kimde — Alper / teknik / ortak? (2 kez soruldu; 2026-09-24'te tabloya taşındı — K-08 dokümana göre ilk sırada) |
+| 2026-09-22 | Kapsam dokümanı v2'deki 17 karar noktası (K-01…K-17) bu dosyada tabloda kalsın mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — tablo "onaylanmadı" işaretli duruyor) |
 
 ### I. Brifing kanalı (6 soru)
 
@@ -241,4 +251,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-23*
+*Son güncelleme: 2026-09-24*
