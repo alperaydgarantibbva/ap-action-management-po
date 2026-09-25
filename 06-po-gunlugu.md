@@ -6,6 +6,36 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-25 — Sabah brifingi (issue #31)
+
+**Brifingte söylenenler:**
+- Bugün Cuma; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde haftayı kapatma günü.
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #30) 2 soru cevapsız kaldı; bugün ikinci kez soruldu.
+- Kapsam dokümanı v2'nin öncelik verdiği K-08, K-03, K-01, K-02 kararlarının hiçbiri verilmedi.
+- D-01 25 gündür açık, karar sahibi yazılı değil. D-02 35 gündür bekliyor. S-001 35 gündür Taslak.
+- 21 paydaşın hiçbirinde "son iletişim" kaydı yok.
+
+**Sorular ve cevaplar:**
+1. S: Kapsam dokümanı v2 ekiple ya da paydaşlarla paylaşıldı mı? (evet/hayır — ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (tarih ya da "yok" — ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 2026-09-21 – 2026-09-25 haftalık kapanış notu eklendi; bekleme süreleri satırı bugüne çekildi (D-01 25 gün, D-02 35 gün).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "hayır" gelirse paydaş güncellemesinin içeriği kapsam dokümanı v2 olacak; "evet" gelirse `00-proje/paydaslar.md` son iletişim sütunu [teyit edilmedi] etiketiyle güncellenecek. 2'ye tarih gelirse `00-proje/ekip-ve-ritim.md` önemli tarihler tablosuna işlenecek; "yok" gelirse asistan dört karar için 30 dakikalık toplantı gündemini `03-toplantilar/` altına çıkaracak.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. İkisi de ikinci kez soruldu; bir sonraki brifingte cevap gelmezse bekleyen sorular tablosuna taşınacaklar.
+- Bekleyen sorular tablosu 58 satırda, dokuz başlıkta — bu turda değişmedi.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-24 — Sabah brifingi (issue #30)
 
 **Brifingte söylenenler:**

@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-09-24 itibarıyla):** D-01 24 gün, D-02 34 gün. R-01 ve R-02/R-03 de 24 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-09-25 itibarıyla):** D-01 25 gün, D-02 35 gün. R-01 ve R-02/R-03 de 25 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -70,6 +70,7 @@
 | Hafta | Kapanışta durum |
 |---|---|
 | 2026-09-14 – 2026-09-18 | Repoya Alper'den içerik gelmedi (son commit 6a3560d, 2026-09-04). Hiçbir engel/karar kapanmadı: D-01 18, D-02 28 gündür açık. S-001 28 gündür Taslak. 17 Eylül workshop tarihi kayıt oluşmadan geçti. Paydaş bilgilendirmesinde Ağustos ve Eylül turu kaçtı. Asistan bu hafta `oncelik.md` sıralama kriterlerini ve `03-toplantilar/20260917-karar-formu-taslak.md`'yi onay beklemeden yazdı. |
+| 2026-09-21 – 2026-09-25 | Alper 2026-09-21'de `03-toplantilar/AccountPlanning-Kapsam-v2.html`'i yükledi (commit 05ab867) — 4 Eylül'den beri ilk içerik. Doküman 5 epic'i doğruluyor, 17 karar noktası (K-01…K-17) ve tarihsiz üç fazlı yol haritası getiriyor. Hafta içinde hiçbir karar verilmedi; D-01 (25 gün) ve D-02 (35 gün) kapanmadı, doküman ikisini de kapatmıyor. S-001 35 gündür Taslak. Brifingler (#27–#31) yorumsuz. Asistan K-01…K-17 tablosunu ve R-03 sayılarını onay beklemeden işledi. |
 
 ## Cevap bekleyen sorular
 
