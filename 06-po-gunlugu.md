@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-28 — Sabah brifingi (issue #32)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde haftanın önceliğini belirleme günü.
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- 2026-09-24'te sorulan 2 soru (issue #30, #31) ikinci kez cevapsız kaldı; bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- K-08, K-03, K-01, K-02 kararlarının hiçbiri verilmedi. D-01 28 gündür açık, karar sahibi yazılı değil. D-02 38 gündür bekliyor. S-001 38 gündür Taslak.
+- 31 brifing issue'su açık duruyor; son brifingler (#7–#31) yorumsuz.
+
+**Sorular ve cevaplar:**
+1. S: Bu haftanın tek önceliği K-08 kararı olsun mu? (evet/hayır)
+   C: *Cevap bekleniyor*
+2. S: Açık kalan eski brifing issue'larını (#7–#31) kapatayım mı? (evet/hayır)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → iki soru F (kapsam v2'nin paylaşılması) ve H (dört karar için toplantı) başlıklarına taşındı; tablo 58'den 60 satıra çıktı (F 5, H 18). Bekleme süreleri satırı bugüne çekildi (D-01 28 gün, D-02 38 gün).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse asistan K-08 için tek sayfalık karşılaştırma notunu (aksiyon başına SQL vs merkezi tek sorgu) `03-toplantilar/` altına çıkaracak. 2'ye "evet" gelirse #7–#31 arası brifing issue'ları kapatılacak; sorular `05-riskler-engeller.md`'de kalmaya devam edecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. İkisi de ilk kez soruldu.
+- Bekleyen sorular tablosu 60 satırda, dokuz başlıkta.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-25 — Sabah brifingi (issue #31)
 
 **Brifingte söylenenler:**
