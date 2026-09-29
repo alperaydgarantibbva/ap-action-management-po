@@ -6,6 +6,34 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-29 — Sabah brifingi (issue #33)
+
+**Brifingte söylenenler:**
+- Bugün Salı; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde kabul kriteri günü.
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #32) 2 soru cevapsız kaldı; bugün ikinci kez soruldu.
+- K-08, K-03, K-01, K-02 kararlarının hiçbiri verilmedi. D-01 29 gündür açık, karar sahibi yazılı değil. D-02 39 gündür bekliyor. S-001 39 gündür Taslak.
+
+**Sorular ve cevaplar:**
+1. S: Bu haftanın tek önceliği K-08 kararı olsun mu? (evet/hayır — ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Açık kalan eski brifing issue'larını (#7–#32) kapatayım mı? (evet/hayır — ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → bekleme süreleri satırı bugüne çekildi (D-01 29 gün, D-02 39 gün).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse asistan K-08 için tek sayfalık karşılaştırma notunu (aksiyon başına SQL vs merkezi tek sorgu) `03-toplantilar/` altına çıkaracak. 2'ye "evet" gelirse #7–#32 arası brifing issue'ları kapatılacak; sorular `05-riskler-engeller.md`'de kalmaya devam edecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. İkisi de ikinci kez soruldu; bir sonraki brifingte cevap gelmezse bekleyen sorular tablosuna taşınacaklar.
+- Bekleyen sorular tablosu 60 satırda, dokuz başlıkta — bu turda değişmedi.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-28 — Sabah brifingi (issue #32)
 
 **Brifingte söylenenler:**
