@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-09-29 itibarıyla):** D-01 29 gün, D-02 39 gün. R-01 ve R-02/R-03 de 29 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-09-30 itibarıyla):** D-01 30 gün, D-02 40 gün. R-01 ve R-02/R-03 de 30 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -76,6 +76,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-09-30:** Tablo 62 satırda. 2026-09-28'de sorulan iki soru (bu haftanın tek önceliğinin
+> K-08 kararı olması, eski brifing issue'larının kapatılması) ikinci kez cevapsız kaldığı için E ve I
+> başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-09-28:** Tablo 60 satırda. 2026-09-24'te sorulan iki soru (kapsam dokümanı v2'nin
 > paylaşılıp paylaşılmadığı, K-08/K-03/K-01/K-02 için karar toplantısı planlanıp planlanmadığı)
 > ikinci kez cevapsız kaldığı için F ve H başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -177,7 +181,7 @@
 | 2026-09-02 | E-01 CAPTURE altına ilk story taslağını çıkarayım mı? (2 kez soruldu) |
 | 2026-09-22 | Yol haritasını (MVP1 Omurga / MVP2 Ölçüm / MVP3 Otomasyon) `00-proje/` altına yazıp 5 epic'i bu fazlara bağlayayım mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı) |
 
-### E. Öncelik (3 soru)
+### E. Öncelik (4 soru)
 
 *Cevaplanmazsa: haftalık hedef yazılı olmaz, `oncelik.md` sıralaması onaysız kalır.*
 
@@ -186,6 +190,7 @@
 | 2026-08-19 | Bu hafta ekibin bitirmesini en çok istediğin tek iş ne? (2 kez soruldu) |
 | 2026-08-24 | Bu haftanın tek hedefi S-001'i "Hazır" duruma getirmek olsun mu? (2026-08-31'de tekrar soruldu) |
 | 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
+| 2026-09-28 | Bu haftanın tek önceliği K-08 kararı olsun mu? (2 kez soruldu; 2026-09-30'da tabloya taşındı) |
 
 ### F. Paydaş iletişimi (5 soru)
 
@@ -235,7 +240,7 @@
 | 2026-09-22 | Kapsam dokümanı v2'deki 17 karar noktası (K-01…K-17) bu dosyada tabloda kalsın mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — tablo "onaylanmadı" işaretli duruyor) |
 | 2026-09-24 | K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı — MVP1 kapsamı bu dört karar olmadan kilitlenmiyor) |
 
-### I. Brifing kanalı (6 soru)
+### I. Brifing kanalı (7 soru)
 
 *Cevaplanmazsa: brifingin gün/saat/sıklığı varsayımla yürümeye devam eder. #7–#15 arası dokuz brifing cevapsız.*
 
@@ -247,6 +252,7 @@
 | 2026-08-27 | Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (2 kez soruldu) |
 | 2026-09-03 | Cevap vermeye vaktin yoksa brifingi geçici olarak durdurayım mı? (2 kez soruldu) |
 | 2026-09-04 | Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı) |
+| 2026-09-28 | Açık kalan eski brifing issue'larını (#7–#32) kapatayım mı? (2 kez soruldu; 2026-09-30'da tabloya taşındı — issue'lar açık bırakıldı) |
 
 ## Kapanmış maddeler
 
@@ -258,4 +264,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-24*
+*Son güncelleme: 2026-09-30*

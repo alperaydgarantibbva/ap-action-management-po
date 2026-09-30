@@ -6,6 +6,34 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-09-30 — Sabah brifingi (issue #34)
+
+**Brifingte söylenenler:**
+- Bugün Çarşamba; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #33) 2 soru ikinci kez cevapsız kaldı; bugün `05-riskler-engeller.md` bekleyen sorular tablosuna taşındı ve bir daha sorulmayacak.
+- K-08, K-03, K-01, K-02 kararları 9 gündür bekliyor. D-01 30 gündür açık, D-02 40 gündür bekliyor. S-001'in kabul kriterleri yazılı, D-02 bağımlılığı nedeniyle Taslak.
+- 21 paydaşa hiç güncelleme gitmedi; Eylül turu da kaçıyor.
+
+**Sorular ve cevaplar:**
+1. S: K-08 kararı (aksiyon başına SQL mi, merkezi tek sorgu mu) verildi mi? (evet/hayır — ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → "Bu haftanın tek önceliği K-08 olsun mu?" sorusu E başlığına, "Eski brifing issue'larını kapatayım mı?" sorusu I başlığına taşındı; tablo 60'tan 62 satıra çıktı (E 4, I 7). Bekleme süreleri satırı bugüne çekildi (D-01 30 gün, D-02 40 gün).
+- Eski brifing issue'ları kapatılmadı (onay gelmedi).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse K-08 kararı ve gerekçesi `00-proje/kararlar.md`'ye yazılacak, K-01…K-17 tablosunda işaretlenecek. "hayır" gelirse asistan iki seçeneği karşılaştıran tek sayfalık notu `03-toplantilar/` altına çıkaracak.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor.
+- Bekleyen sorular tablosu 62 satırda, dokuz başlıkta.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-29 — Sabah brifingi (issue #33)
 
 **Brifingte söylenenler:**
