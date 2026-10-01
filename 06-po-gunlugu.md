@@ -6,6 +6,34 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-01 — Sabah brifingi (issue #35)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde paydaş güncelleme günü.
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #34) tek soru cevapsız kaldı; bugün ikinci kez soruldu.
+- K-08 kararı 10 gündür bekliyor (kapsam v2 2026-09-21'de yüklendi). D-01 31 gündür, D-02 41 gündür açık.
+- Ekim başladı; 21 paydaşa hiç güncelleme gitmedi (Ağustos ve Eylül turları kaçtı).
+
+**Sorular ve cevaplar:**
+1. S: K-08 kararı (aksiyon başına SQL mi, merkezi tek sorgu mu) verildi mi? (evet/hayır — ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → bekleme süreleri satırı bugüne çekildi (D-01 31 gün, D-02 41 gün).
+- Brifingte 3 cümlelik Ekim paydaş notu teklif edildi; Alper "2: yaz" demeden yazılmayacak.
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1'e "evet" gelirse K-08 kararı ve gerekçesi `00-proje/kararlar.md`'ye yazılacak, K-01…K-17 tablosunda işaretlenecek. "hayır" gelirse asistan iki seçeneği karşılaştıran tek sayfalık notu `03-toplantilar/` altına çıkaracak. "2: yaz" gelirse `04-raporlar/` altına Ekim paydaş notu taslağı yazılacak (gönderilmeyecek).
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. İkinci kez soruldu; bir sonraki brifingte cevap gelmezse bekleyen sorular tablosuna taşınacak.
+- Bekleyen sorular tablosu 62 satırda, dokuz başlıkta — bu turda değişmedi.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-09-30 — Sabah brifingi (issue #34)
 
 **Brifingte söylenenler:**
