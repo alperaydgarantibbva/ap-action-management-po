@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-01 itibarıyla):** D-01 31 gün, D-02 41 gün. R-01 ve R-02/R-03 de 31 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-10-02 itibarıyla):** D-01 32 gün, D-02 42 gün. R-01 ve R-02/R-03 de 32 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -70,12 +70,16 @@
 | Hafta | Kapanışta durum |
 |---|---|
 | 2026-09-14 – 2026-09-18 | Repoya Alper'den içerik gelmedi (son commit 6a3560d, 2026-09-04). Hiçbir engel/karar kapanmadı: D-01 18, D-02 28 gündür açık. S-001 28 gündür Taslak. 17 Eylül workshop tarihi kayıt oluşmadan geçti. Paydaş bilgilendirmesinde Ağustos ve Eylül turu kaçtı. Asistan bu hafta `oncelik.md` sıralama kriterlerini ve `03-toplantilar/20260917-karar-formu-taslak.md`'yi onay beklemeden yazdı. |
+| 2026-09-28 – 2026-10-02 | Repoya Alper'den içerik gelmedi (son içerik 05ab867, 2026-09-21). Hiçbir karar verilmedi: K-08 11 gündür bekliyor, D-01 32, D-02 42 gündür açık. S-001 42 gündür Taslak. 21 paydaşa hâlâ güncelleme gitmedi; Ekim'e girildi. Brifingler (#32–#36) yorumsuz. Bekleyen sorular tablosu 60'tan 63 satıra çıktı. Asistan bu hafta yeni taslak üretmedi. |
 | 2026-09-21 – 2026-09-25 | Alper 2026-09-21'de `03-toplantilar/AccountPlanning-Kapsam-v2.html`'i yükledi (commit 05ab867) — 4 Eylül'den beri ilk içerik. Doküman 5 epic'i doğruluyor, 17 karar noktası (K-01…K-17) ve tarihsiz üç fazlı yol haritası getiriyor. Hafta içinde hiçbir karar verilmedi; D-01 (25 gün) ve D-02 (35 gün) kapanmadı, doküman ikisini de kapatmıyor. S-001 35 gündür Taslak. Brifingler (#27–#31) yorumsuz. Asistan K-01…K-17 tablosunu ve R-03 sayılarını onay beklemeden işledi. |
 
 ## Cevap bekleyen sorular
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-10-02:** Tablo 63 satırda. K-08 kararının verilip verilmediği sorusu (2026-09-30, 2026-10-01)
+> ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-09-30:** Tablo 62 satırda. 2026-09-28'de sorulan iki soru (bu haftanın tek önceliğinin
 > K-08 kararı olması, eski brifing issue'larının kapatılması) ikinci kez cevapsız kaldığı için E ve I
 > başlıklarına taşındı; artık brifingte sorulmuyorlar.
@@ -215,7 +219,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (18 soru)
+### H. Risk, engel ve takvim (19 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -239,6 +243,7 @@
 | 2026-09-22 | K-08 (skorlama mimarisi: aksiyon başına SQL mi, merkezi tek sorgu mu) kararı kimde — Alper / teknik / ortak? (2 kez soruldu; 2026-09-24'te tabloya taşındı — K-08 dokümana göre ilk sırada) |
 | 2026-09-22 | Kapsam dokümanı v2'deki 17 karar noktası (K-01…K-17) bu dosyada tabloda kalsın mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — tablo "onaylanmadı" işaretli duruyor) |
 | 2026-09-24 | K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı — MVP1 kapsamı bu dört karar olmadan kilitlenmiyor) |
+| 2026-09-30 | K-08 kararı (aksiyon başına SQL mi, merkezi tek sorgu mu) verildi mi? (2 kez soruldu; 2026-10-02'de tabloya taşındı) |
 
 ### I. Brifing kanalı (7 soru)
 
@@ -264,4 +269,4 @@
 
 ---
 
-*Son güncelleme: 2026-10-01*
+*Son güncelleme: 2026-10-02*
