@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-05 itibarıyla):** D-01 35 gün, D-02 45 gün. R-01 ve R-02/R-03 de 35 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-10-06 itibarıyla):** D-01 36 gün, D-02 46 gün. R-01 ve R-02/R-03 de 36 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -77,6 +77,9 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-10-06:** Tablo 64 satırda. Ekim paydaş notu sorusu (2026-10-02, 2026-10-05) ikinci kez
+> cevapsız kaldığı için F başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-10-02:** Tablo 63 satırda. K-08 kararının verilip verilmediği sorusu (2026-09-30, 2026-10-01)
 > ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -196,7 +199,7 @@
 | 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 | 2026-09-28 | Bu haftanın tek önceliği K-08 kararı olsun mu? (2 kez soruldu; 2026-09-30'da tabloya taşındı) |
 
-### F. Paydaş iletişimi (5 soru)
+### F. Paydaş iletişimi (6 soru)
 
 *Cevaplanmazsa: 21 paydaşın "son iletişim" sütunu boş kalır, aylık bilgilendirme sayacı başlamaz.*
 
@@ -207,6 +210,7 @@
 | 2026-09-17 | Paydaş güncelleme taslağının tarihini Eylül'e çekip göndermeye hazır hale getireyim mi? (2 kez soruldu; 2026-09-21'de tabloya taşındı) |
 | 2026-09-22 | Paydaş güncellemesini kapsam dokümanı v2 üzerinden yeniden yazayım mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı) |
 | 2026-09-24 | Kapsam dokümanı v2 ekiple ya da paydaşlarla paylaşıldı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı) |
+| 2026-10-02 | Ekim paydaş notunu (3 cümle) `04-raporlar/` altına taslak olarak yazayım mı? (2 kez soruldu; 2026-10-06'da tabloya taşındı — yazılmadı) |
 
 ### G. Proje tanımı ve prototip kapsamı (4 soru)
 
