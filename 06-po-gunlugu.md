@@ -6,6 +6,32 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-08 — Sabah brifingi (issue #40)
+
+**Brifingte söylenenler:**
+- Bugün Perşembe; kayıtlı tören yok, `00-proje/ekip-ve-ritim.md` tören takvimi hâlâ şablon değerlerinde [teyit edilmedi]. PO haftalık ritminde paydaş güncellemesi günü.
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Dünkü (issue #39) K-08 gün sorusu ikinci kez cevapsız kaldı; bugün `05-riskler-engeller.md` bekleyen sorular tablosunun H başlığına taşındı ve bir daha sorulmayacak.
+- K-08 17 gündür, D-01 38 gündür, D-02 48 gündür bekliyor. 21 paydaşa hiç güncelleme gitmedi.
+
+**Sorular ve cevaplar:**
+1. S: K-08 için iki seçeneği karşılaştıran tek sayfalık notu bugün, gün beklemeden yazayım mı? (evet/hayır — ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → K-08 gün sorusu H başlığına taşındı (tablo 64'ten 65 satıra, H 20). Bekleme süreleri satırı bugüne çekildi (D-01 38 gün, D-02 48 gün).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse K-08 için iki seçeneği (aksiyon başına SQL / merkezi tek sorgu) karşılaştıran tek sayfalık not `03-toplantilar/` altına hazırlanacak; Alper'den yalnızca seçim istenecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor.
+- Bekleyen sorular tablosu 65 satırda, dokuz başlıkta.
+- Onay beklemeden üretilen çıktılar (5 epic, epic tablosu, paydaş taslağı, workshop hazırlık taslağı, karar formu, sıralama kriterleri, gruplanmış soru tablosu, haftalık kapanış notları, D-01/D-02 ve R-01…R-03 kayıtları, S-001 bağlam notu, K-01…K-17 tablosu) "onaylanmadı" işaretli. Alper reddederse geri alınacak.
+
+---
+
 ## 2026-10-07 — Sabah brifingi (issue #39)
 
 **Brifingte söylenenler:**

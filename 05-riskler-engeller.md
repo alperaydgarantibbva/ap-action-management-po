@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-07 itibarıyla):** D-01 37 gün, D-02 47 gün. R-01 ve R-02/R-03 de 37 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-10-08 itibarıyla):** D-01 38 gün, D-02 48 gün. R-01 ve R-02/R-03 de 38 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -77,6 +77,9 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-10-08:** Tablo 65 satırda. K-08 için 10 dakika ayrılacak gün sorusu (2026-10-06, 2026-10-07)
+> ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-10-06:** Tablo 64 satırda. Ekim paydaş notu sorusu (2026-10-02, 2026-10-05) ikinci kez
 > cevapsız kaldığı için F başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -223,7 +226,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (19 soru)
+### H. Risk, engel ve takvim (20 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -248,6 +251,7 @@
 | 2026-09-22 | Kapsam dokümanı v2'deki 17 karar noktası (K-01…K-17) bu dosyada tabloda kalsın mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — tablo "onaylanmadı" işaretli duruyor) |
 | 2026-09-24 | K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı — MVP1 kapsamı bu dört karar olmadan kilitlenmiyor) |
 | 2026-09-30 | K-08 kararı (aksiyon başına SQL mi, merkezi tek sorgu mu) verildi mi? (2 kez soruldu; 2026-10-02'de tabloya taşındı) |
+| 2026-10-06 | Bu hafta K-08 için 10 dakika ayırabileceğin gün hangisi? (2 kez soruldu; 2026-10-08'de tabloya taşındı) |
 
 ### I. Brifing kanalı (7 soru)
 
