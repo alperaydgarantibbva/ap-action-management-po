@@ -15,7 +15,7 @@
 
 - **Sprint uzunluğu:** `[örn. 2 hafta]`
 - **Sprint başlangıç günü:** `[örn. Çarşamba]`
-- **Aktif sprint:** `[örn. Sprint 7]`
+- **Aktif sprint:** Sprint 1 (Alper, 2026-08-21: "evet, spring 1"; bugün hâlâ geçerli mi [teyit edilmedi])
 - **Aktif sprint tarihleri:** `[başlangıç] – [bitiş]`
 
 ## Tören takvimi
@@ -50,4 +50,4 @@
 
 ---
 
-*Son güncelleme: 2026-09-18*
+*Son güncelleme: 2026-10-09*

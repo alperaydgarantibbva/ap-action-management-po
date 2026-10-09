@@ -6,6 +6,38 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-09 — Sabah brifingi (issue #41)
+
+**Brifingte söylenenler:**
+- Bugün Cuma, haftayı kapatma günü; kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Alper'in 2026-08-21'de bu dosyanın 2026-08-20 kaydına doğrudan yazdığı cevaplar (commit c5329e2) bugüne kadar işlenmemişti: brifing yalnızca Pazartesi ve Cuma, Sprint 1 aktif. Brifingte bu kabul edildi ve özür dilendi.
+- K-08 18 gündür, D-01 39 gündür, D-02 49 gündür bekliyor. 21 paydaşa hiç güncelleme gitmedi.
+
+**Sorular ve cevaplar:**
+1. S: K-08 için iki seçeneği karşılaştıran tek sayfalık notu yazayım mı? (evet/hayır, ikinci kez)
+   C: *Cevap bekleniyor*
+2. S: Cevaplarını issue yorumu yerine doğrudan günlük dosyasına yazmak sana daha mı kolay geliyor? (evet/hayır; I tablosundaki 2026-08-25 sorusunun ikinci soruluşu)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `00-proje/kararlar.md` → K-002 (brifing yalnızca Pazartesi ve Cuma) eklendi. Alper'in kendi cevabı olduğu için onay beklenmedi.
+- `ASISTAN.md` bölüm 3 → Salı–Perşembe brifing açılmaz kuralı ve "günlüğe doğrudan yazılan cevapları kontrol et" kuralı eklendi.
+- `00-proje/ekip-ve-ritim.md` → aktif sprint "Sprint 1" olarak yazıldı (bugün hâlâ geçerli mi [teyit edilmedi]).
+- `05-riskler-engeller.md` → 2026-10-05 – 2026-10-09 haftalık kapanış notu yazıldı, bekleme süreleri bugüne çekildi.
+- Workflow cron satırına dokunulmadı: bot tarafından değiştirilen cron çalışmıyor. Alper'den `'30 5 * * 1,5'` yapması istendi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1 "evet" gelirse K-08 notu `03-toplantilar/` altına hazırlanacak; bir sonraki brifing Pazartesi (2026-10-12) olduğu için not o güne kadar yazılacak.
+- 2 "evet" gelirse `ASISTAN.md`'ye cevap kanalının günlük dosyası olduğu yazılacak ve I tablosundaki satır kapanacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. 1 numara ikinci kez soruldu; Pazartesi cevap gelmezse H başlığına taşınacak.
+- Cron değişikliği Alper'de. Yapılana kadar Salı–Perşembe çalışmaları issue açmadan bitecek.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-08 — Sabah brifingi (issue #40)
 
 **Brifingte söylenenler:**

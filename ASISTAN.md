@@ -40,6 +40,10 @@ Jira'yı okuyamadığın için **tahmin etme, sor.** Ama akıllıca sor:
 
 ## 3. Sabah brifingi (hafta içi 08:30)
 
+**Brifing günleri: yalnızca Pazartesi ve Cuma** (Alper'in 2026-08-21 kararı, bkz. `00-proje/kararlar.md` K-002). Workflow Salı, Çarşamba veya Perşembe tetiklenirse issue açma, günlüğe yazma, commit atma; çıktıya "Bugün brifing günü değil (K-002)" yazıp bitir. Bu satır cron `1,5` olarak değiştirilince gereksizleşir ama zarar vermez.
+
+**Cevap kanalı:** Alper cevabı issue yorumu yerine doğrudan `06-po-gunlugu.md`'deki `C:` satırlarına da yazabilir. Her brifingte önce Alper'in son commit'lerinde günlüğe yazılmış cevap olup olmadığına bak (`git log --author`).
+
 Brifing bir **GitHub issue** olarak açılır: başlık `PO Brifingi — YYYY-AA-GG`, etiket `po-brifing`. Alper yoruma cevap yazar; cevap `po-asistan.yml` workflow'unu tetikler.
 
 Sırayla:
