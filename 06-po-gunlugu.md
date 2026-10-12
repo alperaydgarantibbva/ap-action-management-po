@@ -6,6 +6,37 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-12 — Sabah brifingi (issue #42)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi; kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılan teslim veya tören yok; MVP1 hedef tarihi yazılı değil.
+- Cuma'daki (issue #41) 2 soru ikinci kez cevapsız kaldı; bugün bekleyen sorular tablosuna taşındı.
+- K-08 21 gündür, D-01 42 gündür, D-02 52 gündür bekliyor. 21 paydaşa hiç güncelleme gitmedi.
+- Cron hâlâ `1-5`; Alper'den `1,5` yapması tekrar istendi.
+
+**Sorular ve cevaplar:**
+1. S: Sprint 1 bitti mi? (evet/hayır — ilk kez; 2026-08-21'de "aktif" denmişti)
+   C: *Cevap bekleniyor*
+2. S: Bu brifingi okudun mu? ("+" yeterli — ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → K-08 tek sayfalık not sorusu H başlığına taşındı (tablo 65'ten 66 satıra, H 21); I tablosundaki cevap kanalı sorusuna 2026-10-09 tekrarı not edildi. Bekleme süreleri bugüne çekildi (D-01 42 gün, D-02 52 gün).
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21).
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- 1 "evet" gelirse `ekip-ve-ritim.md` aktif sprint satırı güncellenecek ve Sprint 2 hedef cümlesi taslağı onaya sunulacak. "hayır" gelirse bitiş tarihi sorulacak.
+- 2 "+" gelirse brifingin okunduğu kabul edilip format korunacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 2 soru. Cevap bekleniyor. Bir sonraki brifing Cuma (2026-10-16).
+- Cron değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-09 — Sabah brifingi (issue #41)
 
 **Brifingte söylenenler:**

@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-09 itibarıyla):** D-01 39 gün, D-02 49 gün. R-01 ve R-02/R-03 de 39 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-10-12 itibarıyla):** D-01 42 gün, D-02 52 gün, K-08 21 gün. R-01 ve R-02/R-03 de 42 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -78,6 +78,9 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-10-12:** Tablo 66 satırda. K-08 tek sayfalık not sorusu (2026-10-08, 2026-10-09) ikinci kez
+> cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-10-08:** Tablo 65 satırda. K-08 için 10 dakika ayrılacak gün sorusu (2026-10-06, 2026-10-07)
 > ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -227,7 +230,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (20 soru)
+### H. Risk, engel ve takvim (21 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -253,6 +256,7 @@
 | 2026-09-24 | K-08/K-03/K-01/K-02 için bir karar toplantısı planlandı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı — MVP1 kapsamı bu dört karar olmadan kilitlenmiyor) |
 | 2026-09-30 | K-08 kararı (aksiyon başına SQL mi, merkezi tek sorgu mu) verildi mi? (2 kez soruldu; 2026-10-02'de tabloya taşındı) |
 | 2026-10-06 | Bu hafta K-08 için 10 dakika ayırabileceğin gün hangisi? (2 kez soruldu; 2026-10-08'de tabloya taşındı) |
+| 2026-10-08 | K-08 için iki seçeneği karşılaştıran tek sayfalık notu yazayım mı? (2 kez soruldu; 2026-10-12'de tabloya taşındı — not yazılmadı) |
 
 ### I. Brifing kanalı (7 soru)
 
@@ -262,7 +266,7 @@
 |---|---|
 | 2026-08-20 | Brifingleri telefonunda bildirim olarak görüyor musun? (2 kez soruldu) |
 | 2026-08-20 | Brifing saati 08:30 uygun mu, 18:00 daha mı iyi? (2 kez soruldu) |
-| 2026-08-25 | Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi? |
+| 2026-08-25 | Soruları cevaplamak için issue yorumu mu daha kolay, doğrudan commit mi? (2026-10-09'da tekrar soruldu, cevapsız; 2026-10-12'de kapatıldı, bir daha sorulmayacak) |
 | 2026-08-27 | Brifing hafta içi her gün mü çalışsın, Pazartesi/Cuma mı kalsın? (2 kez soruldu) |
 | 2026-09-03 | Cevap vermeye vaktin yoksa brifingi geçici olarak durdurayım mı? (2 kez soruldu) |
 | 2026-09-04 | Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı) |
@@ -278,4 +282,4 @@
 
 ---
 
-*Son güncelleme: 2026-10-09*
+*Son güncelleme: 2026-10-12*
