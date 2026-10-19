@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-19 — Sabah brifingi (issue #44)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi. Kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılacak teslim yok, MVP1 hedef tarihi yazılmamış.
+- #42 ve #43'teki 2 soru (Sprint 1 bitti mi, brifing okunuyor mu) ikinci kez cevapsız kaldı. Bugün A ve I başlıklarına taşındı.
+- K-08 28 gündür, D-01 49 gündür, D-02 59 gündür bekliyor. S-001 59 gündür Taslak. Alper'den son içerik 2026-09-21'de geldi (28 gün önce).
+- Format değişikliği duyuruldu: yeni girdi gelmezse sonraki brifingler 3 satıra inecek. Alper itiraz ederse eski formata dönülecek.
+
+**Sorular ve cevaplar:**
+1. S: Proje şu an askıda mı? (evet/hayır — ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → iki soru A ve I başlıklarına taşındı (tablo 66'dan 68 satıra). Bekleme süreleri bugüne çekildi (D-01 49 gün, D-02 59 gün, K-08 28 gün).
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21). #42 ve #43'te yorum yok.
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse proje durumu askıda diye `ekip-ve-ritim.md`'ye yazılacak ve brifing, Alper yeniden başlatana kadar haftada tek satıra indirilecek (K-002'yi değiştireceği için Alper'den onay istenecek).
+- "hayır" gelirse K-08 için iki seçeneği karşılaştıran tek sayfalık not `03-toplantilar/` altına hazırlanacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. Bir sonraki brifing Cuma (2026-10-23).
+- Cron (`1-5` → `1,5`) değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-16 — Sabah brifingi (issue #43)
 
 **Brifingte söylenenler:**

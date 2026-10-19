@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-16 itibarıyla):** D-01 46 gün, D-02 56 gün, K-08 24 gün. R-01 ve R-02/R-03 de 46 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-10-19 itibarıyla):** D-01 49 gün, D-02 59 gün, K-08 28 gün. R-01 ve R-02/R-03 de 49 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -79,6 +79,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-10-19:** Tablo 68 satırda. 2026-10-12 ve 2026-10-16'da sorulan iki soru (Sprint 1'in
+> bitip bitmediği, brifingin okunup okunmadığı) ikinci kez cevapsız kaldığı için A ve I
+> başlıklarına taşındı; artık brifingte sorulmuyorlar.
+>
 > **2026-10-12:** Tablo 66 satırda. K-08 tek sayfalık not sorusu (2026-10-08, 2026-10-09) ikinci kez
 > cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -144,7 +148,7 @@
 > tarihleri değişmedi, yalnızca sıralandı. Amaç: bir başlığın tamamını tek oturumda cevaplayabilmek.
 > Bir başlık cevaplanınca o blok "Kapanmış maddeler"e taşınacak.
 
-### A. Sprint ve tören takvimi (7 soru)
+### A. Sprint ve tören takvimi (8 soru)
 
 *Cevaplanmazsa: `ekip-ve-ritim.md` şablon değerlerinde kalır, brifing "bugün tören var mı" sorusuna cevap veremez.*
 
@@ -157,6 +161,7 @@
 | 2026-09-09 | Sprint 1 için hedef cümlesi taslağını ben yazayım mı? (2 kez soruldu; 2026-09-11'de tabloya taşındı) |
 | 2026-09-14 | Bu hafta ekiple kayıtlı bir toplantın var mı, varsa hangi gün? (2 kez soruldu; 2026-09-16'da tabloya taşındı) |
 | 2026-09-22 | MVP1'in hedef tarihi var mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı — yol haritası tarihsiz) |
+| 2026-10-12 | Sprint 1 bitti mi? (2 kez soruldu; 2026-10-19'da tabloya taşındı — aktif sprint bilgisi 2026-08-21'den kalma) |
 
 ### B. Ekip, sahiplik ve ilerleme (4 soru)
 
@@ -259,7 +264,7 @@
 | 2026-10-06 | Bu hafta K-08 için 10 dakika ayırabileceğin gün hangisi? (2 kez soruldu; 2026-10-08'de tabloya taşındı) |
 | 2026-10-08 | K-08 için iki seçeneği karşılaştıran tek sayfalık notu yazayım mı? (2 kez soruldu; 2026-10-12'de tabloya taşındı — not yazılmadı) |
 
-### I. Brifing kanalı (7 soru)
+### I. Brifing kanalı (8 soru)
 
 *Cevaplanmazsa: brifingin gün/saat/sıklığı varsayımla yürümeye devam eder. #7–#15 arası dokuz brifing cevapsız.*
 
@@ -272,6 +277,7 @@
 | 2026-09-03 | Cevap vermeye vaktin yoksa brifingi geçici olarak durdurayım mı? (2 kez soruldu) |
 | 2026-09-04 | Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı) |
 | 2026-09-28 | Açık kalan eski brifing issue'larını (#7–#32) kapatayım mı? (2 kez soruldu; 2026-09-30'da tabloya taşındı — issue'lar açık bırakıldı) |
+| 2026-10-12 | Bu brifingi okuyor musun? ("+" yeterli; 2 kez soruldu; 2026-10-19'da tabloya taşındı) |
 
 ## Kapanmış maddeler
 
