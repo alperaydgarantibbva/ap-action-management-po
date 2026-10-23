@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-23 — Sabah brifingi (issue #45)
+
+**Brifingte söylenenler:**
+- Bugün Cuma, haftayı kapatma günü. Kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılacak teslim yok, MVP1 hedef tarihi yazılmamış.
+- #44'teki soru (proje askıda mı) cevapsız kaldı, bugün ikinci kez soruldu.
+- K-08 32 gündür, D-01 53 gündür, D-02 63 gündür bekliyor. S-001 63 gündür Taslak. Alper'den son içerik 2026-09-21'de geldi (32 gün önce).
+
+**Sorular ve cevaplar:**
+1. S: Proje şu an askıda mı? (evet/hayır, ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 2026-10-19 – 2026-10-23 haftalık kapanış notu yazıldı, bekleme süreleri bugüne çekildi.
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21). #41–#44'te yorum yok.
+- Yeni soru eklenmedi, yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse proje durumu askıda diye `ekip-ve-ritim.md`'ye yazılacak ve brifingin haftada tek satıra indirilmesi için Alper'den onay istenecek (K-002'yi değiştirir).
+- "hayır" gelirse K-08 için iki seçeneği karşılaştıran tek sayfalık not `03-toplantilar/` altına hazırlanacak.
+- Cevap gelmezse Pazartesi (2026-10-26) soru bekleyen sorular tablosuna (H başlığı) taşınacak ve tekrar sorulmayacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. Bir sonraki brifing Pazartesi (2026-10-26).
+- Cron (`1-5` → `1,5`) değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-19 — Sabah brifingi (issue #44)
 
 **Brifingte söylenenler:**
