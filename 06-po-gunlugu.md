@@ -6,6 +6,35 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-10-30 — Sabah brifingi (issue #47)
+
+**Brifingte söylenenler:**
+- Bugün Cuma, haftayı kapatma günü. Kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılacak teslim yok, MVP1 hedef tarihi yazılmamış.
+- #46'daki soru (yalnızca Pazartesi brifingi) cevapsız kaldı, bugün ikinci kez soruldu.
+- K-08 39 gündür, D-01 60 gündür, D-02 70 gündür bekliyor. S-001 70 gündür Taslak. Alper'den son içerik 2026-09-21'de geldi (39 gün önce).
+
+**Sorular ve cevaplar:**
+1. S: Cevap gelene kadar brifingi yalnızca Pazartesi açayım mı? (evet/hayır, ikinci kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → 2026-10-26 – 2026-10-30 haftalık kapanış notu yazıldı, bekleme süreleri bugüne çekildi (D-01 60 gün, D-02 70 gün, K-08 39 gün).
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21). #46'da yorum yok.
+- Yeni soru eklenmedi, yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse K-002 güncellenip `ASISTAN.md` bölüm 3'e "cevap gelene kadar yalnızca Pazartesi" yazılacak; Alper'den cron'u `'30 5 * * 1'` yapması istenecek.
+- "hayır" gelirse Pazartesi/Cuma düzeni (K-002) aynen sürecek.
+- Cevap gelmezse Pazartesi (2026-11-02) soru bekleyen sorular tablosuna (I başlığı) taşınacak ve tekrar sorulmayacak; K-002 geçerli kalacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. Bir sonraki brifing Pazartesi (2026-11-02).
+- Cron (`1-5` → `1,5`) değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-26 — Sabah brifingi (issue #46)
 
 **Brifingte söylenenler:**
