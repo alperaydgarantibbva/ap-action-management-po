@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-10-30 itibarıyla):** D-01 60 gün, D-02 70 gün, K-08 39 gün. R-01 ve R-02/R-03 de 60 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-11-02 itibarıyla):** D-01 63 gün, D-02 73 gün, K-08 42 gün. R-01 ve R-02/R-03 de 63 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -81,6 +81,10 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-11-02:** Tablo 70 satırda. "Cevap gelene kadar brifingi yalnızca Pazartesi açayım mı?" sorusu
+> (2026-10-26, 2026-10-30) ikinci kez cevapsız kaldığı için I başlığına taşındı; artık brifingte sorulmuyor.
+> K-002 (Pazartesi/Cuma) geçerli kalıyor.
+>
 > **2026-10-26:** Tablo 69 satırda. "Proje askıda mı?" sorusu (2026-10-19, 2026-10-23) ikinci kez
 > cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -270,7 +274,7 @@
 | 2026-10-08 | K-08 için iki seçeneği karşılaştıran tek sayfalık notu yazayım mı? (2 kez soruldu; 2026-10-12'de tabloya taşındı — not yazılmadı) |
 | 2026-10-19 | Proje şu an askıda mı? (2 kez soruldu; 2026-10-26'da tabloya taşındı — cevaba göre K-08 notu veya brifing sıklığı değişecekti) |
 
-### I. Brifing kanalı (8 soru)
+### I. Brifing kanalı (9 soru)
 
 *Cevaplanmazsa: brifingin gün/saat/sıklığı varsayımla yürümeye devam eder. #7–#15 arası dokuz brifing cevapsız.*
 
@@ -284,6 +288,7 @@
 | 2026-09-04 | Bugüne kadar cevapsız kalan soruları tek bir kontrol listesi issue'sunda toplayayım mı? (2 kez soruldu; 2026-09-10'da tabloya taşındı) |
 | 2026-09-28 | Açık kalan eski brifing issue'larını (#7–#32) kapatayım mı? (2 kez soruldu; 2026-09-30'da tabloya taşındı — issue'lar açık bırakıldı) |
 | 2026-10-12 | Bu brifingi okuyor musun? ("+" yeterli; 2 kez soruldu; 2026-10-19'da tabloya taşındı) |
+| 2026-10-26 | Cevap gelene kadar brifingi yalnızca Pazartesi açayım mı? (2 kez soruldu; 2026-11-02'de tabloya taşındı — K-002 Pazartesi/Cuma olarak sürüyor) |
 
 ## Kapanmış maddeler
 
@@ -295,4 +300,4 @@
 
 ---
 
-*Son güncelleme: 2026-10-12*
+*Son güncelleme: 2026-11-02*

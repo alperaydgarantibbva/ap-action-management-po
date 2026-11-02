@@ -6,6 +6,34 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-11-02 — Sabah brifingi (issue #48)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi. Kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılacak teslim yok, MVP1 hedef tarihi yazılmamış.
+- "Yalnızca Pazartesi brifingi" sorusu (#46, #47) ikinci kez cevapsız kaldı. Bugün I başlığına taşındı. K-002 (Pazartesi/Cuma) geçerli.
+- K-08 42 gündür, D-01 63 gündür, D-02 73 gündür bekliyor. S-001 73 gündür Taslak. Alper'den son içerik 2026-09-21'de geldi (42 gün önce).
+
+**Sorular ve cevaplar:**
+1. S: K-08 Kasım'da gündemde mi? (evet/hayır, ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → "yalnızca Pazartesi" sorusu I başlığına taşındı (tablo 69'dan 70 satıra, I 9). Bekleme süreleri bugüne çekildi (D-01 63 gün, D-02 73 gün, K-08 42 gün).
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21). #46 ve #47'de yorum yok.
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "evet" gelirse K-08 karar sahibi ve tarihi sorulacak, iki seçeneği karşılaştıran not önerilecek.
+- "hayır" gelirse K-08 `05-riskler-engeller.md`'de "Kasım'da gündem dışı" diye işaretlenecek, brifinglerde gün sayımı bırakılacak.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. Bir sonraki brifing Cuma (2026-11-06).
+- Cron (`1-5` → `1,5`) değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-10-30 — Sabah brifingi (issue #47)
 
 **Brifingte söylenenler:**
