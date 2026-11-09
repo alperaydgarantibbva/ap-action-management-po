@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-11-06 itibarıyla):** D-01 67 gün, D-02 77 gün, K-08 46 gün. R-01 ve R-02/R-03 de 67 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-11-09 itibarıyla):** D-01 70 gün, D-02 80 gün, K-08 49 gün. R-01 ve R-02/R-03 de 70 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -82,6 +82,9 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-11-09:** Tablo 71 satırda. "K-08 Kasım'da gündemde mi?" sorusu (2026-11-02, 2026-11-06)
+> ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-11-02:** Tablo 70 satırda. "Cevap gelene kadar brifingi yalnızca Pazartesi açayım mı?" sorusu
 > (2026-10-26, 2026-10-30) ikinci kez cevapsız kaldığı için I başlığına taşındı; artık brifingte sorulmuyor.
 > K-002 (Pazartesi/Cuma) geçerli kalıyor.
@@ -246,7 +249,7 @@
 | 2026-08-27 | Action Engine prototipi ekibin geliştirme kapsamında mı, hizalanma amaçlı ayrı bir çalışma mı? (2 kez soruldu) |
 | 2026-09-10 | 31 Ağustos Architecture notundaki uçtan uca akışı tek sayfalık şemaya ben çevireyim mi? (2 kez soruldu; 2026-09-14'te tabloya taşındı) |
 
-### H. Risk, engel ve takvim (22 soru)
+### H. Risk, engel ve takvim (23 soru)
 
 *Cevaplanmazsa: aktif engel tablosu ve risk tablosu boş kalır — engel/risk olmadığı için değil, teyit alınamadığı için.*
 
@@ -274,6 +277,7 @@
 | 2026-10-06 | Bu hafta K-08 için 10 dakika ayırabileceğin gün hangisi? (2 kez soruldu; 2026-10-08'de tabloya taşındı) |
 | 2026-10-08 | K-08 için iki seçeneği karşılaştıran tek sayfalık notu yazayım mı? (2 kez soruldu; 2026-10-12'de tabloya taşındı — not yazılmadı) |
 | 2026-10-19 | Proje şu an askıda mı? (2 kez soruldu; 2026-10-26'da tabloya taşındı — cevaba göre K-08 notu veya brifing sıklığı değişecekti) |
+| 2026-11-02 | K-08 Kasım'da gündemde mi? (2 kez soruldu; 2026-11-09'da tabloya taşındı — K-08 49 gündür bekliyor) |
 
 ### I. Brifing kanalı (9 soru)
 
@@ -301,4 +305,4 @@
 
 ---
 
-*Son güncelleme: 2026-11-02*
+*Son güncelleme: 2026-11-09*
