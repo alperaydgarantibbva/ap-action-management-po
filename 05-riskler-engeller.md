@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-11-13 itibarıyla):** D-01 74 gün, D-02 84 gün, K-08 53 gün. R-01 ve R-02/R-03 de 74 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-11-16 itibarıyla):** D-01 77 gün, D-02 87 gün, K-08 56 gün. R-01 ve R-02/R-03 de 77 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -83,6 +83,9 @@
 
 *Asistanın sorduğu ama cevaplanmamış sorular buraya düşer. Tamamı Alper'e sorulmuştur.*
 
+> **2026-11-16:** Tablo 72 satırda. "Kasım'da paydaşlardan herhangi birine proje güncellemesi gitti mi?" sorusu
+> (2026-11-09, 2026-11-13) ikinci kez cevapsız kaldığı için F başlığına taşındı; artık brifingte sorulmuyor.
+>
 > **2026-11-09:** Tablo 71 satırda. "K-08 Kasım'da gündemde mi?" sorusu (2026-11-02, 2026-11-06)
 > ikinci kez cevapsız kaldığı için H başlığına taşındı; artık brifingte sorulmuyor.
 >
@@ -226,7 +229,7 @@
 | 2026-09-15 | `01-backlog/oncelik.md` sıralama kriterlerinin taslağını ben yazayım mı? (2 kez soruldu; 2026-09-17'de tabloya taşındı) |
 | 2026-09-28 | Bu haftanın tek önceliği K-08 kararı olsun mu? (2 kez soruldu; 2026-09-30'da tabloya taşındı) |
 
-### F. Paydaş iletişimi (6 soru)
+### F. Paydaş iletişimi (7 soru)
 
 *Cevaplanmazsa: 21 paydaşın "son iletişim" sütunu boş kalır, aylık bilgilendirme sayacı başlamaz.*
 
@@ -238,6 +241,7 @@
 | 2026-09-22 | Paydaş güncellemesini kapsam dokümanı v2 üzerinden yeniden yazayım mı? (2 kez soruldu; 2026-09-24'te tabloya taşındı) |
 | 2026-09-24 | Kapsam dokümanı v2 ekiple ya da paydaşlarla paylaşıldı mı? (2 kez soruldu; 2026-09-28'de tabloya taşındı) |
 | 2026-10-02 | Ekim paydaş notunu (3 cümle) `04-raporlar/` altına taslak olarak yazayım mı? (2 kez soruldu; 2026-10-06'da tabloya taşındı — yazılmadı) |
+| 2026-11-09 | Kasım'da paydaşlardan herhangi birine proje güncellemesi gitti mi? (2 kez soruldu; 2026-11-16'da tabloya taşındı — paydaşlar.md "Son iletişim" sütunu boş) |
 
 ### G. Proje tanımı ve prototip kapsamı (4 soru)
 
@@ -306,4 +310,4 @@
 
 ---
 
-*Son güncelleme: 2026-11-13*
+*Son güncelleme: 2026-11-16*

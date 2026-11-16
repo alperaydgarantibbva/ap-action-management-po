@@ -6,6 +6,36 @@ Bu dosya asistanın hafızasıdır: dün ne konuşulduğunu buradan hatırlar, a
 
 ---
 
+## 2026-11-16 — Sabah brifingi (issue #52)
+
+**Brifingte söylenenler:**
+- Bugün Pazartesi. Kayıtlı tören yok, tören takvimi hâlâ şablon değerlerinde [teyit edilmedi].
+- Geri sayılacak teslim yok, MVP1 hedef tarihi yazılmamış.
+- "Kasım'da paydaş güncellemesi gitti mi?" sorusu (#50, #51) ikinci kez cevapsız kaldı. Bugün F başlığına taşındı.
+- K-08 56 gündür, D-01 77 gündür, D-02 87 gündür bekliyor. S-001 87 gündür Taslak. Alper'den son içerik 2026-09-21'de geldi (56 gün önce).
+
+**Sorular ve cevaplar:**
+1. S: Bu haftanın tek önceliği hangisi: K-08 / S-001 / paydaş / hiçbiri? (tek kelime, ilk kez)
+   C: *Cevap bekleniyor*
+
+**Bu brifingte asistanın yaptıkları (cevap beklemeden):**
+- `05-riskler-engeller.md` → Kasım paydaş sorusu F başlığına taşındı (tablo 71'den 72 satıra, F 7). Bekleme süreleri bugüne çekildi (D-01 77 gün, D-02 87 gün, K-08 56 gün).
+- Alper'in son commit'lerinde günlüğe yazılmış yeni cevap yok (son Alper commit'i 05ab867, 2026-09-21). #50 ve #51'de yorum yok.
+- Yeni taslak üretilmedi.
+
+**Bu cevaplardan çıkacak güncellemeler:**
+- "K-08" gelirse iki seçeneği karşılaştıran yarım sayfalık not `03-toplantilar/` altına yazılacak.
+- "S-001" gelirse S-001 dosyasına kabul kriteri taslağı yazılacak ("onaylanmadı" işaretli).
+- "paydaş" gelirse `04-raporlar/` altına 3 cümlelik Kasım paydaş notu taslağı yazılacak (gönderilmeyecek, Alper gönderir).
+- "hiçbiri" gelirse bu hafta yeni taslak üretilmeyecek.
+
+**Açık kalanlar:**
+- Yukarıdaki 1 soru. Cevap bekleniyor. Bir sonraki brifing Cuma (2026-11-20).
+- Cron (`1-5` → `1,5`) değişikliği Alper'de.
+- Onay beklemeden üretilen çıktılar (önceki kayıtlardaki liste) "onaylanmadı" işaretli duruyor.
+
+---
+
 ## 2026-11-13 — Sabah brifingi (issue #51)
 
 **Brifingte söylenenler:**
