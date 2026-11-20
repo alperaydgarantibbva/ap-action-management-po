@@ -33,7 +33,7 @@
 
 *D-01, Alper'in 2026-09-04'te yüklediği `03-toplantilar/20260831-Architecture.md` notundan asistan tarafından çıkarıldı; kararın kimde olduğu notta yazmıyor, 2026-09-07'de soruldu. Alper onaylamadı.*
 
-**Bekleme süreleri (2026-11-16 itibarıyla):** D-01 77 gün, D-02 87 gün, K-08 56 gün. R-01 ve R-02/R-03 de 77 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
+**Bekleme süreleri (2026-11-20 itibarıyla):** D-01 81 gün, D-02 91 gün, K-08 60 gün. R-01 ve R-02/R-03 de 81 gündür teyit almamış durumda. Karar sahibi yazılı olmayan tek madde D-01; sorusu iki kez cevapsız kaldığı için 2026-09-18'de bekleyen sorular tablosuna taşındı.
 
 ## Kapsam dokümanı v2 karar noktaları (K-01…K-17)
 
@@ -77,6 +77,7 @@
 | 2026-10-26 – 2026-10-30 | Repoya Alper'den içerik gelmedi (son içerik 05ab867, 2026-09-21). Hiçbir karar verilmedi: K-08 39, D-01 60, D-02 70 gündür açık. S-001 70 gündür Taslak. 21 paydaşa hâlâ güncelleme gitmedi [teyit edilmedi]. Brifingler #46 ve #47 açıldı; #46 yorumsuz. "Yalnızca Pazartesi brifingi" sorusu 2026-10-30'da ikinci kez soruldu. Asistan bu hafta yeni taslak üretmedi. |
 | 2026-11-02 – 2026-11-06 | Repoya Alper'den içerik gelmedi (son içerik 05ab867, 2026-09-21). Hiçbir karar verilmedi: K-08 46, D-01 67, D-02 77 gündür açık. S-001 77 gündür Taslak. 21 paydaşa hâlâ güncelleme gitmedi [teyit edilmedi]. Brifingler #48 ve #49 açıldı; #48 yorumsuz. "K-08 Kasım'da gündemde mi?" sorusu 2026-11-06'da ikinci kez soruldu. Asistan bu hafta yeni taslak üretmedi. |
 | 2026-11-09 – 2026-11-13 | Repoya Alper'den içerik gelmedi (son içerik 05ab867, 2026-09-21). Hiçbir karar verilmedi: K-08 53, D-01 74, D-02 84 gündür açık. S-001 84 gündür Taslak. 21 paydaşa Kasım güncellemesi gittiğine dair kayıt yok [teyit edilmedi]. Brifingler #50 ve #51 açıldı; #50 yorumsuz. "Kasım'da paydaş güncellemesi gitti mi?" sorusu 2026-11-13'te ikinci kez soruldu. Asistan bu hafta yeni taslak üretmedi. |
+| 2026-11-16 – 2026-11-20 | Repoya Alper'den içerik gelmedi (son içerik 05ab867, 2026-09-21; 60 gün). Hiçbir karar verilmedi: K-08 60, D-01 81, D-02 91 gündür açık. S-001 91 gündür Taslak. 21 paydaşa Kasım güncellemesi gittiğine dair kayıt yok [teyit edilmedi]. Brifingler #52 ve bugünkü açıldı; #52 yorumsuz. "Bu haftanın tek önceliği" sorusu 2026-11-20'de ikinci kez soruldu. Asistan bu hafta yeni taslak üretmedi. |
 | 2026-09-21 – 2026-09-25 | Alper 2026-09-21'de `03-toplantilar/AccountPlanning-Kapsam-v2.html`'i yükledi (commit 05ab867) — 4 Eylül'den beri ilk içerik. Doküman 5 epic'i doğruluyor, 17 karar noktası (K-01…K-17) ve tarihsiz üç fazlı yol haritası getiriyor. Hafta içinde hiçbir karar verilmedi; D-01 (25 gün) ve D-02 (35 gün) kapanmadı, doküman ikisini de kapatmıyor. S-001 35 gündür Taslak. Brifingler (#27–#31) yorumsuz. Asistan K-01…K-17 tablosunu ve R-03 sayılarını onay beklemeden işledi. |
 
 ## Cevap bekleyen sorular
